@@ -6,6 +6,10 @@ const VaporLounge = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+  const API_BASE_URL =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:8888/.netlify/functions/api" 
+    : "/.netlify/functions/api";   
   // const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
   const sendMessage = async () => {
@@ -16,7 +20,7 @@ const VaporLounge = () => {
     setInput("");
   
     try {
-      const response = await fetch('/.netlify/functions/api', {
+      const response = await fetch(`${API_BASE_URL}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: newMessages }),
@@ -59,7 +63,7 @@ const VaporLounge = () => {
             className="spotify"
           ></iframe>
 
-          <div className="chatbox border p-4 rounded-lg shadow-lg w-96 bg-white mt-4">
+          <div className="chatbox border p-4 rounded-lg shadow-lg w-96 bg-white mt-4" style={{  zIndex: "1000" }}>
             <h2 className="text-black">Chat With a Pirate</h2>
             <div className="messages h-60 overflow-y-auto p-2 border-b">
               {messages.map((msg, index) => (
