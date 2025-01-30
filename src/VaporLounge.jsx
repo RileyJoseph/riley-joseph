@@ -6,48 +6,30 @@ const VaporLounge = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+  // const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
-  // Load environment variable (store API key securely)
-  const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
-
-
-  // Handle message sending
   const sendMessage = async () => {
     if (!input.trim()) return;
-
+  
     const newMessages = [...messages, { sender: "user", text: input }];
     setMessages(newMessages);
     setInput("");
-
+  
     try {
-      const response = await axios.post(
-        "https://api.openai.com/v1/chat/completions",
-        {
-          model: "gpt-4",
-          messages: newMessages.map((msg) => ({
-            role: msg.sender === "user" ? "user" : "assistant",
-            content: msg.text + " - reply to this like you were a pirate please!",
-          })),
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${API_KEY}`,
-          },
-        }
-      );
-
-      setMessages([
-        ...newMessages,
-        { sender: "bot", text: response.data.choices[0].message.content },
-      ]);
+      const response = await fetch('/.netlify/functions/api', {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: newMessages }),
+      });
+  
+      const data = await response.json();
+      setMessages([...newMessages, { sender: "bot", text: data.message }]);
     } catch (error) {
       console.error("Error fetching response:", error);
       setMessages([...newMessages, { sender: "bot", text: "Error occurred." }]);
     }
   };
 
-  // Simulate a loading screen for 4 seconds
   useEffect(() => {
     const timeout = setTimeout(() => setIsLoading(false), 4000);
     return () => clearTimeout(timeout);
@@ -74,6 +56,7 @@ const VaporLounge = () => {
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
             title="Spotify Playlist"
+            className="spotify"
           ></iframe>
 
           <div className="chatbox border p-4 rounded-lg shadow-lg w-96 bg-white mt-4">
@@ -86,10 +69,7 @@ const VaporLounge = () => {
                     msg.sender === "user"
                       ? "bg-blue-500 text-white self-end ml-auto text-right"
                       : "bg-gray-700 text-gray-200 self-start mr-auto text-left"
-                  }`}
-                >
-                  {msg.text}
-                </div>
+                  }`}>{msg.text}</div>
               ))}
             </div>
             <div className="flex mt-2">

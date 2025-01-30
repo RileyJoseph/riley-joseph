@@ -4,10 +4,12 @@ function BookRecommendations() {
   const [books, setBooks] = useState([]);
   const [error, setError] = useState(null);
 
-  const apiKey = import.meta.env.VITE_GOOGLE_BOOKS_API_KEY;
   const [selectedGenre, setSelectedGenre] = useState(null);
   const [selectedBook, setSelectedBook] = useState(null);
-
+  const API_BASE_URL =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:8888/.netlify/functions/api" // Local Netlify Dev Server
+    : "/.netlify/functions/api"; 
   const bookRecs = {
     "Science Fiction": {
       icon: "planet-outline",
@@ -64,10 +66,11 @@ function BookRecommendations() {
 
   const fetchBooks = async (bookTitles) => {
     try {
-      console.log("bookTitle", bookTitles)
+
       const promises = bookTitles.books.map((title) =>
         fetch(
-          `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(title)}&key=${apiKey}`
+          `${API_BASE_URL}?q=${encodeURIComponent(title)}`
+          // `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(title)}&key=${apiKey}`
         ).then((response) => response.json())
       );
 
@@ -109,7 +112,7 @@ function BookRecommendations() {
     <div className="book-container">
       <div className="hero book-hero">
         <div className="">
-          <h1 className="text-2xl pt-35 pb-5 pink cyber-glow:glowPulse font-bold">Book Recommendations</h1>
+          <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl pt-36 pb-5 pink cyber-glow:glowPulse font-bold ">Book Recommendations</h1>
         </div>
         <div className="genres">
         {Object.keys(bookRecs).map((genre) => (

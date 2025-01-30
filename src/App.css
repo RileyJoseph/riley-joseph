@@ -202,7 +202,7 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;  
 }
@@ -213,7 +213,7 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: transparent;
   background-size: 5px 5px, 5px 5px;
   background-position:  -1px -1px, -1px -1px;
@@ -587,4 +587,25 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
 #mirror:hover #mirror-content:before {
 	opacity: 0.4;
 	transform: translateY(4px);
+}
+
+@media (width <= 1250px) {
+  .spotify{
+    position: absolute;
+    top: 15vh;
+  }
+  .chatbox{
+    position: initial;
+    margin-top: 100px;
+  }
+  h1{
+    font-size: 42px;
+  }
+}
+
+
+@media (width <= 950px) {
+  h1{
+    font-size: 38px;
+  }
 }
