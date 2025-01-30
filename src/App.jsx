@@ -2,12 +2,13 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 import BookRecommendations from './BookRecommendations'; 
 import './App.css'; 
-import Navbar from './Navbar.jsx';
+import Navbar from './NavBar.jsx';
 import VaporLounge from "./VaporLounge";
 import GameMirror from './windows/GameWindow.jsx';
 import LibraryWindow from './windows/LibraryWindow.jsx'
 import LoungeWindow from './windows/LoungeWindow.jsx'
-import Footer from './Footer.jsx'; 
+import Footer from './footer.jsx';
+
 
 function App() {
   const [bgColor, setBgColor] = useState("bg-white");
