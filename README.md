@@ -1,2 +1,1 @@
-# RileyJoseph.github.io
-Personal Site 25' Vite - React
+Personal Site 25' Vite - React\
