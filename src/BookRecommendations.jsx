@@ -78,7 +78,7 @@ function BookRecommendations() {
           title: result.items[0].volumeInfo.title,
           authors: result.items[0].volumeInfo.authors || ["Unknown Author"],
           description: result.items[0].volumeInfo.description || "No description available.",
-          thumbnail: result.items[0].volumeInfo.imageLinks?.thumbnail || "../../public/images/no-book-cover.gif",
+          thumbnail: result.items[0].volumeInfo.imageLinks?.thumbnail || "/images/no-book-cover.gif",
         } : null
       );
 
