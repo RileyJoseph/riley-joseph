@@ -59,20 +59,21 @@ function App() {
                 <div className="min-h-screen welcome-text">
                   <div className="p-8">
                     <h1 className="text-2xl font-bold pink cyber-glow:glowPulse">Welcome Home</h1>
+                    <p className="mt-4">Thanks for coming to my site, this was built over the course of 3-4 days so that I would have a live website to use for job applications :)</p>
                     <p className="mt-4">Enjoy a platformer game, get a book recommendation or just hang.</p>
-                  </div>
+                    <ion-icon 
+                      className="down-arrow mt-8"
+                      size="large" 
+                      name="caret-down-outline" 
+                      style={{ cursor: "pointer" }} 
+                      onClick={() => {
+                      const windowsElement = document.getElementById("windows");
+                      if (windowsElement) {
+                        windowsElement.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}></ion-icon>
+                  </div>                  
                 </div>
-                <ion-icon 
-                  className="down-arrow mt-8"
-                  size="large" 
-                  name="caret-down-outline" 
-                  style={{ cursor: "pointer" }} 
-                  onClick={() => {
-                  const windowsElement = document.getElementById("windows");
-                  if (windowsElement) {
-                    windowsElement.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}></ion-icon>
               </div>
               <div id="windows" className="window-container flex flex-col items-center pulse-border">
                 <div className="scene flex flex-wrap justify-center gap-32 w-full">
