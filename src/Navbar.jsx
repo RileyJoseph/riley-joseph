@@ -16,7 +16,8 @@ const Navbar = ({ onColorChange }) => {
       <nav className="flex justify-between items-center w-full">
         <div className="flex gap-4">          
           <Link to="/" className="home-logo"></Link>
-          <Link to="/" className="anti-btn py-2 cyber-glow:glowPulse pink">Home</Link>          
+          <Link to="/" className="anti-btn py-2 cyber-glow:glowPulse pink">Home</Link>   
+          <Link to="/portfolio" className="anti-btn py-2 cyber-glow:glowPulse pink">Portfolio</Link>       
           {/* <Link to="/vapor-lounge" className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600">Vapor Lounge</Link> */}
         </div>
 

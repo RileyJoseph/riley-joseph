@@ -8,6 +8,7 @@ import GameMirror from './windows/GameWindow.jsx';
 import LibraryWindow from './windows/LibraryWindow.jsx'
 import LoungeWindow from './windows/LoungeWindow.jsx'
 import Footer from './footer.jsx';
+import Portfolio from "./Portfolio";
 
 
 function App() {
@@ -96,7 +97,8 @@ function App() {
           }
         />
         <Route path="/book-recommendations" element={<BookRecommendations />} />
-        <Route path="/vapor-lounge" element={<VaporLounge />} />                
+        <Route path="/vapor-lounge" element={<VaporLounge />} />  
+        <Route path="/portfolio" element={<Portfolio />} />              
       </Routes>
       <Footer /> 
     </Router>
