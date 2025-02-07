@@ -22,7 +22,7 @@ const Navbar = ({ onColorChange }) => {
         </div>
 
         {/* Color Picker Dropdown */}
-        <div className="relative">
+        {/* <div className="relative">
           <button className="dropdown px-4 py-2 text-white rounded cyber-glow:glowPulse" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>Mode</button>
           {isDropdownOpen && (
             <ul className="absolute mt-2 shadow-lg rounded bg-transparent">
@@ -34,7 +34,7 @@ const Navbar = ({ onColorChange }) => {
               </li>
             </ul>
           )}
-        </div>
+        </div> */}
       </nav>
     </div>
   );

@@ -38,6 +38,102 @@ html, body {
   /* color: white; */
 }
 
+.app-body {
+  /* background-color: var(--bg-color); */
+  /* background: var(--bg-gradient); */
+  /* background-color: black; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  /* background-image: url("/images/black-static.jpg"); */
+  /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(10px); */
+ }
+ 
+
+ .listen-body {
+  background-color: var(--bg-color);
+  background: var(--bg-gradient);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+ }
+
+
+.welcome-text{
+  position: absolute;
+  margin-top: 30vh;
+  /* right: 10%; */
+  .cutout{
+    position: absolute;
+    z-index: 0;
+  }
+  .name{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    z-index: 10;
+    letter-spacing: 28px;
+    font-style: normal;
+    font-size: 102px;
+  }
+  .info{
+    width: 100%;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    z-index: 11;
+    font-style: normal;
+    font-size: 18px;
+    .left{
+      text-align: left;
+    }
+    .right{
+      text-align: right;
+    }
+  }
+}
+
+.welcome-home{
+  position: absolute;
+  bottom: 0px;
+  left: 70%;
+  margin-left: auto;
+  font-size: 48px;
+  color: var(--bg-color);
+}
+
+.home-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.bio{
+  position: relative;
+  min-height: 80vh;
+  .name{
+    font-size: 48px;
+  }
+  .titles{
+    font-size: 28px;
+  }
+}
+
 .cyber-glow{
   margin: 0 0 16px 0;
   color: var(--primary-color);
@@ -159,19 +255,6 @@ html, body {
  box-sizing: border-box;
 }
 
-.app-body {
- background-color: var(--bg-color);
- background: var(--bg-gradient);
- margin: 0;
- padding: 0;
- display: flex;
- align-items: center;
- justify-content: center;
- height: 100vh;
- position: relative;
- overflow: hidden;
-}
-
 .chatbox {
   position: fixed;
   bottom: 20px;
@@ -222,10 +305,6 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
   mix-blend-mode: difference;
 }
 
-.welcome-text{
-  position: absolute;
-  margin-top: 60vh;
-}
 
 .kill-bill{
   position: absolute;

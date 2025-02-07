@@ -40,7 +40,8 @@ const VaporLounge = () => {
   }, []);
 
   return (
-    <div className="app-body vapor-lounge flex flex-col items-center justify-center min-h-screen">
+    <div className="listen-body vapor-lounge flex flex-col items-center justify-center min-h-screen">
+      <div className="sun"></div>
       <div className="overlay"></div>
       <div className={`overlay glitch ${bgColor}`}></div>
 
