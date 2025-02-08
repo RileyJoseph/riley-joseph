@@ -10,6 +10,7 @@ import LoungeWindow from './windows/LoungeWindow.jsx'
 import Footer from './footer.jsx';
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import Bio from './Bio.jsx';
 
 const greetings = [
   "Hey, nice to meet you.",
@@ -212,6 +213,7 @@ function App() {
         <Route path="/vapor-lounge" element={<VaporLounge />} />  
         <Route path="/portfolio" element={<Portfolio />} />  
         <Route path="/contact" element={<Contact />} />              
+        <Route path="/bio" element={<Bio />} />     
       </Routes>
       <Footer /> 
     </Router>

@@ -39,9 +39,9 @@ const Footer = () => {
       <div className="w-full md:w-1/3 text-left">
         <h2 className="text-xl font-semibold underline">Pages</h2>
         <ul className="text-sm text-gray-400 space-y-1 ">
-          <li><a href="/game-projects" className="hover:underline">Home</a></li>
+          <li><a href="/" className="hover:underline">Home</a></li>
           <li><a href="/portfolio" className="hover:underline">Portfolio</a></li>
-          <li><a href="/vapor-lounge" className="hover:underline">About Me</a></li>          
+          <li><a href="/bio" className="hover:underline">About Me</a></li>          
         </ul>
       </div>
 
