@@ -19,40 +19,55 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="container mx-auto flex flex-col items-center space-y-4">
-        <a
-          href="https://www.linkedin.com/in/rileymjoseph/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-400 hover:underline"
-        >
-          LinkedIn
-        </a>
+<footer className="bg-black text-white py-10">
+  <div className="container mx-auto flex flex-col md:flex-row justify-between px-8">
 
-        <div className="text-center">
-          <input
-            type="password"
-            placeholder="Enter password to download resume"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="px-4 py-2 border rounded mb-2"
-          />
-          <button
-            onClick={handleDownload}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-          >
-            Download Resume
-          </button>
-          {error && <p className="text-red-500 mt-2">{error}</p>}
-        </div>
-        <div className="text-center space-y-2">
-          <a href="tel:+14058023368"  className="hover:underline">(405) 802-3368</a>
-          <br />
-          <a href="mailto:your.email@example.com" className="hover:underline">riley.m.joseph1@gmail.com</a>
-        </div>
+    <div className="footer-details w-full md:w-2/3 flex flex-col md:flex-row justify-between">
+      
+      <div className="w-full md:w-1/3 text-left">
+        <h2 className="text-xl font-semibold">Get in Touch</h2>
+        <a href="https://www.linkedin.com/in/rileymjoseph/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           className="text-blue-400 hover:underline">
+          LinkedIn
+        </a><br />
+        <a href="mailto:riley.m.joseph1@gmail.com" className="hover:underline">riley.m.joseph1@gmail.com</a>
       </div>
-    </footer>
+
+
+      <div className="w-full md:w-1/3 text-left">
+        <h2 className="text-xl font-semibold underline">Pages</h2>
+        <ul className="text-sm text-gray-400 space-y-1 ">
+          <li><a href="/game-projects" className="hover:underline">Home</a></li>
+          <li><a href="/portfolio" className="hover:underline">Portfolio</a></li>
+          <li><a href="/vapor-lounge" className="hover:underline">About Me</a></li>          
+        </ul>
+      </div>
+
+    </div>
+
+    <div className="footer-resume w-full md:w-2/3 flex flex-col items-start md:items-end mt-6 md:mt-0 inline-block text-right">
+      <h2 className="text-xl font-semibold">Get Resume</h2>
+      <input
+        type="password"
+        placeholder="Enter password to download"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        className="px-4 py-2 border rounded mb-2 text-black border-white white"
+      />
+      <button
+        onClick={handleDownload}
+        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+        Download Resume
+      </button>
+      {error && <p className="text-red-500 mt-2">{error}</p>}
+    </div>
+
+  </div>
+</footer>
+
+
   );
 };
 

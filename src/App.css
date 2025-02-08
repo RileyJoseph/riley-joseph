@@ -33,15 +33,12 @@ html, body {
 }
 
 .dropdown{
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 10px;
-  /* color: white; */
+  color: white;
 }
 
 .app-body {
-  /* background-color: var(--bg-color); */
-  /* background: var(--bg-gradient); */
-  /* background-color: black; */
   margin: 0;
   padding: 0;
   display: flex;
@@ -50,13 +47,48 @@ html, body {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  /* background-image: url("/images/black-static.jpg"); */
-  /* -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(10px); */
  }
+
+ .headshot{
+  z-index: 20;
+ }
+
+ .code{
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 30vh;
+ }
+
+ .inline-only{
+  display: none;
+ }
+
+ .code-red{
+  color: red;
+ }
+
+ .code-yellow{
+  color: yellow;
+ }
+
+ .code-blue{
+  color: rgb(106, 228, 255);
+ }
+
+ .code-green{
+  color: rgb(25, 239, 25);
+ }
+
+ .code-purple{
+  color: rgb(255, 30, 255);
+ }
+
+ .dot{
+  margin-right: 6px;
+ }
+
  
 
  .listen-body {
@@ -75,7 +107,7 @@ html, body {
 
 .welcome-text{
   position: absolute;
-  margin-top: 30vh;
+  margin-top: 45vh;
   /* right: 10%; */
   .cutout{
     position: absolute;
@@ -103,6 +135,13 @@ html, body {
       text-align: right;
     }
   }
+}
+
+.hero-links{
+  border-bottom: 1px solid white;
+  letter-spacing: 4px;
+  font-size: 24px;
+  font-weight: 200;
 }
 
 .welcome-home{
@@ -304,7 +343,6 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
                     linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
   mix-blend-mode: difference;
 }
-
 
 .kill-bill{
   position: absolute;
@@ -668,6 +706,18 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
 	transform: translateY(4px);
 }
 
+@media (width <= 1375px) {
+  .welcome-text{
+    .name{
+      font-size: 68px;
+    }
+    .info{
+      font-size: 14px;
+    }
+  }
+}
+
+
 @media (width <= 1250px) {
   .spotify{
     position: absolute;
@@ -679,6 +729,41 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
   }
   h1{
     font-size: 42px;
+  }
+}
+
+@media (width <= 1100px) {
+  .welcome-text{
+    margin-top: 55vh;
+    .name{
+      font-size: 52px;
+    }
+    .info{
+      font-size: 14px;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      .left, .subheading{
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .inline-only{
+      display: inline-block;
+     }    
+  }
+  .code{
+    margin-top: 10vh;
+  }
+  .headshot{
+    position: absolute;
+    top:5vh;
+  }  
+  .jobs{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
   }
 }
 

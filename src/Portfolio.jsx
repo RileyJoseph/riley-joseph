@@ -1,12 +1,12 @@
 import React from "react";
 
 const portfolioItems = [  
-  { id: 1, name: "Orange Leaf", image: "/images/orange-leaf.png" },
-  { id: 2, name: "Eote", image: "/images/eote.png" },
-  { id: 3, name: "Huble Donutes", image: "/images/humble.png" },  
-  { id: 4, name: "Quantum Dynamics", image: "https://source.unsplash.com/600x400/?corporate" },
-  { id: 5, name: "Eclipse Systems", image: "https://source.unsplash.com/600x400/?design" },
-  { id: 6, name: "Titan AI", image: "https://source.unsplash.com/600x400/?software" },
+  { id: 1, name: "Orange Leaf", image: "/images/portfolio/orange-leaf.png" },
+  { id: 2, name: "Eote", image: "/images/portfolio/eote.png" },
+  { id: 3, name: "Huble Donutes", image: "/images/portfolio/humble.png" },  
+  { id: 4, name: "Patted", image: "/images/portfolio/patted.png" },
+  { id: 5, name: "Solas", image: "/images/portfolio/solas-1.png" },
+  { id: 6, name: "Coat", image: "/images/portfolio/coat.png" },
 ];
 
 const Portfolio = () => {
