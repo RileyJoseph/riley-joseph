@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import BookRecommendations from './BookRecommendations'; 
 import './App.css'; 
-import Navbar from './Navbar.jsx';
+import Navigation from './Navigation.jsx';
 import VaporLounge from "./VaporLounge";
 import GameMirror from './windows/GameWindow.jsx';
 import LibraryWindow from './windows/LibraryWindow.jsx'
@@ -70,7 +70,7 @@ function App() {
 
   return (
     <Router>
-      <Navbar onColorChange={handleColorChange} />
+      <Navigation onColorChange={handleColorChange} />
       <Routes>
         <Route
           path="/"

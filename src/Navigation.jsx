@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-const Navbar = ({ onColorChange }) => {
+const Navigation = ({ onColorChange }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [bgColor, setBgColor] = useState();
   const handleColorChange = (color) => {
@@ -45,4 +45,4 @@ const Navbar = ({ onColorChange }) => {
   );
 };
 
-export default Navbar;
+export default Navigation;
