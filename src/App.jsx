@@ -7,7 +7,7 @@ import VaporLounge from "./VaporLounge";
 import GameMirror from './windows/GameWindow.jsx';
 import LibraryWindow from './windows/LibraryWindow.jsx'
 import LoungeWindow from './windows/LoungeWindow.jsx'
-import Footer from './footer.jsx';
+import Footer from './Footer.jsx';
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Bio from './Bio.jsx';
