@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import BookRecommendations from './BookRecommendations'; 
 import './App.css'; 
-import Navbar from './NavBar.jsx';
+import Navbar from './Navbar.jsx';
 import VaporLounge from "./VaporLounge";
 import GameMirror from './windows/GameWindow.jsx';
 import LibraryWindow from './windows/LibraryWindow.jsx'
@@ -104,8 +104,10 @@ function App() {
 
                     {/* 🔴 JavaScript & Backend (Red) */}
                     <span className="code-red">JavaScript</span> <span className="dot">●</span> 
-                    <span className="code-red">jQuery</span> <span className="dot">●</span> 
                     <span className="code-red">Node.js</span> <span className="dot">●</span> 
+                    <span className="code-red">TypeScript</span> <span className="dot">●</span>
+                    <span className="code-red">Express</span> <span className="dot">●</span>
+                    <span className="code-red">PHP</span> <span className="dot">●</span>
 
                     {/* 🟣 JavaScript Frameworks (Purple) */}
                     <span className="code-purple">Vue</span> <span className="dot">●</span> 
@@ -129,11 +131,11 @@ function App() {
 
                     {/* 🔵 DevOps & Tools (Blue) */}
                     <span className="code-blue">Git</span> <span className="dot">●</span> 
-                    <span className="code-blue">Gulp</span> <span className="dot">●</span> 
-                    <span className="code-blue">Yarn</span> <span className="dot">●</span> 
-                    <span className="code-blue">NPM</span> <span className="dot">●</span> 
+                    <span className="code-blue">NPM</span> <span className="dot">●</span>                                         
                     <span className="code-blue">AWS</span> <span className="dot">●</span> 
                     <span className="code-blue">Docker</span> <span className="dot">●</span> 
+                    <span className="code-blue">Gulp</span> <span className="dot">●</span> 
+                    <span className="code-blue">Yarn</span> <span className="dot">●</span> 
                     <span className="code-blue">APIs</span> <span className="dot">●</span> 
 
                     {/* 🟢 Project & Team Management (Green) */}
