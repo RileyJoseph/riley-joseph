@@ -77,7 +77,7 @@ function App() {
           element={
             <div>
               {/* <div className="app-body w-full h-[100vh] bg-cover bg-center bg-no-repeat md:relative absolute" style={{ backgroundImage: "url('/images/leaves.jpeg')" }}>               */}
-              <div className="app-body w-full h-[100vh] bg-cover bg-center bg-no-repeat md:relative absolute">              
+              <div className="app-body w-full h-screen flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat relative">
                 <div className="overlay"></div>
                 {/* <div className="sun"></div> */}
                 <div className={`overlay glitch ${bgColor}`}></div>

@@ -806,6 +806,10 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     height: auto;
     /* margin-bottom: 120px; */
   }
+  .welcome-text .name{
+    z-index: 99;
+    margin-left: 20px;
+  }
 }
 
 
@@ -813,5 +817,11 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
   .bio-headshot{
     height: 700px;
     display: none;
+  }
+  .app-body{
+    min-height: 125vh;
+  }
+  .code{
+    padding-bottom: 80px;
   }
 }
