@@ -44,7 +44,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
  }
@@ -103,12 +103,15 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
  }
 
-
+ h1, h2{
+  font-family: "Cinzel", serif;
+ }
+ 
 .welcome-text{
   position: absolute;
   margin-top: 45vh;
@@ -174,6 +177,16 @@ html, body {
   }
   .titles{
     font-size: 28px;
+  }
+}
+
+.contact{
+  z-index: 22;
+}
+
+.portfolio{
+  min-height: 100vh;
+  .client{
   }
 }
 
@@ -787,6 +800,11 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     .hero-links{
       font-size: 18px;
     } 
+  }
+  .bio{
+    padding-top: 60px;
+    height: auto;
+    /* margin-bottom: 120px; */
   }
 }
 
