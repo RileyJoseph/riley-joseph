@@ -789,6 +789,13 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
 
 
 @media (width <= 950px) {
+  .app-body{
+    /* height: auto; */
+  }
+  .overlay{
+    min-height: 125vh;
+    /* height: auto; */
+  }
   h1{
     font-size: 38px;
   }
@@ -797,6 +804,7 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     margin-top: 5vh;
   }
   .links{
+    position: relative;
     .hero-links{
       font-size: 18px;
     } 
@@ -804,11 +812,19 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
   .bio{
     padding-top: 60px;
     height: auto;
-    /* margin-bottom: 120px; */
   }
-  .welcome-text .name{
+  .headshot{
+    position: relative;
+    /* margin-top: 80px; */
+  }
+  .welcome-text{
+    margin-top: 30px;
+    position: relative;
+    min-height: auto;
+   .name{
     z-index: 99;
     margin-left: 20px;
+    }
   }
 }
 
