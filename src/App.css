@@ -32,6 +32,12 @@ html, body {
   height: 80px;
 }
 
+.dropdown-ul{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  width: 90px;
+}
+
 .dropdown{
   border: 2px solid white;
   border-radius: 10px;
@@ -828,7 +834,7 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     min-height: auto;
    .name{
     z-index: 99;
-    margin-left: 20px;
+    margin-left: 25px;
     }
   }
   .portfolio{
@@ -847,5 +853,10 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
   }
   .code{
     padding-bottom: 80px;
+  }
+  .portfolio{
+    .title-overlay{
+
+    }
   }
 }

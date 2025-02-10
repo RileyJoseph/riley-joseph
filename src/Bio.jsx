@@ -9,7 +9,7 @@ function Bio() {
   <div className="overlay"></div>
   <div className={`overlay glitch`}></div>    
 
-  <div id="bio" className="bio home-section pulse-border flex flex-col md:flex-row items-center md:items-start">
+  <div id="bio" className="bio home-section flex flex-col md:flex-row items-center md:items-start">
     
     {/* Responsive Headshot Image */}
     <div className="bio-headshot w-full md:w-1/3 min-h-[300px] md:h-auto bg-cover bg-center bg-no-repeat"
