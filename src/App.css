@@ -186,7 +186,12 @@ html, body {
 
 .portfolio{
   min-height: 100vh;
-  .client{
+  h2{
+    font-size: 36px;
+    padding-bottom: 15px;
+  }
+  .grid{
+    padding-bottom: 60px;
   }
 }
 
