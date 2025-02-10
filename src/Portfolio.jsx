@@ -17,7 +17,8 @@ const portfolioItems = [
   { id: 14, name: "Take Heart", image: "/images/portfolio/take-heart.png" },
   { id: 15, name: "America Prays", image: "/images/portfolio/america-prays.png" },
   { id: 16, name: "Stars and Stripes Coffee", image: "/images/portfolio/sscoffee.png" },
-  { id: 13, name: "Patted", image: "/images/portfolio/patted.png" },
+  { id: 17, name: "Patted", image: "/images/portfolio/patted.png" },
+  { id: 18, name: "Platformer", image: "/images/portfolio/kill-bill.png", src: "https://project-manager-curve-50566.netlify.app/"},
 ];
 
 const sassPortfolioItems = [  
