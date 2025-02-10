@@ -5,8 +5,12 @@ function Contact() {
   const [error, setError] = useState('');
 
   const handleDownload = () => {
-    if (password === 'yourPassword') { // Replace with actual password logic
-      window.location.href = '/path-to-resume.pdf';
+    if (password === 'resumeplease') { // Replace with actual password logic
+      setError(null);
+      const link = document.createElement("a");
+      link.href = "/resume.pdf";
+      link.download = "resumse.pdf";
+      link.click();
     } else {
       setError('Incorrect password. Please try again.');
     }

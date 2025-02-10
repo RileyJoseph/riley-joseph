@@ -54,7 +54,7 @@ const Footer = () => {
         placeholder="Enter password to download"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        className="px-4 py-2 border rounded mb-2 text-black border-white white"
+        className="px-4 py-2 border rounded mb-2 text-black border-white text-white"
       />
       <button
         onClick={handleDownload}
