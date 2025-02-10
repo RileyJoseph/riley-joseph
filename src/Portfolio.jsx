@@ -3,8 +3,8 @@ import React from "react";
 const portfolioItems = [  
   { id: 1, name: "Orange Leaf", image: "/images/portfolio/orange-leaf.png" },
   { id: 2, name: "Eote", image: "/images/portfolio/eote.png" },
-  { id: 3, name: "Huble Donutes", image: "/images/portfolio/humble.png" },  
-  { id: 4, name: "Patted", image: "/images/portfolio/patted.png" },
+  { id: 3, name: "Huble Donutes", image: "/images/portfolio/humble.png" },    
+  { id: 4, name: "Life Church", image: "/images/portfolio/open-lc.png" },
   { id: 5, name: "Solas", image: "/images/portfolio/solas-1.png" },
   { id: 6, name: "Coat", image: "/images/portfolio/coat.png" },
   { id: 7, name: "OKC MoA", image: "/images/portfolio/moa.png" },
@@ -13,6 +13,7 @@ const portfolioItems = [
   { id: 10, name: "Chisholm Creek", image: "/images/portfolio/ccreek.png" },
   { id: 11, name: "First Med", image: "/images/portfolio/firstmed.png" },
   { id: 12, name: "CBMC", image: "/images/portfolio/cbmc.png" },
+  // { id: 13, name: "Patted", image: "/images/portfolio/patted.png" },
 ];
 
 const sassPortfolioItems = [  
@@ -28,19 +29,13 @@ const Portfolio = () => {
   <h2>SaaS</h2>
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
     {sassPortfolioItems.map((item) => (
-      <div 
-        key={item.id} 
-        className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer"
-      >
-        {/* Background Image */}
+      <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
         <img 
           src={item.image} 
           alt={item.name} 
           className="client object-cover object-top w-full h-60 object-cover transition duration-300 group-hover:brightness-50"
-        />
-        
-        {/* Overlay with Text */}
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        />        
+        <div className="title-overlay title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-60 md:opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <h2 className="text-white text-2xl font-semibold">
             {item.name}
           </h2>
@@ -54,19 +49,14 @@ const Portfolio = () => {
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     {portfolioItems.map((item) => (
-      <div 
-        key={item.id} 
-        className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer"
-      >
-        {/* Background Image */}
+      <div key={item.id}  className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
         <img 
           src={item.image} 
           alt={item.name} 
           className="client object-cover object-top w-full h-60 object-cover transition duration-300 group-hover:brightness-50"
         />
         
-        {/* Overlay with Text */}
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="title-overlay title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <h2 className="text-white text-2xl font-semibold">
             {item.name}
           </h2>

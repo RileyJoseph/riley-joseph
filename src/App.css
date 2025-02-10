@@ -831,6 +831,9 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     margin-left: 20px;
     }
   }
+  .portfolio{
+    padding-top: 120px;
+  }
 }
 
 
