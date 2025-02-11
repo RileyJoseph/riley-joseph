@@ -18,6 +18,7 @@ html, body {
   background-color: #1e1e1e;
 }
 
+
 #root {
   max-width: none;
   width: 100%;
@@ -33,6 +34,10 @@ html, body {
   height: 80px;
 }
 
+.home-btn{
+  color: white;
+}
+
 .dropdown-ul{
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
@@ -43,6 +48,7 @@ html, body {
   border: 2px solid white;
   border-radius: 10px;
   color: white;
+  background-color:#1e1e1e;
 }
 
 .app-body {
@@ -120,12 +126,14 @@ html, body {
 
  h1, h2{
   font-family: "Cinzel", serif;
+  color: white;
  }
  
 .welcome-text{
   position: absolute;
   margin-top: 45vh;
   /* right: 10%; */
+  color: white;
   .cutout{
     position: absolute;
     z-index: 0;
@@ -145,6 +153,10 @@ html, body {
     z-index: 11;
     font-style: normal;
     font-size: 18px;
+    color: white;
+    p{
+      color: white;
+    }
     .left{
       text-align: left;
     }
@@ -188,7 +200,11 @@ html, body {
   .titles{
     font-size: 28px;
   }
+  p{
+    color: white;
+  }  
 }
+
 
 .contact{
   z-index: 22;
