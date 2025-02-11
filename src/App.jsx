@@ -75,7 +75,7 @@ function App() {
         <Route
           path="/"
           element={
-            <div>
+            <div className='all'>
               {/* <div className="app-body w-full h-[100vh] bg-cover bg-center bg-no-repeat md:relative absolute" style={{ backgroundImage: "url('/images/leaves.jpeg')" }}>               */}
               <div className="app-body w-full h-screen flex flex-col justify-center items-center bg-cover bg-center bg-no-repeat relative">              
                 <div className="overlay"></div>
@@ -160,7 +160,7 @@ function App() {
                     }
                   }}></ion-icon>               */}
                 </div>
-                <div className="links absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full max-w-4xl flex justify-between px-8 lg:flex md:flex sm:hidden">
+                <div className="links absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full max-w-4xl flex justify-between px-8 lg:flex md:flex">
                     <Link to="/portfolio" className="hero-links hire-me-btn px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
                       Portfolio
                     </Link>

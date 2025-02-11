@@ -18,6 +18,10 @@ html, body {
   background-color: #1e1e1e;
 }
 
+.all{
+  background-color: #1e1e1e;
+}
+
 
 #root {
   max-width: none;
@@ -869,7 +873,7 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     display: none;
   }
   .app-body{
-    min-height: 125vh;
+    /* min-height: 125vh; */
   }
   .code{
     padding-bottom: 80px;
