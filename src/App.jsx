@@ -160,17 +160,15 @@ function App() {
                     }
                   }}></ion-icon>               */}
                 </div>
-                <div className="links absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full max-w-4xl flex justify-between px-8 lg:flex md:flex">
-                    <Link to="/portfolio" className="hero-links hire-me-btn px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
-                      Portfolio
-                    </Link>
-                    {/* <Link to="/contact" className="hero-links hire-me-btn px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
-                      Music
-                    </Link> */}
-                    <Link to="/bio" className="hero-links hire-me-btn px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
-                      About Me
-                    </Link>
-                </div>                
+                <div className="links absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full max-w-4xl flex justify-between items-center px-8">
+                  <Link to="/portfolio" className="hero-links hire-me-btn px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
+                    Portfolio
+                  </Link>
+                  <Link to="/bio" className="hero-links hire-me-btn px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
+                    About Me
+                  </Link>
+                </div>
+                            
                 <div className='hire-me fixed right-10 top-1/2 transform -translate-y-1/2'>
                   <Link to="/contact" className="hire-me-btn hire-me-btn bg-white text-black px-6 py-11 rounded-full shadow-lg text-lg font-semibold transition duration-300 hover:bg-gray-300">Hire Me</Link>
                 </div>
