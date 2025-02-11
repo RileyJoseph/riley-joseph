@@ -20,6 +20,7 @@ html, body {
 
 .all{
   background-color: #1e1e1e;
+  min-height: 900px;
 }
 
 
@@ -61,7 +62,8 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 900px;
+  /* min-height: 100vh; */
   position: relative;
   overflow: hidden;
  }
@@ -145,7 +147,7 @@ html, body {
   .name{
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
-    z-index: 10;
+    z-index: 22;
     letter-spacing: 28px;
     font-style: normal;
     font-size: 102px;
@@ -387,7 +389,8 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
   top: 0;
   left: 0;
   width: 100vw;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: 900px;
   background-color: transparent;
   background-size: 5px 5px, 5px 5px;
   background-position:  -1px -1px, -1px -1px;
@@ -828,7 +831,8 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     /* height: auto; */
   }
   .overlay{
-    min-height: 125vh;
+    /* min-height: 125vh; */
+    min-height: 900px;
     /* height: auto; */
   }
   h1{
@@ -839,8 +843,9 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     margin-top: 5vh;
   }
   .links{
-    position: relative;
+    position: relative;    
     .hero-links{
+      padding-top: 50px;
       font-size: 18px;
     } 
   }
@@ -872,6 +877,11 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     height: 700px;
     display: none;
   }
+  .link{
+    .hero-links{
+      padding-top: 10px;
+    }    
+  }
   .code{
     padding-bottom: 80px;
   }
@@ -883,7 +893,13 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
 }
 
 @media (width <= 700px) {
-.app-body{
-  min-height: 125vh;
-}
+  .app-body{
+    min-height: 1100px;
+  }
+  .all{
+    min-height: 1100px;
+  }
+  .overlay{
+    min-height: 1100px;
+  }
 }
