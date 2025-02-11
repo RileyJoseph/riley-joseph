@@ -872,9 +872,6 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     height: 700px;
     display: none;
   }
-  .app-body{
-    /* min-height: 125vh; */
-  }
   .code{
     padding-bottom: 80px;
   }
@@ -883,4 +880,10 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
 
     }
   }
+}
+
+@media (width <= 700px) {
+.app-body{
+  min-height: 125vh;
+}
 }

@@ -28,7 +28,7 @@ const sassPortfolioItems = [
 
 const Portfolio = () => {
   return (
-<div className="min-h-screen flex flex-col justify-center items-center p-6 portfolio">
+<div className="min-h-screen flex flex-col justify-center items-center p-6 portfolio all">
   <h1 className="text-3xl font-bold text-center mb-8">My Portfolio</h1>
 
   <h2>SaaS</h2>

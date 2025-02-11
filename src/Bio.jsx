@@ -5,7 +5,7 @@ function Bio() {
   const [error, setError] = useState('');
 
   return (
-<div className="min-h-screen p-8 flex flex-col items-center app-body">
+<div className="min-h-screen p-8 flex flex-col items-center app-body all">
   <div className="overlay"></div>
   <div className={`overlay glitch`}></div>    
 
