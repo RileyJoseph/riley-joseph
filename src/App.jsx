@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import BookRecommendations from './BookRecommendations'; 
 import './App.css'; 
@@ -23,6 +23,16 @@ const greetings = [
   "Hey! Let's build something cool together."
 ]
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   const [bgColor, setBgColor] = useState("bg-white");
   const [greeting, setGreeting] = useState("Hey, nice to meet you.")
@@ -35,6 +45,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Navigation />
       <Routes>
         <Route
