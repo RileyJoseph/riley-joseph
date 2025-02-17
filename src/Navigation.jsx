@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navigation = ({ onColorChange }) => {
+const Navigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleCloseMenu = () => {
