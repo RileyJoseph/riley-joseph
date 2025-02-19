@@ -29,7 +29,7 @@ function Bio() {
       <p className="text-lg md:text-xl">
         I'm a graduate from the University of Oklahoma where I majored in Entrepreneurship 
         and New Venture Management and minored in Non-Profit Organization Studies.
-        I'm on the Board of Directors for the Oklahoma Children's Theater and am currently a member of 3 local bands 
+        I'm on the Board of Directors for the Oklahoma Children's Theatre and am currently a member of 3 local bands 
         (Coat, Trilogy, and Twiggs).
       </p>
     </div>
