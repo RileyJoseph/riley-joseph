@@ -7,6 +7,7 @@ import VaporLounge from "./VaporLounge";
 import GameMirror from './windows/GameWindow.jsx';
 import LibraryWindow from './windows/LibraryWindow.jsx'
 import LoungeWindow from './windows/LoungeWindow.jsx'
+import ProjectDetails from "./ProjectDetails";
 import Footer from './Footer.jsx';
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
@@ -147,6 +148,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />  
         <Route path="/contact" element={<Contact />} />              
         <Route path="/bio" element={<Bio />} />     
+        <Route path="/portfolio/:url" element={<ProjectDetails />} />
       </Routes>
       <Footer /> 
     </Router>
