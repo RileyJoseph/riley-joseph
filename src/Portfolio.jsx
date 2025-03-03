@@ -34,7 +34,7 @@ const Portfolio = () => {
       <h2>SaaS</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
         {sassPortfolioItems.map((item) => (
-          <Link to={`/portfolio/${item.url}`} key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
+          <Link key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
             <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60 transition duration-300 group-hover:brightness-50" />
             <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-60 md:opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <h2 className="text-white text-2xl font-semibold">{item.name}</h2>
@@ -45,7 +45,7 @@ const Portfolio = () => {
       <h2>Web Development</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {portfolioItems.map((item) => (
-          <Link to={`/portfolio/${item.url}`} key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
+          <Link key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
             <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60 transition duration-300 group-hover:brightness-50" />
             <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <h2 className="text-white text-2xl font-semibold">{item.name}</h2>
