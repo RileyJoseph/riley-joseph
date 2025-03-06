@@ -29,7 +29,7 @@ function Contact() {
             <a href="https://www.linkedin.com/in/rileymjoseph/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-blue-500 hover:underline">
+              className="hover:underline">
               LinkedIn
             </a>
             <p><a href="mailto:riley.m.joseph1@gmail.com" className="hover:underline">riley.m.joseph1@gmail.com</a></p>
