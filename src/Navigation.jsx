@@ -19,6 +19,7 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-6 text-lg">
           <li><Link to="/portfolio" className="nav-btn py-2" onClick={handleCloseMenu}>Portfolio</Link></li>
           <li><Link to="/bio" className="nav-btn py-2" onClick={handleCloseMenu}>About Me</Link></li>
+          <li><Link to="/contact" className="nav-btn py-2" onClick={handleCloseMenu}>Contact</Link></li>
         </ul>
         
         {/* Mobile Menu Button */}

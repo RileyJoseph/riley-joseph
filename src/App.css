@@ -232,6 +232,9 @@ html, body {
 
 .contact{
   z-index: 22;
+  .linkedIn{
+    text-decoration: underline;
+  }
 }
 
 .portfolio{
