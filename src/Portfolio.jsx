@@ -46,7 +46,7 @@ const Portfolio = () => {
       <h2>Full-Stack Development</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {portfolioItems.map((item) => (
-          <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project">
+          <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg  project">
             <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60" />
             <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
               <h2 className="text-white text-2xl font-semibold">{item.name}</h2>
