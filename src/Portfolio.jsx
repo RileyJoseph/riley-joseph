@@ -18,8 +18,9 @@ const portfolioItems = [
   { id: 14, name: "Take Heart", url:"take-heart", image: "/images/portfolio/take-heart.jpg", description: "Project details for Take Heart." },
   { id: 15, name: "America Prays", url:"america-prays", image: "/images/portfolio/america-prays.jpg", description: "Project details for America Prays." },
   { id: 16, name: "Stars and Stripes Coffee", url:"stars-and-stripes-coffee", image: "/images/portfolio/sscoffee.jpg", description: "Project details for Stars and Stripes Coffee." },
-  { id: 17, name: "Patted", url:"patted", image: "/images/portfolio/patted.jpg", description: "Project details for Patted." },
-  { id: 18, name: "Platformer", url:"platformer", image: "/images/portfolio/kill-bill.jpg", src: "https://project-manager-curve-50566.netlify.app/", description: "Project details for Platformer." },
+  { id: 17, name: "Catholic Charities", url:"catholic-charities", image: "/images/portfolio/cc.jpg", description: "Project details for CC" },
+  { id: 18, name: "Patted", url:"patted", image: "/images/portfolio/patted.jpg", description: "Project details for Patted." },
+  // { id: 19, name: "Platformer", url:"platformer", outUrl:"https://project-manager-curve-50566.netlify.app/", image: "/images/portfolio/kill-bill.jpg", description: "Project details for Platformer." },
 ];
 
 const sassPortfolioItems = [  
@@ -34,7 +35,7 @@ const Portfolio = () => {
       <h2>SaaS</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
         {sassPortfolioItems.map((item) => (
-          <Link key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
+          <Link key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project">
             <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60 transition duration-300 group-hover:brightness-50" />
             <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-60 md:opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <h2 className="text-white text-2xl font-semibold">{item.name}</h2>
@@ -42,17 +43,31 @@ const Portfolio = () => {
           </Link>
         ))}
       </div>
-      <h2>Web Development</h2>
+      <h2>Full-Stack Development</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {portfolioItems.map((item) => (
-          <Link key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer">
-            <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60 transition duration-300 group-hover:brightness-50" />
-            <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project">
+            <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60" />
+            <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
               <h2 className="text-white text-2xl font-semibold">{item.name}</h2>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
+      <h2>For Fun</h2>
+      <a
+        key="platformer"
+        className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer"
+        target="_blank"
+        href="https://project-manager-curve-50566.netlify.app/"
+        rel="noopener noreferrer"
+      >
+
+        {/* <img src="/" alt="Platformer" className="client object-cover object-top w-full h-80 md:h-96" /> */}
+        <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-70">
+          <h2 className="text-white text-3xl font-semibold">Play My Platformer</h2>
+        </div>
+      </a>
     </div>
   );
 };

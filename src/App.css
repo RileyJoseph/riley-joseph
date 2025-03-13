@@ -217,6 +217,7 @@ html, body {
 }
 
 .portfolio{
+  overflow: hidden;
   min-height: 100vh;
   h2{
     font-size: 36px;
@@ -224,6 +225,21 @@ html, body {
   }
   .grid{
     padding-bottom: 60px;
+  }
+  .project {
+    transition: transform 0.3s ease-in-out, filter 4s ease-in-out 2s;
+    will-change: transform, filter; /* Helps with performance */
+  }
+  .project:hover {
+    transform: scale(1.3); /* Scale first */
+    filter: brightness(50%); /* Then darken */
+    z-index: 20;
+  } 
+  .platformer{
+    width: 100%;
+    background-position: center;
+    background-image: url("/images/portfolio/kill-bill.jpg");
+    height: 350px;
   }
 }
 
