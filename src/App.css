@@ -116,9 +116,23 @@ html, body {
   margin-right: 6px;
  }
 
- .hire-me-btn{
+ /* .hire-me-btn{
   transform: rotateY(45deg);
- }
+ } */
+
+ .hire-me-btn {
+  transition: transform 0.3s ease-out;
+  }
+
+.hire-me-btn:hover {
+  transform: scale(1.4) rotate(10deg);
+}
+
+.hire-me-btn:hover {
+  transform: scale(1.4) rotate(10deg) !important;
+}
+
+
  
 
  .listen-body {
@@ -842,7 +856,7 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
     display: inline-block;
     text-align: center;
   }
-  .hire-me{
+  .hire-me-btn{
     display: none;
   }
 }

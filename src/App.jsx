@@ -63,7 +63,7 @@ function App() {
                   <h1 className="name text-2xl font-bold">Riley Joseph</h1>
                   <div className="info flex justify-between w-full px-8 md:w-2/4">
                     <span className="left flex flex-col text-left jobs">                      
-                      <span>Software Engineer ● Web Developer <span class="dot inline-only">●</span></span>
+                      <span>Software Engineer ● Web Developer <span className="dot inline-only">●</span></span>
                       
                       <span>Musician ● Photographer</span>
                     </span>
@@ -125,18 +125,21 @@ function App() {
 
                 </div>
                 <div className="links absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full max-w-4xl flex justify-between items-center px-8">
-                  <Link to="/portfolio" className="hero-links hire-me-btn px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
+                  <Link to="/portfolio" className="hero-links px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
                     Portfolio
                   </Link>
-                  <Link to="/bio" className="hero-links hire-me-btn px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
+                  <Link to="/bio" className="hero-links px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
                     About Me
                   </Link>
                 </div>
-                
-                            
-                <div className='hire-me fixed right-10 top-1/2 transform -translate-y-1/2'>
-                  <Link to="/contact" className="hire-me-btn hire-me-btn bg-white text-black px-6 py-11 rounded-full shadow-lg text-lg font-semibold transition duration-300 hover:bg-gray-300">Hire Me</Link>
-                </div>
+                                          
+                  <Link 
+                    to="/contact" 
+                    className="fixed right-10 top-1/2 -translate-y-1/2 transform-gpu hire-me-btn bg-white text-black px-6 py-11 rounded-full shadow-lg text-lg font-semibold hover:bg-gray-300"
+                  >
+                    Hire Me
+                  </Link>
+
               </div>
 
             </div>
