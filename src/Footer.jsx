@@ -25,7 +25,7 @@ const Footer = () => {
     <div className="footer-details w-full md:w-2/3 flex flex-col md:flex-row justify-between">
       
       <div className="w-full md:w-1/3 text-left">
-        <h2 className="text-xl font-semibold">Get in Touch</h2>
+        <h2 className="text-xl font-semibold underline">Get in Touch</h2>
         <a href="https://www.linkedin.com/in/rileymjoseph/" 
            target="_blank" 
            rel="noopener noreferrer" 
@@ -38,7 +38,7 @@ const Footer = () => {
 
       <div className="w-full md:w-1/3 text-left">
         <h2 className="text-xl font-semibold underline">Pages</h2>
-        <ul className="text-sm text-gray-400 space-y-1 ">
+        <ul className="text-sm space-y-1 ">
           <li><a href="/" className="hover:underline">Home</a></li>
           <li><a href="/portfolio" className="hover:underline">Portfolio</a></li>
           <li><a href="/bio" className="hover:underline">About Me</a></li>          
@@ -48,7 +48,7 @@ const Footer = () => {
     </div>
 
     <div className="footer-resume w-full md:w-2/3 flex flex-col items-start md:items-end mt-6 md:mt-0 inline-block text-right">
-      <h2 className="text-xl font-semibold">Get Resume</h2>
+      <h2 className="text-xl font-semibold underline">Resume With Password</h2>
       <input
         type="password"
         placeholder="Enter password to download"
