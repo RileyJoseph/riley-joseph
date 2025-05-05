@@ -32,7 +32,7 @@ const Footer = () => {
            className="text-blue-400 hover:underline text-white underline">
           LinkedIn
         </a><br />
-        <a href="mailto:riley.m.joseph1@gmail.com" className="hover:underline">riley.m.joseph1@gmail.com</a>
+        {/* <a href="mailto:riley.m.joseph1@gmail.com" className="hover:underline">riley.m.joseph1@gmail.com</a> */}
       </div>
 
 
@@ -41,10 +41,10 @@ const Footer = () => {
         <ul className="text-sm space-y-1 ">
           <li><a href="/" className="hover:underline">Home</a></li>
           <li><a href="/portfolio" className="hover:underline">Portfolio</a></li>
-          <li><a href="/bio" className="hover:underline">About Me</a></li>          
+          <li><a href="/bio" className="hover:underline">About Me</a></li>       
+          <li><a href="/contact" className="hover:underline">Contact</a></li>          
         </ul>
       </div>
-
     </div>
 
     <div className="footer-resume w-full md:w-2/3 flex flex-col items-start md:items-end mt-6 md:mt-0 inline-block text-right">

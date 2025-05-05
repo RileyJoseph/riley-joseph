@@ -63,14 +63,14 @@ function App() {
                   <h1 className="name text-2xl font-bold">Riley Joseph</h1>
                   <div className="info flex justify-between w-full px-8 md:w-2/4">
                     <span className="left flex flex-col text-left jobs">                      
-                      <span>Software Engineer ● Web Developer <span className="dot inline-only">●</span></span>
-                      
+                      <span>Software Engineer ● Web Developer <span className="dot inline-only">●</span></span>                      
                       <span>Musician ● Photographer</span>
                     </span>
-                    
+                    {/* <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="054629d7-56c4-4544-9460-33acd5351eb5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>                     */}
                     <h2 className='subheading text-right md:w-2/4'>{greeting}</h2>
                   </div>
                   <div className='md:w-3/4 code'>
+                    <h3>Ceritifed AWS Cloud Practitioner</h3>
                     {/* Frontend Development (Blue) */}
                     <span className="code-blue">HTML</span> <span className="dot">●</span> 
                     <span className="code-blue">CSS</span> <span className="dot">●</span> 
