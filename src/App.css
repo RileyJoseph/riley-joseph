@@ -819,6 +819,14 @@ footer{
     p{
       font-size: 14px;
     }
+    .procon-logo{
+      border: 2px solid white;
+      padding: 4px 12px;
+      margin-top: 8px;
+    }
+    .procon-logo:hover{
+      background-color: #ff6646;
+    }
   }
   .footer-logos.procon img{
     height: 30px;
@@ -826,6 +834,9 @@ footer{
   .footer-logos.coat img{
     height: 20px;
     /* padding-top: 10px; */
+  }
+  .resume-download:hover{
+    cursor: pointer;
   }
 }
 
