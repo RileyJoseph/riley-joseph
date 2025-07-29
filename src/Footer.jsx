@@ -25,7 +25,7 @@ const Footer = () => {
       <div className="footer-logos procon text-left">
         <h2>Big Project?</h2>
         <hr />
-        <p>I can solve most of your coding problems but sometimes you want the full team at your back. Proper Conduct is a all-purpose agency that offers branding, marketing, security, AI integration and more.</p>      
+        <p>While I can solve most of your coding problems but sometimes you want the full team at your back. Proper Conduct is a all-purpose agency that offers branding, marketing, security, AI integration and more.</p>      
         {/* <hr /> */}
         <a href="https://www.properconduct.com/" target="_blank"  className=" inline-block pt-2">
           <img src="/images/procon-white.png" alt="" />
@@ -49,13 +49,6 @@ const Footer = () => {
           LinkedIn
         </a><br />
         <a href="mailto:riley.m.joseph1@gmail.com" className="hover:underline">Email Me</a>
-        <br />
-        {/* <a href="https://www.instagram.com/r.m.joseph" target="_blank">    
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-        <a href="https://github.com/RileyJoseph" target="_blank">    
-          <ion-icon name="logo-github"></ion-icon>
-        </a>                 */}
       </div>
 
       <div className="text-left w-1/4 md:w-2/4 sm:w-full">
@@ -69,7 +62,7 @@ const Footer = () => {
       </div>
     </div>
 
-    <div className="footer-resume flex flex-col items-start md:items-end mt-6 md:mt-0 inline-block text-left w-1/4 md:w-2/4 sm:w-full">
+    <div className="footer-resume flex flex-col items-start md:items-end mt-6 md:mt-0 inline-block text-left w-1/5 md:w-2/4 sm:w-full">
       <p className="text-xl font-bold footer-heading text-center">Resume With Password</p>
       <p className="text-center text-sm">Password upon request.</p>
       <div className="pt-4">
