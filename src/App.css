@@ -219,7 +219,8 @@ html, body {
   position: relative;
   min-height: 80vh;
   .name{
-    font-size: 48px;
+    font-size: 54px;
+    line-height: 48px;
   }
   .titles{
     font-size: 28px;
@@ -227,6 +228,9 @@ html, body {
   p{
     color: white;
   }  
+  .subtitle{
+    font-size: 28px;
+  }
 }
 
 
@@ -968,6 +972,12 @@ footer{
     .title-overlay{
 
     }
+  }
+}
+
+@media (width <= 768px) {
+  footer{
+
   }
 }
 
