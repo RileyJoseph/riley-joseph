@@ -43,10 +43,10 @@ const Footer = () => {
     <div className="text-left w-full md:w-1/2 mx-auto">
       <p className="text-xl font-bold footer-heading">PAGES</p>
       <ul className="text-sm space-y-1">
-        <li><a href="/" className="hover:underline">Home</a></li>
-        <li><a href="/portfolio" className="hover:underline">Portfolio</a></li>
-        <li><a href="/bio" className="hover:underline">About Me</a></li>       
-        <li><a href="/contact" className="hover:underline">Contact</a></li>          
+        <li className="pt-2"><a href="/" className="hover:underline ">Home</a></li>
+        <li className="pt-2"><a href="/portfolio" className="hover:underline ">Portfolio</a></li>
+        <li className="pt-2"><a href="/bio" className="hover:underline ">About Me</a></li>       
+        <li className="pt-2"><a href="/contact" className="hover:underline ">Contact</a></li>          
       </ul>
     </div>
 
@@ -58,7 +58,7 @@ const Footer = () => {
       <div className="pt-4 w-full max-w-sm">
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Enter Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className="px-4 py-2 border border-white bg-black text-white w-full text-center"
