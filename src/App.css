@@ -219,11 +219,15 @@ html, body {
 .bio{
   position: relative;
   min-height: 80vh;
+  max-width: 600px;
   .name{
     font-size: 54px;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 48px;
-    padding-top: 75px;
+    padding-top: 125px;
+  }
+  .subtitle{
+    font-size: 16px;
   }
   .titles{
     font-size: 28px;
@@ -231,12 +235,14 @@ html, body {
   p{
     color: white;
   }  
-  .subtitle{
-    font-size: 28px;
-  }
   .bio-text{
-    max-width: 300px;
-    font-size: 14px;
+    /* max-width: 300px; */
+    font-size: 16px;
+  }
+  .buttons{
+    .btn{
+      border-radius: 0px;
+    }
   }
 
 }
@@ -246,6 +252,12 @@ html, body {
   z-index: 22;
   .linkedIn{
     text-decoration: underline;
+  }
+}
+
+.contact-me{
+  .title{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   }
 }
 
@@ -991,7 +1003,7 @@ footer{
     padding-top: 0px;
     .name{
       padding-top: 0px;
-      padding-bottom: 24px;
+      /* padding-bottom: 24px; */
     }
     .subtitle{
       font-size: 18px;

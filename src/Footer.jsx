@@ -27,7 +27,7 @@ const Footer = () => {
     <div className="footer-details w-full md:w-1/2 flex flex-col px-4 md:px-8 sm:px-4">
       <div className="footer-logos procon text-left">
         <h2>Big Project?</h2>
-        <p className="md:pr-8">
+        <p className="md:pr-8 font-semibold">
           While I can solve most of your coding problems, sometimes you want the full team at your back. 
           Proper Conduct is an all-purpose agency that offers branding, marketing, security, AI integration and more.
         </p>      

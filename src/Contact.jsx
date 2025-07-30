@@ -17,11 +17,11 @@ function Contact() {
   };
 
   return (
-    <div className="min-h-screen p-8 flex flex-col items-center app-body">
+    <div className="min-h-screen p-8 flex flex-col items-center app-body contact-me">
       <div className="overlay"></div>
       <div className={`overlay glitch`}></div>    
       <div className='contact'>
-        <h1 className="text-4xl font-bold mb-8">Contact Me</h1>
+        <h1 className="title text-4xl font-bold mb-8 font-bold">CONTACT ME</h1>
         <div className="w-full max-w-3xl bg-black shadow-lg rounded-lg p-6">
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
           <p className="text-lg">Feel free to reach out to me via the following channels:</p>

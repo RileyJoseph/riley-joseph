@@ -17,9 +17,9 @@ function Bio() {
     </div>
 
     {/* About Me Section */}
-    <div className="info flex-1 p-4 md:p-16 text-center md:text-left">
-      <h2 className="name">ABOUT</h2>
-      <p className='subtitle pb-4'>Engineer, Artist, Nonprofit Professional</p>
+    <div className="info flex-1 p-4 md:pl-16 text-center md:text-left">
+      <h2 className="name font-bold">ABOUT</h2>
+      <p className='subtitle py-4 font-semibold'>Engineer, Artist, Nonprofit Professional</p>
       <div className='bio-text'>
         <p>
           Riley Joseph is the CTO of Proper Conduct, an all-purpose ad and branding agency in Oklahoma City and has 
@@ -33,6 +33,11 @@ function Bio() {
           Riley is the guitarist for the bands Coat and Lover Girl. He is also a composer of soundscapes and electronic 
           music and a practicing film photographer.
         </p>
+      </div>
+      <div className='buttons pt-8'>
+        <a className='btn btn-white' href="">Music</a>
+        <a className='btn btn-white ml-1' href="">Photography</a>
+        <a className='btn btn-white ml-1' href="">Work</a>
       </div>
     </div>
 

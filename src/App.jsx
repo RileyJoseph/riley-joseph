@@ -152,6 +152,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />              
         <Route path="/bio" element={<Bio />} />     
         <Route path="/portfolio/:url" element={<ProjectDetails />} />
+        {/* <Route path="/portfolio/:url" element={<ProjectDetails />} /> */}
       </Routes>
       <Footer /> 
     </Router>
