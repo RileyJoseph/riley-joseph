@@ -176,10 +176,11 @@ html, body {
     font-optical-sizing: auto;
     z-index: 22;
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     p{
       color: white;
+      font-size: 16px;
     }
     .left{
       text-align: left;
@@ -220,7 +221,9 @@ html, body {
   min-height: 80vh;
   .name{
     font-size: 54px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 48px;
+    padding-top: 75px;
   }
   .titles{
     font-size: 28px;
@@ -231,6 +234,11 @@ html, body {
   .subtitle{
     font-size: 28px;
   }
+  .bio-text{
+    max-width: 300px;
+    font-size: 14px;
+  }
+
 }
 
 
@@ -842,6 +850,9 @@ footer{
   .resume-download:hover{
     cursor: pointer;
   }
+  .right-half{
+    padding-right: 0px;
+  }
 }
 
 @media (width <= 1375px) {
@@ -976,9 +987,20 @@ footer{
 }
 
 @media (width <= 768px) {
-  footer{
+  .bio{
+    padding-top: 0px;
+    .name{
+      padding-top: 0px;
+      padding-bottom: 24px;
+    }
+    .subtitle{
+      font-size: 18px;
+    }
+    .bio-text{
+      text-align: left; 
+     }
+  } 
 
-  }
 }
 
 @media (width <= 700px) {
