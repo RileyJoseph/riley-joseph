@@ -17,7 +17,7 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-6 text-lg">
-          <li><a target="_blank" href="https://music.apple.com/us/artist/coat/1670318082" className="nav-btn py-2">Music</a></li>
+          <li><a target="_blank" href="https://coattheband.bandcamp.com/" className="nav-btn py-2">Music</a></li>
           <li><a target="_blank" href="/" className="nav-btn py-2">Photography</a></li>
           <li><Link to="/portfolio" className="nav-btn py-2" onClick={handleCloseMenu}>Work</Link></li>
           <li><Link to="/bio" className="nav-btn py-2" onClick={handleCloseMenu}>About Me</Link></li>
@@ -41,6 +41,8 @@ const Navbar = () => {
           >
             <ul className="text-white text-2xl space-y-6">
               <li><Link to="/" className="nav-btn py-2" onClick={handleCloseMenu}>Home</Link></li>
+              <li><a target="_blank" href="https://coattheband.bandcamp.com/" className="nav-btn py-2">Music</a></li>
+              <li><a target="_blank" href="/" className="nav-btn py-2">Photography</a></li>
               <li><Link to="/portfolio" className="nav-btn py-2" onClick={handleCloseMenu}>Portfolio</Link></li>
               <li><Link to="/bio" className="nav-btn py-2" onClick={handleCloseMenu}>About Me</Link></li>
             </ul>
