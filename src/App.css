@@ -250,6 +250,35 @@ html, body {
 
 }
 
+.photo-gallery{
+  position: relative;
+  min-height: 80vh;
+  max-width: 800px;
+  padding-top: 80px;
+  .name{
+    font-size: 54px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 48px;
+    padding-top: 125px;
+  }  
+  .subtitle{
+    font-size: 16px;
+  }  
+  .painter{
+    background-position: 70% 50%;
+  }
+  .tv-truck{
+    background-position: 27% 50%;
+  }
+  .gallery-img{
+    height: 620px;
+  }
+  .gallery-img:hover{
+    transform: scale(1.4);   
+    -webkit-transition: transform 1s ease-in-out; 
+    cursor: pointer;
+  }
+}
 
 .contact{
   z-index: 22;

@@ -12,6 +12,7 @@ import Footer from './Footer.jsx';
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Bio from './Bio.jsx';
+import Photography from './Photography.jsx';
 
 const greetings = [
   "Hey, nice to meet you.",
@@ -154,6 +155,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />  
         <Route path="/contact" element={<Contact />} />              
         <Route path="/bio" element={<Bio />} />     
+        <Route path="/photography" element={<Photography />} />     
         <Route path="/portfolio/:url" element={<ProjectDetails />} />
         {/* <Route path="/portfolio/:url" element={<ProjectDetails />} /> */}
       </Routes>
