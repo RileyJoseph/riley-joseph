@@ -127,7 +127,7 @@ function App() {
                   </div>
 
                 </div>
-                <div className="links absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full max-w-4xl flex justify-between items-center px-8">
+                <div className="links bottom-landing-links absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full max-w-4xl flex justify-between items-center px-8">
                   <Link to="/portfolio" className="hero-links px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
                     Portfolio
                   </Link>

@@ -158,7 +158,7 @@ html, body {
  
 .welcome-text{
   position: absolute;
-  margin-top: 80px;
+  margin-top: 180px;
   /* right: 10%; */
   color: white;
   .cutout{
@@ -938,7 +938,7 @@ footer{
   }
   .overlay{
     /* min-height: 125vh; */
-    min-height: 900px;
+    /* min-height: 900px; */
     /* height: auto; */
   }
   h1{
@@ -949,7 +949,6 @@ footer{
     margin-top: 5vh;
   }
   .links{
-    position: relative;    
     .hero-links{
       padding-top: 50px;
       font-size: 18px;
@@ -963,12 +962,12 @@ footer{
     position: relative;
   }
   .welcome-text{
-    margin-top: 0px;
+    margin-top: 180px;
     position: relative;
     /* min-height: auto; */
    .name{
-    z-index: 99;
-    margin-left: 25px;
+      z-index: 99;
+      margin-left: 25px;
     }
   }
   .portfolio{
@@ -1011,18 +1010,10 @@ footer{
       text-align: left; 
      }
   } 
-
 }
 
-@media (width <= 700px) {
-  .app-body{
-    min-height: 1100px;
-  }
-  .all{
-    min-height: 1100px;
-  }
-  .overlay{
-    min-height: 1100px;
-    /* margin-top: 0px; */
+@media (width <= 600px) {
+  .bottom-landing-links{
+    display: none;
   }
 }
