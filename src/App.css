@@ -250,7 +250,7 @@ html, body {
 
 }
 
-.photo-gallery{
+.photo-gallery-top{
   position: relative;
   min-height: 80vh;
   max-width: 800px;
@@ -267,9 +267,6 @@ html, body {
   .painter{
     background-position: 70% 50%;
   }
-  .tv-truck{
-    background-position: 27% 50%;
-  }
   .gallery-img-container{
     overflow: hidden;
     transition: width 1s ease;
@@ -281,8 +278,40 @@ html, body {
     transition: width 1.5s ease-in-out;
     cursor: pointer;
   }
-  .gallery-img:hover{
-    width: 500px;
+  .hover-md:hover{
+    width: 400px;
+  }
+  .hover-lg:hover{
+    width: 600px;
+  }
+}
+
+.photo-gallery{
+  position: relative;
+  margin-top: 80px;
+  .tv-truck{
+    background-position: 27% 50%;
+  }  
+  .gallery-img-container{
+    overflow: hidden;
+    transition: width 1s ease;
+    width: fit-content;
+  }
+  .gallery-img{
+    height: 500px;
+    width: 150px; 
+    transition: width 1.5s ease-in-out;
+    cursor: pointer;
+    margin: 20px;
+  }
+  .hover-sm:hover{
+    width: 250px;
+  }
+  .hover-md:hover{
+    width: 400px;
+  }
+  .hover-lg:hover{
+    width: 700px;
   }
 }
 
