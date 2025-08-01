@@ -10,14 +10,16 @@ function Photography() {
   <div className={`overlay glitch`}></div>    
 
   <div id="photo-gallery" className="flex flex-col md:flex-row photo-gallery">
-    <div className="gallery-img w-full md:w-1/3 max-w-[150px] min-h-[300px] md:h-auto bg-cover bg-no-repeat painter"
+    <div className='gallery-img-container'>
+      <div className="gallery-img w-full md:w-1/3 max-w-[150px] min-h-[300px] md:h-auto bg-cover bg-no-repeat painter"
         style={{ backgroundImage: "url('/images/the-painter-1.jpg')" }}>
+      </div>
     </div>
 
     <div className="info flex-1 p-4 md:pl-16 text-center md:text-left w-1/2">
       <h2 className="name font-bold">GALLERY</h2>
       <p className='subtitle py-4 font-semibold'>Film Photography</p>
-      <div className='bio-text'>
+      <div className='gallery-img-container'>
         <div className="gallery-img w-full max-w-[300px] min-h-[300px] md:h-auto bg-cover bg-no-repeat tv-truck"
           style={{ backgroundImage: "url('/images/tv-truck.jpg')" }}>
         </div>

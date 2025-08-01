@@ -270,13 +270,19 @@ html, body {
   .tv-truck{
     background-position: 27% 50%;
   }
+  .gallery-img-container{
+    overflow: hidden;
+    transition: width 1s ease;
+    width: fit-content;
+  }
   .gallery-img{
     height: 620px;
+    width: 150px; 
+    transition: width 1.5s ease-in-out;
+    cursor: pointer;
   }
   .gallery-img:hover{
-    transform: scale(1.4);   
-    -webkit-transition: transform 1s ease-in-out; 
-    cursor: pointer;
+    width: 500px;
   }
 }
 
