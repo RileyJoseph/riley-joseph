@@ -255,6 +255,16 @@ html, body {
   min-height: 80vh;
   max-width: 800px;
   padding-top: 80px;
+  .gallery-hero-container{
+    width: 150px;
+    .gallery-img{
+      height: 500px;
+      width: 150px; 
+      transition: width 1.5s ease-in-out;
+      cursor: pointer;
+      margin: 20px;
+    }      
+  }  
   .name{
     font-size: 54px;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -270,11 +280,11 @@ html, body {
   .gallery-img-container{
     overflow: hidden;
     transition: width 1s ease;
-    width: fit-content;
+    /* width: fit-content; */
   }
   .gallery-img{
     height: 620px;
-    width: 150px; 
+    /* width: 150px;  */
     transition: width 1.5s ease-in-out;
     cursor: pointer;
   }
@@ -289,29 +299,21 @@ html, body {
 .photo-gallery{
   position: relative;
   margin-top: 80px;
+  max-width: 1100px;
   .tv-truck{
     background-position: 27% 50%;
   }  
   .gallery-img-container{
     overflow: hidden;
     transition: width 1s ease;
-    width: fit-content;
+    /* width: fit-content; */
   }
   .gallery-img{
     height: 500px;
-    width: 150px; 
+    width: 100%;
     transition: width 1.5s ease-in-out;
     cursor: pointer;
-    margin: 20px;
-  }
-  .hover-sm:hover{
-    width: 250px;
-  }
-  .hover-md:hover{
-    width: 400px;
-  }
-  .hover-lg:hover{
-    width: 700px;
+    margin: 10px;
   }
 }
 
@@ -1041,6 +1043,10 @@ footer{
 
 
 @media (width <= 777px) {
+  .bio{
+    justify-content: center;
+    padding-top: 0px;
+  }
   .bio-headshot{
     height: 700px;
     display: none;
@@ -1065,15 +1071,35 @@ footer{
     padding-top: 0px;
     .name{
       padding-top: 0px;
-      /* padding-bottom: 24px; */
     }
     .subtitle{
       font-size: 18px;
     }
     .bio-text{
-      text-align: left; 
+      text-align: left;
+      max-width: 80%;
+      margin: auto;
      }
-  } 
+  }
+  .photo-gallery-top{
+    width: 500px;
+    margin: auto;
+    .name{
+      padding-top: 40px;
+    }
+    .painter{
+      display: none;
+    }
+    .bio-text{
+      max-width: 100%;
+      margin: auto;
+    }
+  }
+  .photo-gallery{
+    .tall{
+      height: 900px;
+    }
+  }
 }
 
 @media (width <= 600px) {
