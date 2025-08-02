@@ -21,16 +21,16 @@ function Photography() {
   <div className={`overlay glitch`}></div>    
 
   <div id="photo-gallery" className="flex flex-col md:flex-row photo-gallery-top">
-    <div className='gallery-hero-container'>
-      <div className="gallery-img w-full md:w-1/3 max-w-[500px] min-h-[300px] md:h-auto bg-cover bg-no-repeat painter"
-        style={{ backgroundImage: "url('/images/the-painter-1.jpg')" }}>
-      </div>
-    </div>
+    <img className="gallery-img w-full md:w-1/3 max-w-[500px] min-h-[300px] md:h-auto bg-cover bg-no-repeat painter object-cover"
+      loading='lazy'
+      alt="painter on church roof"
+      src='/images/the-painter-1.jpg'>
+    </img>
 
-    <div className="info flex-1 p-4 md:pl-16 text-center md:text-left w-1/2 sm:w-full">
-      <h2 className="name font-bold">FILM</h2>
-      <p className='subtitle py-4 font-semibold'>The Photo Gallery</p>
-      <div className='bio-text max-w-[200px]'>
+    <div className="info flex-1 p-4 md:pl-16 text-center md:text-left w-full md:w-1/2">
+      <h2 className="name font-bold">PHOTOS</h2>
+      <p className='subtitle py-4 font-semibold'>The Film Gallery</p>
+      <div className='bio-text'>
         <p>This section of the site is under construction, 
           more images will be added and later become available in high-resolution for purchase as prints. 
         </p> 

@@ -57,7 +57,7 @@ const Footer = () => {
         <p className="text-xl font-bold footer-heading md:text-left sm:text-left sm:pt-8 pt-8 md:pt-0">Resume With Password</p>
         <p className="text-sm md:text-left sm:text-left">Password upon request.</p>
 
-        <div className="pt-4 w-full max-w-sm">
+        <div className="pt-4 w-full">
           <input
             type="password"
             placeholder="Enter Password"

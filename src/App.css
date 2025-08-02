@@ -20,7 +20,7 @@ html, body {
 
 .all{
   background-color: #1e1e1e;
-  min-height: 900px;
+  /* min-height: 900px; */
 }
 
 
@@ -69,7 +69,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 900px;
+  /* min-height: 900px; */
   /* min-height: 100vh; */
   position: relative;
   overflow: hidden;
@@ -221,8 +221,8 @@ html, body {
 
 .bio{
   position: relative;
-  min-height: 80vh;
-  max-width: 600px;
+  padding-top: 80px;
+  width: 600px;
   .name{
     font-size: 54px;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -252,9 +252,8 @@ html, body {
 
 .photo-gallery-top{
   position: relative;
-  min-height: 80vh;
-  max-width: 800px;
   padding-top: 80px;
+  width: 600px;
   .gallery-hero-container{
     width: 150px;
     .gallery-img{
@@ -1082,20 +1081,28 @@ footer{
      }
   }
   .photo-gallery-top{
-    width: 500px;
+    width: 80%;
     margin: auto;
+    min-height: auto;
     .name{
       padding-top: 40px;
+      text-align: left;
     }
     .painter{
       display: none;
     }
+    .subtitle{
+      text-align: left;
+      font-weight: bold;
+    }
     .bio-text{
+      text-align: left;
       max-width: 100%;
       margin: auto;
     }
   }
   .photo-gallery{
+    width: 90%;
     .tall{
       height: 900px;
     }

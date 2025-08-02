@@ -13,7 +13,7 @@ function Bio() {
   <div id="bio" className="bio flex flex-col md:flex-row ">
     
     {/* Responsive Headshot Image */}
-    <div className="bio-headshot w-full md:w-1/3 min-h-[300px] md:h-auto bg-cover bg-center bg-no-repeat"
+    <div className="bio-headshot w-full md:w-1/3 min-h-[300px] md:h-auto bg-cover bg-center bg-no-repeat object-cover"
         style={{ backgroundImage: "url('/images/shoe-tie.jpg')" }}>
     </div>
 
