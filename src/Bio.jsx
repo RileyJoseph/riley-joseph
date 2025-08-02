@@ -11,13 +11,11 @@ function Bio() {
   <div className={`overlay glitch`}></div>    
 
   <div id="bio" className="bio flex flex-col md:flex-row ">
-    
-    {/* Responsive Headshot Image */}
+  
     <div className="bio-headshot w-full md:w-1/3 min-h-[300px] md:h-auto bg-cover bg-center bg-no-repeat object-cover"
         style={{ backgroundImage: "url('/images/shoe-tie.jpg')" }}>
     </div>
 
-    {/* About Me Section */}
     <div className="info flex-1 p-4 md:pl-16 text-center md:text-left">
       <h2 className="name font-bold">ABOUT</h2>
       <p className='subtitle py-4 font-semibold'>Engineer, Artist, Nonprofit Professional</p>

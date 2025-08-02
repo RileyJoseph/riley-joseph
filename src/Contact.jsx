@@ -19,7 +19,27 @@ function Contact() {
   return (
     <div className="min-h-screen p-8 flex flex-col items-center app-body contact-me">
       <div className="overlay"></div>
-      <div className={`overlay glitch`}></div>    
+      <div className={`overlay glitch`}></div>  
+
+      <div id="bio" className="bio flex flex-col md:flex-row "> 
+      <div className="bio-headshot w-full md:w-1/3 min-h-[300px] md:h-auto bg-cover bg-center bg-no-repeat object-cover"
+        style={{ backgroundImage: "url('/images/contact.jpg')" }}>
+      </div>
+
+      <div className="info flex-1 p-4 md:pl-16 text-center md:text-left">
+        <h2 className="name font-bold">Contact</h2>
+        <p className='subtitle py-4 font-semibold'>riley.m.joseph1@gmail.com</p>
+        <div className='bio-text'>
+          <p>The easiest way to get in touch is via email.</p> 
+        </div>
+        </div>
+        </div>
+      
+      
+      
+      
+      
+      
       <div className='contact'>
         <h1 className="title text-4xl font-bold mb-8 font-bold">CONTACT ME</h1>
         <div className="w-full max-w-3xl bg-black shadow-lg rounded-lg p-6">
