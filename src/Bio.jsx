@@ -17,7 +17,7 @@ function Bio() {
     </div>
 
     <div className="info flex-1 p-4 md:pl-16 text-center md:text-left">
-      <h2 className="name font-bold">ABOUT</h2>
+      <h2 className="name font-bold">Bio</h2>
       <p className='subtitle py-4 font-semibold'>Engineer, Artist, Nonprofit Professional</p>
       <div className='bio-text'>
         <p>

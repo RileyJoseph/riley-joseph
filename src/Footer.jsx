@@ -79,7 +79,7 @@ const Footer = () => {
   </div>
 
   {/* bottom footer */}
-  <div className="footer-content container mx-auto flex flex-col md:flex-row justify-between py-8">
+  <div className="footer-content container mx-auto flex flex-col md:flex-row justify-between py-8 px-4">
     <div className="footer-details w-full flex justify-end items-center space-x-4 ">
       <a href="https://www.instagram.com/r.m.joseph" target="_blank" className="text-white text-xl">
         <ion-icon name="logo-instagram"></ion-icon>

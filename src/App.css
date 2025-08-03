@@ -222,6 +222,7 @@ html, body {
 .bio{
   position: relative;
   padding-top: 80px;
+  padding-bottom: 80px;
   width: 600px;
   .name{
     font-size: 54px;
@@ -931,7 +932,7 @@ footer{
     cursor: pointer;
   }
   .right-half{
-    padding-right: 0px;
+    /* padding-right: 0px; */
   }
 }
 
@@ -1043,6 +1044,7 @@ footer{
 
 @media (width <= 777px) {
   .bio{
+    width: auto;
     justify-content: center;
     padding-top: 0px;
   }
