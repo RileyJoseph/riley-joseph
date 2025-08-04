@@ -123,7 +123,7 @@ function App() {
                     <span className="code-green">Team Management</span> <span className="dot">●</span> 
                     <span className="code-green">Client Communication</span> <span className="dot">●</span> 
                     <span className="code-green">Database Management</span> <span className="dot">●</span> 
-                    <span className="code-green">JIRA</span> <span className="dot">●</span> 
+                    <span className="code-green">JIRA</span> 
 
                   </div>
 
