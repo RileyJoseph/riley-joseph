@@ -333,6 +333,7 @@ html, body {
 .portfolio{
   overflow: hidden;
   min-height: 100vh;
+  padding-top: 120px;
   h2{
     font-size: 36px;
     padding-bottom: 15px;
