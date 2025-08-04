@@ -254,7 +254,7 @@ html, body {
 .photo-gallery-top{
   position: relative;
   padding-top: 80px;
-  width: 800px;
+  width: 600px;
   .gallery-hero-container{
     width: 150px;
     .gallery-img{
@@ -562,7 +562,6 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
 .home-btns\:bounceOrig:hover { animation: bounceOrig 1s infinite; }
 
 .glitch {
-  margin-top: 80px;
   clip-path: polygon(0 0, 100% 0, 100% .5em, 0 .5em);
   animation: glitch 10s linear infinite;
   transform: translatex(.1rem);
@@ -998,14 +997,6 @@ footer{
 
 
 @media (width <= 950px) {
-  .app-body{
-    /* height: auto; */
-  }
-  .overlay{
-    /* min-height: 125vh; */
-    /* min-height: 900px; */
-    /* height: auto; */
-  }
   h1{
     font-size: 38px;
   }
@@ -1027,12 +1018,9 @@ footer{
     position: relative;
   }
   .welcome-text{
-    /* margin-top: 180px; */
     position: relative;
-    /* min-height: auto; */
    .name{
       z-index: 99;
-      margin-left: 25px;
     }
   }
   .portfolio{
@@ -1042,6 +1030,9 @@ footer{
 
 
 @media (width <= 777px) {
+  .welcome-text{
+    /* padding-top: 120px; */
+  }
   .bio{
     width: auto;
     justify-content: center;

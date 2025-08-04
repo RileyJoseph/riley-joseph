@@ -4,16 +4,16 @@ function Photography() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  useEffect(() => {
-    const handleContextMenu = (e) => {
-      e.preventDefault();
-    };
-    document.addEventListener('contextmenu', handleContextMenu);
+  // useEffect(() => {
+  //   const handleContextMenu = (e) => {
+  //     e.preventDefault();
+  //   };
+  //   document.addEventListener('contextmenu', handleContextMenu);
 
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-    };
-  }, []);  
+  //   return () => {
+  //     document.removeEventListener('contextmenu', handleContextMenu);
+  //   };
+  // }, []);  
 
   return (
 <div className="min-h-screen p-8 flex flex-col app-body all">
@@ -27,7 +27,7 @@ function Photography() {
       src='/images/the-painter-1.jpg'>
     </img>
 
-    <div className="info flex-1 p-4 md:pl-16 text-center md:text-left w-full md:w-1/2">
+    <div className="info flex-1 p-4 md:pl-16 text-center md:text-left">
       <h2 className="name font-bold">PHOTOS</h2>
       <p className='subtitle py-4 font-semibold'>The Film Gallery</p>
       <div className='bio-text'>
