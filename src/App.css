@@ -165,6 +165,9 @@ html, body {
     position: absolute;
     z-index: 0;
   }
+  .spaceme{
+    padding-left: 25px;
+  }
   .name{
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
@@ -1097,6 +1100,14 @@ footer{
     width: 90%;
     .tall{
       height: 900px;
+    }
+  }
+}
+
+@media (width <= 700px) {
+  .welcome-text{
+    .spaceme{
+      padding-left: 0px;
     }
   }
 }

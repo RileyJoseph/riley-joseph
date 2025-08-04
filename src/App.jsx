@@ -63,7 +63,7 @@ function App() {
                   <div className={`overlay glitch ${bgColor}`}></div>
                   
                   <div className="min-h-screen welcome-text flex flex-col items-center text-center lg:w-3/4 pt-40 pb-40">              
-                    <h1 className="name text-2xl font-bold ml-auto mr-auto">Riley Joseph</h1>
+                    <h1 className="name text-2xl font-bold ml-auto mr-auto text-center spaceme">Riley Joseph</h1>
                     <div className="info flex justify-between w-full px-8 md:w-2/4">
                       <span className="left flex flex-col text-left jobs">                      
                         <span>Software Engineer ● Web Developer <span className="dot inline-only">●</span></span>                      
