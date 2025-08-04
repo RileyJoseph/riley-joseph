@@ -336,6 +336,7 @@ html, body {
   h2{
     font-size: 36px;
     padding-bottom: 15px;
+    /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   }
   .grid{
     padding-bottom: 60px;
@@ -926,13 +927,9 @@ footer{
   }
   .footer-logos.coat img{
     height: 20px;
-    /* padding-top: 10px; */
   }
   .resume-download:hover{
     cursor: pointer;
-  }
-  .right-half{
-    /* padding-right: 0px; */
   }
 }
 

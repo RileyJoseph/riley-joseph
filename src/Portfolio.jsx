@@ -9,7 +9,7 @@ const portfolioItems = [
   { id: 5, name: "Solas", url:"solas", image: "/images/portfolio/solas-1.jpg", description: "Project details for Solas." },
   { id: 6, name: "Chisholm Creek", url:"chisholm-creek", image: "/images/portfolio/ccreek.jpg", description: "Project details for Chisholm Creek." },
   { id: 7, name: "OKC MoA", url:"okc-moa", image: "/images/portfolio/moa.jpg", description: "Project details for OKC MoA." },
-  { id: 8, name: "guernsey", url:"guernsey", image: "/images/portfolio/guernsey.jpg", description: "Project details for Guernsey." },
+  { id: 8, name: "Guernsey", url:"guernsey", image: "/images/portfolio/guernsey.jpg", description: "Project details for Guernsey." },
   { id: 9, name: "Life Church", url:"life-church", image: "/images/portfolio/open-lc.jpg", description: "Project details for Life Church." },
   { id: 10, name: "Coat", url:"coat", image: "/images/portfolio/coat.jpg", description: "Project details for Coat." },
   { id: 11, name: "First Med", url:"first-med", image: "/images/portfolio/firstmed.jpg", description: "Project details for First Med." },
@@ -49,7 +49,7 @@ const Portfolio = () => {
           <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg  project">
             <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60" />
             <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
-              <h2 className="text-white text-2xl font-semibold">{item.name}</h2>
+              <p className="text-white text-2xl font-semibold">{item.name}</p>
             </div>
           </div>
         ))}
@@ -65,7 +65,7 @@ const Portfolio = () => {
 
         {/* <img src="/" alt="Platformer" className="client object-cover object-top w-full h-80 md:h-96" /> */}
         <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-70">
-          <h2 className="text-white text-3xl font-semibold">Play My Platformer</h2>
+          <p className="text-white text-3xl font-semibold">Play My Platformer</p>
         </div>
       </a>
     </div>
