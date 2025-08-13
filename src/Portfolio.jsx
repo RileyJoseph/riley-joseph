@@ -24,15 +24,15 @@ const portfolioItems = [
 ];
 
 const sassPortfolioItems = [  
-  { id: 1, name: "Lennections", url:"lennections", image: "/images/portfolio/LennectionsIconRed.png", subtitle: "Lead engineer, technology manager and team lead in the education sector.", description: "Engineer, technology manager and team lead in the education sector.", technology: "Meteor, MongoDB, Blaze.js, Node.js, AWS, OpenAI GPT-4 API, AI, machine learning, JIRA, JavaScript." },
-  { id: 2, name: "Frontera", url:"frontera-software", image: "/images/portfolio/emma-logo.png", description: "Engineer for Union software managing hundreds of thousands of users and their activities.", technology: "Vue, Meteor, MongoDB, Node.js, Docker, AWS, Stripe, JIRA, JavaScript." },  
+  { id: 1, name: "Lennections (SaaS)", url:"lennections", image: "/images/portfolio/LennectionsIconRed.png", subtitle: "Lead engineer, technology manager and team lead in the education sector.", description: "Engineer, technology manager and team lead in the education sector.", technology: "Meteor, MongoDB, Blaze.js, Node.js, AWS, OpenAI GPT-4 API, AI, machine learning, JIRA, JavaScript." },
+  { id: 2, name: "Frontera (SaaS)", url:"frontera-software", image: "/images/portfolio/emma-logo.png", description: "Engineer for Union software managing hundreds of thousands of users, their payments and filings.", technology: "Vue, Meteor, MongoDB, Node.js, Docker, AWS, Stripe, JIRA, JavaScript." },  
 ];
 
 const Portfolio = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-6 portfolio all">
       <h1 className="text-3xl font-bold text-center mb-8">Dev Portfolio</h1>
-      <h2>SaaS</h2>
+      {/* <h2>SaaS</h2> */}
       <div className="flex flex-col w-full md:w-3/4">
         {sassPortfolioItems.map((item) => (
           <article key={item.id} className="flex flex-row pb-10">
