@@ -34,9 +34,9 @@ const Portfolio = () => {
     <div className="overlay"></div>
     <div className={`overlay glitch`}></div>   
     <div className="portfolio-container">
-      <h1 className="text-3xl font-bold text-center mb-18 pulse-border-bottom">Dev Portfolio</h1>
+      <h1 className="text-3xl font-bold text-center mb-18 pulse-border-bottom inline">Dev Portfolio</h1>
       {/* <h2>SaaS</h2> */}
-      <div className="flex flex-col">
+      <div className="flex flex-col pt-18">
         {sassPortfolioItems.map((item) => (
           <article key={item.id} className="flex flex-col md:flex-row pb-10">
             <div className="relative group overflow-hidden sass md:w-1/3 w-full flex mr-4 flex-col justify-center">
