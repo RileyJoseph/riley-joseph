@@ -30,8 +30,10 @@ const sassPortfolioItems = [
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center p-6 portfolio all">
-      <h1 className="text-3xl font-bold text-center mb-18">Dev Portfolio</h1>
+    <div className="relative min-h-screen flex flex-col justify-center items-center p-6 portfolio all">
+        <div className="overlay"></div>
+        <div className={`overlay glitch`}></div>    
+      <h1 className="text-3xl font-bold text-center mb-18 pulse-border-bottom">Dev Portfolio</h1>
       {/* <h2>SaaS</h2> */}
       <div className="flex flex-col w-full md:w-3/4">
         {sassPortfolioItems.map((item) => (
@@ -44,10 +46,12 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="md:w-2/3 w-full p-4 md:ml-4 text-left border border-white rounded-lg hover-pulse flex md:flex-col flex-row justify-center relative">
-                <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/4 inline md:hidden height-120 inner-logo m-auto px-4 m-inherit sm:my-auto" />
+            {/* <div className="md:w-2/3 w-full p-4 md:ml-4 text-left border border-white rounded-lg hover-pulse flex md:flex-col flex-row justify-center relative"></div> */}
+            
+                <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/4 inline md:hidden height-120 inner-logo m-auto px-4 margin-inherit sm:my-auto" />
                 <div className="flex-col w-3/4 md:w-full">
                   <h3 className="text-2xl font-bold">{item.name}</h3><span className="text-sm absolute top-5 right-5 font-bold hidden sm:absolute">SaaS</span>
-              {/* <p className="subtitle text-sm text-bold py-4">{item.subtitle}</p> */}
+                  {/* <p className="subtitle text-sm text-bold py-4">{item.subtitle}</p> */}
                   <p className="text-sm">{item.description}</p>
                   <p className="text-sm mr-5 mt-4">{item.technology}</p>
                 </div>
@@ -67,7 +71,7 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-      <h2>For Fun</h2>
+      <h2 className="text-2xl font-bold text-center my-12">For Fun</h2>
       <a
         key="platformer"
         className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer"
@@ -75,7 +79,6 @@ const Portfolio = () => {
         href="https://project-manager-curve-50566.netlify.app/"
         rel="noopener noreferrer"
       >
-
         {/* <img src="/" alt="Platformer" className="client object-cover object-top w-full h-80 md:h-96" /> */}
         <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-70">
           <p className="text-white text-3xl font-semibold">Play My Platformer</p>
