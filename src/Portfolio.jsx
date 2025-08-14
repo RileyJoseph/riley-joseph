@@ -35,19 +35,22 @@ const Portfolio = () => {
       {/* <h2>SaaS</h2> */}
       <div className="flex flex-col w-full md:w-3/4">
         {sassPortfolioItems.map((item) => (
-          <article key={item.id} className="flex flex-row pb-10">
-            <div className="relative group overflow-hidden sass w-1/3 flex mr-4 flex-col justify-center">
+          <article key={item.id} className="flex flex-col md:flex-row pb-10">
+            <div className="relative group overflow-hidden sass md:w-1/3 w-full flex mr-4 flex-col justify-center">
             {/* <div className="relative group overflow-hidden sass w-1/3 flex mr-4 flex-col justify-center border border-white rounded-lg p-4 hover-pulse"> */}
-              <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/3 pb-4" />
-              <div className="title-overlay flex items-center justify-center">
+              <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/3 pb-4 hidden md:inline" />
+              <div className="title-overlay flex items-center justify-center hidden md:inline">
                 <h2 className="text-white text-xl font-semibold pb-0">{item.name}</h2>
               </div>
             </div>
-            <div className="w-2/3 p-4 ml-4 text-left border border-white rounded-lg hover-pulse flex flex-col relative">
-              <h3 className="text-2xl font-bold">{item.name}</h3><span className="text-sm absolute top-5 right-5 font-bold">SaaS</span>
+            <div className="md:w-2/3 w-full p-4 md:ml-4 text-left border border-white rounded-lg hover-pulse flex md:flex-col flex-row justify-center relative">
+                <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/4 inline md:hidden height-120 inner-logo m-auto px-4 m-inherit sm:my-auto" />
+                <div className="flex-col w-3/4 md:w-full">
+                  <h3 className="text-2xl font-bold">{item.name}</h3><span className="text-sm absolute top-5 right-5 font-bold hidden sm:absolute">SaaS</span>
               {/* <p className="subtitle text-sm text-bold py-4">{item.subtitle}</p> */}
-              <p className="text-sm">{item.description}</p>
-              <p className="text-sm mr-5 mt-4">{item.technology}</p>
+                  <p className="text-sm">{item.description}</p>
+                  <p className="text-sm mr-5 mt-4">{item.technology}</p>
+                </div>
             </div>
           </article>
         ))}
@@ -57,8 +60,9 @@ const Portfolio = () => {
         {portfolioItems.map((item) => (
           <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg  project">
             <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60" />
-            <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
+            <div className="title-overlay absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
               <p className="text-white text-2xl font-semibold">{item.name}</p>
+              {/* <p className="text-white text-2xl font-semibold">{item.description}</p> */}
             </div>
           </div>
         ))}

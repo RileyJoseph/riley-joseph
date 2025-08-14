@@ -364,6 +364,17 @@ html, body {
     transition: transform 0.3s ease-in-out, filter 4s ease-in-out 2s;
     will-change: transform, filter; /* Helps with performance */
   }
+  .inner-logo{
+    height: 120px;
+    width: auto;
+  }
+  @media (width <= 600px) {
+    .inner-logo{
+      margin-top: inherit;
+      height: 50px;
+      padding-left: 0px;
+    }
+  }
   .sass{
     /* filter: brightness(50%); */
     /* transition: transform 0.6s ease-in-out, filter 4s ease-in-out 2s; */
