@@ -24,8 +24,8 @@ const portfolioItems = [
 ];
 
 const sassPortfolioItems = [  
-  { id: 1, name: "Lennections", url:"lennections", image: "/images/portfolio/LennectionsIconRed.png", subtitle: "Lead engineer, technology manager and team lead in the education sector. AI integration, auth, RBAC, report generation, database management.", description: "Engineer, technology manager and team lead in the education sector. AI integration, auth, RBAC, report generation, spreadsheet parsing, database management.", technology: "Meteor, MongoDB, Blaze.js, Node.js, Javascript, AWS, OpenAI GPT-4 API, AI, ML, JIRA, PIE, NPM." },
-  { id: 2, name: "Frontera", url:"frontera-software", image: "/images/portfolio/emma-logo.png", description: "Engineer for Union software managing hundreds of thousands of users, their payments and filings.", technology: "Vue, Meteor, MongoDB, Node.js, Docker, AWS, Stripe, JIRA, JavaScript." },  
+  { id: 1, name: "Lennections", url:"lennections", image: "/images/portfolio/LennectionsIconRed.png", description: "Engineer, technology manager and team lead in the education sector overseeing full-stack development, AI integration, and team coordination. RBAC, dynamic report generation, spreadsheet data ingestion and parsing, and scalable database management.", technology: "HTML5, CSS3, SCSS, Meteor, MongoDB, Blaze.js, Node.js, Javascript, AWS (EC2, S3, CloudFront), OpenAI GPT-4 API, AI, ML, JIRA, PIE." },
+  { id: 2, name: "Frontera", url:"frontera-software", image: "/images/portfolio/emma-logo.png", description: "Developed and maintained large-scale union management software serving hundreds of thousands of users, handling complex workflows for membership, payments, and filings. Built with a scalable architecture to ensure security, high availability, and seamless integration with payment and compliance systems.", technology: "Vue, HTML5, CSS3, SCSS, Javascript, Meteor, MongoDB, MongoDB Atlas, Node.js, Docker, AWS (EC2, S3, CloudFront), RDS, Lambda, Stripe, JIRA" },  
 ];
 
 const Portfolio = () => {
@@ -44,10 +44,10 @@ const Portfolio = () => {
               </div>
             </div>
             <div className="w-2/3 p-4 ml-4 text-left border border-white rounded-lg hover-pulse flex flex-col relative">
-              <h3 className="text-2xl">{item.name}</h3><span className="text-sm absolute top-5 right-5 ">SaaS</span>
+              <h3 className="text-2xl font-bold">{item.name}</h3><span className="text-sm absolute top-5 right-5 font-bold">SaaS</span>
               {/* <p className="subtitle text-sm text-bold py-4">{item.subtitle}</p> */}
               <p className="text-sm">{item.description}</p>
-              <p className="text-sm mr-5">{item.technology}</p>
+              <p className="text-sm mr-5 mt-4">{item.technology}</p>
             </div>
           </article>
         ))}
