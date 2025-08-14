@@ -349,7 +349,7 @@ html, body {
   overflow: hidden;
   min-height: 100vh;
   padding-top: 120px;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin: auto;
   h2{
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -367,6 +367,10 @@ html, body {
   .inner-logo{
     height: 120px;
     width: auto;
+  }
+  .portfolio-container{
+    max-width: 1300px; 
+    margin: auto;
   }
   @media (width <= 600px) {
     .inner-logo{
@@ -391,6 +395,7 @@ html, body {
     background-position: center;
     background-image: url("/images/portfolio/kill-bill.jpg");
     height: 350px;
+    display: block;
   }
 }
 

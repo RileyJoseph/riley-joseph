@@ -30,12 +30,13 @@ const sassPortfolioItems = [
 
 const Portfolio = () => {
   return (
-    <div className="relative min-h-screen flex flex-col justify-center items-center p-6 portfolio all">
-        <div className="overlay"></div>
-        <div className={`overlay glitch`}></div>    
+    <div className="relative min-h-screen items-center p-6 portfolio all w-full">
+    <div className="overlay"></div>
+    <div className={`overlay glitch`}></div>   
+    <div className="portfolio-container">
       <h1 className="text-3xl font-bold text-center mb-18 pulse-border-bottom">Dev Portfolio</h1>
       {/* <h2>SaaS</h2> */}
-      <div className="flex flex-col w-full md:w-3/4">
+      <div className="flex flex-col">
         {sassPortfolioItems.map((item) => (
           <article key={item.id} className="flex flex-col md:flex-row pb-10">
             <div className="relative group overflow-hidden sass md:w-1/3 w-full flex mr-4 flex-col justify-center">
@@ -74,7 +75,7 @@ const Portfolio = () => {
       <h2 className="text-2xl font-bold text-center my-12">For Fun</h2>
       <a
         key="platformer"
-        className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer"
+        className="group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer display-block"
         target="_blank"
         href="https://project-manager-curve-50566.netlify.app/"
         rel="noopener noreferrer"
@@ -84,6 +85,7 @@ const Portfolio = () => {
           <p className="text-white text-3xl font-semibold">Play My Platformer</p>
         </div>
       </a>
+    </div> 
     </div>
   );
 };
