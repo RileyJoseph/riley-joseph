@@ -24,34 +24,35 @@ const portfolioItems = [
 ];
 
 const sassPortfolioItems = [  
-  { id: 1, name: "Lennections (SaaS)", url:"lennections", image: "/images/portfolio/LennectionsIconRed.png", subtitle: "Lead engineer, technology manager and team lead in the education sector.", description: "Engineer, technology manager and team lead in the education sector.", technology: "Meteor, MongoDB, Blaze.js, Node.js, AWS, OpenAI GPT-4 API, AI, machine learning, JIRA, JavaScript." },
-  { id: 2, name: "Frontera (SaaS)", url:"frontera-software", image: "/images/portfolio/emma-logo.png", description: "Engineer for Union software managing hundreds of thousands of users, their payments and filings.", technology: "Vue, Meteor, MongoDB, Node.js, Docker, AWS, Stripe, JIRA, JavaScript." },  
+  { id: 1, name: "Lennections", url:"lennections", image: "/images/portfolio/LennectionsIconRed.png", subtitle: "Lead engineer, technology manager and team lead in the education sector. AI integration, auth, RBAC, report generation, database management.", description: "Engineer, technology manager and team lead in the education sector. AI integration, auth, RBAC, report generation, spreadsheet parsing, database management.", technology: "Meteor, MongoDB, Blaze.js, Node.js, Javascript, AWS, OpenAI GPT-4 API, AI, ML, JIRA, PIE, NPM." },
+  { id: 2, name: "Frontera", url:"frontera-software", image: "/images/portfolio/emma-logo.png", description: "Engineer for Union software managing hundreds of thousands of users, their payments and filings.", technology: "Vue, Meteor, MongoDB, Node.js, Docker, AWS, Stripe, JIRA, JavaScript." },  
 ];
 
 const Portfolio = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center p-6 portfolio all">
-      <h1 className="text-3xl font-bold text-center mb-8">Dev Portfolio</h1>
+      <h1 className="text-3xl font-bold text-center mb-18">Dev Portfolio</h1>
       {/* <h2>SaaS</h2> */}
       <div className="flex flex-col w-full md:w-3/4">
         {sassPortfolioItems.map((item) => (
           <article key={item.id} className="flex flex-row pb-10">
-            <div className="relative group overflow-hidden sass w-1/3 flex flex-col justify-center">
+            <div className="relative group overflow-hidden sass w-1/3 flex mr-4 flex-col justify-center">
+            {/* <div className="relative group overflow-hidden sass w-1/3 flex mr-4 flex-col justify-center border border-white rounded-lg p-4 hover-pulse"> */}
               <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/3 pb-4" />
               <div className="title-overlay flex items-center justify-center">
-                <h2 className="text-white text-xl font-semibold">{item.name}</h2>
+                <h2 className="text-white text-xl font-semibold pb-0">{item.name}</h2>
               </div>
             </div>
-            <div className="w-2/3 p-8 text-left">
-              <h3 className="text-2xl">{item.name}</h3>
+            <div className="w-2/3 p-4 ml-4 text-left border border-white rounded-lg hover-pulse flex flex-col relative">
+              <h3 className="text-2xl">{item.name}</h3><span className="text-sm absolute top-5 right-5 ">SaaS</span>
               {/* <p className="subtitle text-sm text-bold py-4">{item.subtitle}</p> */}
               <p className="text-sm">{item.description}</p>
-              <p className="text-sm">{item.technology}</p>
+              <p className="text-sm mr-5">{item.technology}</p>
             </div>
           </article>
         ))}
       </div>
-      <h2>Full-Stack Development</h2>
+      <h2 className="text-2xl font-bold text-center my-12">Full-Stack Development</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {portfolioItems.map((item) => (
           <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg  project">

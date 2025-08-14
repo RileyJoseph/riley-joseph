@@ -12,6 +12,18 @@
   }
 }
 
+@keyframes borderPulse {
+  0% {
+    border-color: 0 0 5px var(--secondary-color), 0 0 10px var(--secondary-color);
+  }
+  50% {
+    border-color: 0 0 10px var(--secondary-color), 0 0 20px var(--secondary-color);
+  }  
+  100%{
+    border-color: 0 0 10px var(--secondary-color), 0 0 20px var(--secondary-color);
+  }
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -340,7 +352,6 @@ html, body {
   max-width: 1300px;
   margin: auto;
   h2{
-    padding-bottom: 15px;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   }
   h3{
@@ -378,7 +389,11 @@ html, body {
   text-align: center;
   animation: glowPulse 2s infinite;
   font-weight: bold;
-  
+}
+
+.hover-pulse:hover{
+  border-color: var(--primary-color);
+  animation: borderPulse 2s infinite;
 }
 
 .pink{
