@@ -51,7 +51,7 @@ const Portfolio = () => {
             
                 <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/4 inline md:hidden height-120 inner-logo m-auto px-4 margin-inherit sm:my-auto" />
                 <div className="flex-col w-3/4 md:w-full">
-                  <h3 className="text-2xl font-bold">{item.name}</h3><span className="text-sm absolute top-5 right-5 font-bold hidden sm:absolute">SaaS</span>
+                  <h3 className="text-2xl font-bold">{item.name}</h3><span className="text-sm absolute top-5 right-5 font-bold invisible sm:visible md:visible">SaaS</span>
                   {/* <p className="subtitle text-sm text-bold py-4">{item.subtitle}</p> */}
                   <p className="text-sm">{item.description}</p>
                   <p className="text-sm mr-5 mt-4">{item.technology}</p>
@@ -75,7 +75,7 @@ const Portfolio = () => {
       <h2 className="text-2xl font-bold text-center my-12">For Fun</h2>
       <a
         key="platformer"
-        className="group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer display-block"
+        className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer display-block"
         target="_blank"
         href="https://project-manager-curve-50566.netlify.app/"
         rel="noopener noreferrer"
