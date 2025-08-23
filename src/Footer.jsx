@@ -19,8 +19,9 @@ const Footer = () => {
   };
 
   return (
-<footer className="bg-black text-white py-10 pulse-border">
+<footer className="bg-black text-white py-10  test-wave">
   {/* full top footer */}
+  {/* <div className="test-wave"> </div> */}
   <div className="footer-content container mx-auto flex flex-col md:flex-row justify-between py-8">
   
     {/* Left Half: Procon */}
