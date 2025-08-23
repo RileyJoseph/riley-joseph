@@ -19,7 +19,7 @@ const Footer = () => {
   };
 
   return (
-<footer className="bg-black text-white py-10  test-wave">
+<footer className="bg-black text-white py-10 ">
   {/* full top footer */}
   {/* <div className="test-wave"> </div> */}
   <div className="footer-content container mx-auto flex flex-col md:flex-row justify-between py-8">
