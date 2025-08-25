@@ -25,7 +25,7 @@ const portfolioItems = [
 
 const sassPortfolioItems = [  
   { id: 1, name: "Lennections", url:"lennections", image: "/images/portfolio/LennectionsIconRed.png", description: "Engineer, technology manager and team lead in the education sector overseeing full-stack development, AI integration, and project development. RBAC, dynamic report generation, spreadsheet data ingestion and parsing, and scalable database management.", technology: "HTML5, CSS3, SCSS, Meteor, MongoDB, Blaze.js, Node.js, Javascript, AWS (EC2, S3, CloudFront), OpenAI GPT-4 API, AI, ML, JIRA, PIE." },
-  { id: 2, name: "Frontera", url:"frontera-software", image: "/images/portfolio/emma-logo.png", description: "Developed and maintained large-scale union management software serving hundreds of thousands of users, handling complex workflows for membership, payments, and filings. Built with a scalable architecture to ensure security, high availability, and seamless integration with payment and compliance systems.", technology: "Vue, HTML5, CSS3, SCSS, Javascript, Meteor, MongoDB, MongoDB Atlas, Node.js, Docker, AWS (EC2, S3, CloudFront, RDS, Lambda), Stripe, JIRA" },  
+  { id: 2, name: "Frontera", url:"frontera-software", image: "/images/portfolio/emma-logo.png", description: "Developed and maintained large-scale union management software serving hundreds of thousands of users, handling complex workflows for membership, payments, and filings. Built with a scalable architecture to ensure security, high availability, and seamless integration with payment and compliance systems.", technology: "HTML5, CSS3, SCSS, Vue, Javascript, Meteor, MongoDB, MongoDB Atlas, Node.js, Docker, AWS (EC2, S3, CloudFront, RDS, Lambda), Stripe, JIRA" },  
 ];
 
 const Portfolio = () => {
@@ -37,6 +37,7 @@ const Portfolio = () => {
       <h1 className="text-3xl font-bold text-center mb-18 pulse-border-bottom inline">Dev Portfolio</h1>
       {/* <h2>SaaS</h2> */}
       <div className="flex flex-col pt-18">
+      <h2 className="text-2xl font-bold text-center my-12">SaaS Engineering</h2>
         {sassPortfolioItems.map((item) => (
           <article key={item.id} className="flex flex-col md:flex-row pb-10">
             <div className="relative group overflow-hidden sass md:w-1/3 w-full flex mr-4 flex-col justify-center">
@@ -50,7 +51,8 @@ const Portfolio = () => {
             {/* <div className="md:w-2/3 w-full p-4 md:ml-4 text-left border border-white rounded-lg hover-pulse flex md:flex-col flex-row justify-center relative"></div> */}            
                 <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/4 inline md:hidden height-120 inner-logo m-auto px-4 margin-inherit sm:my-auto" />
                 <div className="flex-col w-full">
-                  <h3 className="text-2xl font-bold">{item.name}</h3><span className="text-sm absolute top-5 right-5 font-bold justify-center sm:visible md:visible">SaaS</span>
+                  <h3 className="text-2xl font-bold">{item.name}</h3>
+                  {/* <span className="text-sm absolute top-5 right-5 font-bold justify-center sm:visible md:visible">SaaS</span> */}
                   {/* <p className="subtitle text-sm text-bold py-4">{item.subtitle}</p> */}
                   <p className="text-sm">{item.description}</p>
                   <p className="text-sm mr-5 mt-4">{item.technology}</p>

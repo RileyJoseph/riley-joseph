@@ -20,11 +20,8 @@ const Footer = () => {
 
   return (
 <footer className="bg-black text-white py-10 ">
-  {/* full top footer */}
-  {/* <div className="test-wave"> </div> */}
   <div className="footer-content container mx-auto flex flex-col md:flex-row justify-between py-8">
-  
-    {/* Left Half: Procon */}
+
     <div className="footer-details w-full md:w-1/2 flex flex-col px-4 md:px-8 sm:px-4">
       <div className="footer-logos procon text-left">
         <h2>Big Project?</h2>
@@ -38,10 +35,8 @@ const Footer = () => {
       </div>
     </div>
 
-    {/* Right Half: Pages + Resume */}
     <div className="footer-details w-full md:w-1/2 flex flex-col md:flex-row px-4 mt-8 md:mt-0 right-half ">
-    
-      {/* Pages Section */}
+
       <div className="text-left w-full md:w-1/2 mx-auto">
         <p className="text-xl font-bold footer-heading">PAGES</p>
         <ul className="text-sm space-y-1">
@@ -53,7 +48,6 @@ const Footer = () => {
         </ul>
       </div>
 
-      {/* Resume Section */}
       <div className="footer-resume flex flex-col w-full md:w-1/2 text-left">
         <p className="text-xl font-bold footer-heading md:text-left sm:text-left sm:pt-8 pt-8 md:pt-0">Resume With Password</p>
         <p className="text-sm md:text-left sm:text-left">Password upon request.</p>
@@ -79,7 +73,6 @@ const Footer = () => {
     </div>
   </div>
 
-  {/* bottom footer */}
   <div className="footer-content container mx-auto flex flex-col md:flex-row justify-between py-8 px-4">
     <div className="footer-details w-full flex justify-end items-center space-x-4 ">
       <a href="https://www.instagram.com/r.m.joseph" target="_blank" className="text-white text-xl">
@@ -92,6 +85,10 @@ const Footer = () => {
         <ion-icon name="logo-linkedin"></ion-icon>
       </a>      
     </div>
+  </div>
+
+  <div>
+    <p className="text-xs">Copyright @ 2025 Riley Joseph. All Rights Reserved.</p>
   </div>
 
 </footer>
