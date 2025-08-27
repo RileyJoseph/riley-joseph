@@ -13,6 +13,7 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Bio from './Bio.jsx';
 import Photography from './Photography.jsx';
+import PhotoDetail from './PhotoDetail';
 
 const greetings = [
   "Hey, nice to meet you.",
@@ -159,6 +160,7 @@ function App() {
           <Route path="/bio" element={<Bio />} />     
           <Route path="/photography" element={<Photography />} />     
           <Route path="/portfolio/:url" element={<ProjectDetails />} />
+          <Route path="/photography/:slug" element={<PhotoDetail />} />
           {/* <Route path="/portfolio/:url" element={<ProjectDetails />} /> */}
         </Routes>
       </div>

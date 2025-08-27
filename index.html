@@ -29,13 +29,21 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.6.1/default/snipcart.css"/>    
     <title>Riley's Site</title>
   </head>
   <body>
     <div id="root"></div>
+    <div
+    hidden
+    id="snipcart"
+    data-api-key="YOUR_PUBLIC_API_KEY"
+    data-config-modal-style="side"
+    ></div>
     <script type="module" src="/src/main.jsx"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+    <script async src="https://cdn.snipcart.com/themes/v3.6.1/default/snipcart.js"></script>
     <!-- <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>                     -->
   </body>
 </html>

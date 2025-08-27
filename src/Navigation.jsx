@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import CartButton from './CartButton';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -22,6 +23,7 @@ const Navbar = () => {
           <li><Link to="/photography" className="nav-btn py-2">Photography</Link></li>
           <li><Link to="/portfolio" className="nav-btn py-2" onClick={handleCloseMenu}>Dev</Link></li>          
           <li><Link to="/contact" className="nav-btn py-2" onClick={handleCloseMenu}>Contact</Link></li>
+          <li><CartButton/></li>
         </ul>
         
         {/* Mobile Menu Button */}
