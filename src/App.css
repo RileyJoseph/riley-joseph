@@ -89,7 +89,7 @@ html, body {
 .navbar{
   position: absolute;
   width: 100%;
-  z-index: 1000;
+  z-index: 50;
   height: 80px;
   a:hover, link:hover{
     animation: glowPulse 2s infinite;
@@ -374,6 +374,10 @@ html, body {
   }
 }
 
+.photo-detail{
+  padding-top: 80px;
+}
+
 .contact{
   z-index: 22;
   .linkedIn{
@@ -395,9 +399,6 @@ html, body {
   margin: auto;
   h2{
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  }
-  h3{
-
   }
   .grid{
     padding-bottom: 60px;
@@ -607,6 +608,7 @@ ion-icon.down-arrow:hover, ion-icon.down-arrow:focus {
   top: 0;
   left: 0;
   width: 100vw;
+  inset: 0;
   /* min-height: 100vh; */
   height: 100%;
   min-height: 900px;

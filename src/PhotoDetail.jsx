@@ -71,18 +71,18 @@ export default function PhotoDetail() {
   if (!photo) return <Navigate to="/photography" replace />;
 
   return (
-    <div className="min-h-screen p-8 flex flex-col app-body all">
+    <div className="min-h-screen p-8 flex flex-col app-body all relative">
       <div className="overlay"></div>
       <div className="overlay glitch"></div>
 
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto z-10 photo-detail">
         <div className="flex items-center justify-between mb-6">
           <Link to="/photography" className="inline-block underline">
             ← Back to gallery
           </Link>
-          {/* Inline cart opener (optional if you have a global one) */}
+
           <button className="snipcart-checkout px-3 py-1 border rounded">
-            Cart (<span className="snipcart-items-count"></span>) • $
+            Cart (<span className="snipcart-items-count"></span>) •&nbsp;
             <span className="snipcart-total-price"></span>
           </button>
         </div>
