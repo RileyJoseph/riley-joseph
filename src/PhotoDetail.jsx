@@ -3,15 +3,16 @@ import React, { useMemo, useState } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 
 const PHOTOS = [
-  { slug: 'the-painter-1', src: '/images/the-painter-1.jpg', alt: 'painter on church roof' },
-  { slug: 'tv-truck', src: '/images/tv-truck.jpg', alt: 'truck with tv in windshield' },
-  { slug: 'bikers', src: '/images/bikers.jpg', alt: 'bikers on a ferry with seattle in the background' },
-  { slug: 'atv', src: '/images/atv.jpg', alt: 'atv on a moutain' },
-  { slug: 'ferry-shadows', src: '/images/ferry-shadows.jpg', alt: 'shadows cast by benches on a ferry' },
-  { slug: 'dolphins-unedited', src: '/images/dolphins-unedited.jpg', alt: 'blowup dolphins in a bin' },
-  { slug: 'beach', src: '/images/beach.jpg', alt: 'lifeguard stand on a beach with a boat in the ocean in the background' },
-  { slug: 'converse', src: '/images/converse.jpg', alt: 'chickens pecking around a pair on converse shoes' },
-  { slug: 'gasworks', src: '/images/gasworks.jpg', alt: 'old machinery covered in natural growth' },
+  { slug: 'seitan-limania', title: "Seitan Limania", src: '/images/seitan-limania.jpg', alt: 'painter on church roof' },
+  { slug: 'the-painter-1', title: "The Painter", src: '/images/the-painter-1.jpg', alt: 'painter on church roof' },
+  { slug: 'tv-truck', title: "Animal Control", src: '/images/tv-truck.jpg', alt: 'truck with tv in windshield' },
+  { slug: 'bikers', title: "Seattle Bikers", src: '/images/bikers.jpg', alt: 'bikers on a ferry with seattle in the background' },
+  { slug: 'atv', title: "Offroad", src: '/images/atv.jpg', alt: 'atv on a moutain' },
+  { slug: 'ferry-shadows', title: "Ferry Shadows", src: '/images/ferry-shadows.jpg', alt: 'shadows cast by benches on a ferry' },
+  { slug: 'dolphins-unedited', title: "Dolphins", src: '/images/dolphins-unedited.jpg', alt: 'blowup dolphins in a bin' },
+  { slug: 'beach', title: "The Boat", src: '/images/beach.jpg', alt: 'lifeguard stand on a beach with a boat in the ocean in the background' },
+  { slug: 'converse', title: "Converse", src: '/images/converse.jpg', alt: 'chickens pecking around a pair on converse shoes' },
+  { slug: 'gasworks', title: "Gasworks Graffiti", src: '/images/gasworks.jpg', alt: 'old machinery covered in natural growth' },
 ];
 
 // Define print sizes & pricing (adjust to your real costs)
@@ -36,10 +37,6 @@ const FRAMES = [
   { id: 'natural-wood', label: 'Natural Wood Frame', add: 90 },
 ];
 
-function titleFromSlug(slug) {
-  return slug.replace(/-/g, ' ').replace(/\b\w/g, (m) => m.toUpperCase());
-}
-
 export default function PhotoDetail() {
   const { slug } = useParams();
   const photo = PHOTOS.find((p) => p.slug === slug);
@@ -48,7 +45,6 @@ export default function PhotoDetail() {
   const [finishId, setFinishId] = useState(FINISHES[0].id);
   const [frameId, setFrameId] = useState(FRAMES[0].id);
   const [qty, setQty] = useState(1);
-  const productTitle = useMemo(() => titleFromSlug(slug ?? ''), [slug]);
 
   const fallbackSize   = { id: 'default', label: '8" × 10"', price: 0 };
   const fallbackFinish = { id: 'matte', label: 'Matte' };
@@ -100,7 +96,7 @@ export default function PhotoDetail() {
 
           {/* Order panel */}
           <div className="border rounded p-4 md:p-6">
-            <h1 className="text-2xl font-semibold mb-2">{productTitle}</h1>
+            <h1 className="text-2xl font-semibold mb-2">{photo.title}</h1>
             <p className="text-sm opacity-70 mb-6">Archival print on premium photo paper.</p>
 
             {/* Size */}
@@ -119,7 +115,6 @@ export default function PhotoDetail() {
               </select>
             </label>
 
-            {/* Finish */}
             <label className="block mb-4">
               <span className="block text-sm font-medium mb-1">Finish</span>
               <select
@@ -135,7 +130,6 @@ export default function PhotoDetail() {
               </select>
             </label>
 
-            {/* Quantity */}
             <label className="block mb-6">
               <span className="block text-sm font-medium mb-1">Quantity</span>
               <input
@@ -147,18 +141,16 @@ export default function PhotoDetail() {
               />
             </label>
 
-            {/* Price summary */}
             <div className="flex items-center justify-between mb-4">
               <div className="opacity-80 text-sm">
                 Unit: ${unitPrice.toFixed(2)} • Total: <strong>${totalPrice.toFixed(2)}</strong>
               </div>
             </div>
 
-            {/* Snipcart Add to Cart */}
             <button
               className="snipcart-add-item px-4 py-2 rounded bg-white/10 border hover:bg-white/20 transition"
               data-item-id={variantId}
-              data-item-name={`${productTitle} — ${selectedSize.label}`}
+              data-item-name={`${photo.title} — ${selectedSize.label}`}
               data-item-price={unitPrice.toFixed(2)}
               data-item-url={itemUrl}
               data-item-description={`${photo.alt} • ${selectedSize.label} • ${selectedFinish.label} • ${selectedFrame.label}`}
@@ -173,9 +165,6 @@ export default function PhotoDetail() {
               data-item-custom2-name="Finish"
               data-item-custom2-type="readonly"
               data-item-custom2-value={selectedFinish.label}
-              data-item-custom3-name="Frame"
-              data-item-custom3-type="readonly"
-              data-item-custom3-value={selectedFrame.label}
             >
               Add to Cart
             </button>
