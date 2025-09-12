@@ -5,6 +5,23 @@ import { Link } from 'react-router-dom';
 function Photography() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const LINKS_ENABLED = false;
+
+  function Link({ children, className = '', ...props }) {
+    if (LINKS_ENABLED) {
+      return <RouterLink className={className} {...props}>{children}</RouterLink>;
+    }
+    return (
+      <span
+        role="link"
+        aria-disabled="true"
+        tabIndex={-1}
+        className={className + ' cursor-default'} // add 'opacity-60' if you want a visual cue
+      >
+        {children}
+      </span>
+    );
+  }
 
   useEffect(() => {
     const handleContextMenu = (e) => e.preventDefault();
@@ -31,8 +48,8 @@ function Photography() {
         </Link>
 
         <div className="info flex-1 p-4 md:pl-16 text-center md:text-left">
-          <h2 className="name font-bold">PHOTOS</h2>
-          <p className="subtitle py-4 font-semibold">The Film Gallery</p>
+          <h2 className="name font-bold">FILM</h2>
+          <p className="subtitle py-4 font-semibold">The Gallery</p>
           <div className="bio-text">
             <p>
               This section of the site is under construction, more images will be added and later

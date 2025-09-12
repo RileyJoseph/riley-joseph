@@ -318,7 +318,7 @@ html, body {
       height: 500px;
       width: 150px; 
       transition: width 1.5s ease-in-out;
-      cursor: pointer;
+      /* cursor: pointer; */
       margin: 20px;
     }      
   }  
@@ -343,7 +343,7 @@ html, body {
     height: 620px;
     /* width: 150px;  */
     transition: width 1.5s ease-in-out;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   .hover-md:hover{
     width: 400px;
@@ -369,7 +369,7 @@ html, body {
     height: 500px;
     width: 100%;
     transition: width 1.5s ease-in-out;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin: 10px;
   }
 }
