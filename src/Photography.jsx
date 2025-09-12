@@ -23,17 +23,22 @@ function Photography() {
     );
   }
 
-  useEffect(() => {
-    const handleContextMenu = (e) => e.preventDefault();
-    document.addEventListener('contextmenu', handleContextMenu);
-    return () => document.removeEventListener('contextmenu', handleContextMenu);
-  }, []);
+  // useEffect(() => {
+  //   const handleContextMenu = (e) => e.preventDefault();
+  //   document.addEventListener('contextmenu', handleContextMenu);
+  //   return () => document.removeEventListener('contextmenu', handleContextMenu);
+  // }, []);
 
   return (
     <div className="min-h-screen p-8 flex flex-col app-body all">
-      <div className="overlay"></div>
-      <div className={`overlay glitch`}></div>
 
+      <div id="" class="hero-photo film-hero pulse-border-bottom">
+        <div className='hero-text'>
+          <h1>FILM</h1>
+          <p>Link to Store Coming Soon</p>
+        </div>
+      </div>
+{/* 
       <div id="photo-gallery" className="flex flex-col md:flex-row photo-gallery-top">
         <Link
           to="/photography/the-painter-1"
@@ -64,9 +69,13 @@ function Photography() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
+
+
+    <br />
 
       <div className="photo-gallery flex flex-wrap">
+
         <div className="gallery-img-container w-full md:w-2/3">
           <Link to="/photography/tv-truck" className="block">
             <img
@@ -155,6 +164,20 @@ function Photography() {
           </Link>
         </div>
       </div>
+      <div className='outro-block'>
+        <h2>THANK YOU FOR VISITING</h2>
+        <hr />
+        <div className='copy'>
+          <p>These shots are from all over the world - Athens, Seattle, Zion, Arkansas, Jacksonville, New York, Kissamos,
+        Breckenridge, Paris, and of course, OKC. 
+        I've used a variety of cameras, lenses and film for these photos but mostly rely on the Canon A-1 I found at a thrift store for $30 some 10 years ago.
+        </p>
+        <br />
+        <p>This section of the site is under construction, more images will be added and later
+        become available in high-resolution for purchase as prints. If you'd like to book me or are interested in purchasing photos
+        before the store is available, please contact me via email @ <a href='mailto:riley.m.joseph1@gmail.com'>riley.m.joseph1@gmail.com</a></p>
+        </div>
+      </div>      
     </div>
   );
 }
