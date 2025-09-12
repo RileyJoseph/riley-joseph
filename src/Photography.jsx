@@ -23,11 +23,11 @@ function Photography() {
     );
   }
 
-  // useEffect(() => {
-  //   const handleContextMenu = (e) => e.preventDefault();
-  //   document.addEventListener('contextmenu', handleContextMenu);
-  //   return () => document.removeEventListener('contextmenu', handleContextMenu);
-  // }, []);
+  useEffect(() => {
+    const handleContextMenu = (e) => e.preventDefault();
+    document.addEventListener('contextmenu', handleContextMenu);
+    return () => document.removeEventListener('contextmenu', handleContextMenu);
+  }, []);
 
   return (
     <div className="min-h-screen p-8 flex flex-col app-body all">
