@@ -32,15 +32,25 @@ function Contact() {
           <p className='subtitle py-4 font-semibold'>riley.m.joseph1@gmail.com</p>
             <div className='bio-text'>
               <p>
-                The easiest way to get in touch is via email.
+                Whether you need me for programing, photography, or music, the easiest way to get in touch is via email. <br /> <br />
                 If you'd like the full 
                 services of Proper Conduct, please reach out to:
                 <br />
-                <p className='font-bold'>properconductagency@gmail.com</p>
+                <span className='font-bold'>properconductagency@gmail.com</span>
+                <br /> <br />
+                If you'd like to book Coat, please reach out to:
+                <br />
+                <span className='font-bold'>coattheband@gmail.com</span>
+                <br /> <br />
+                Otherwise, please feel free to add me on LinkedIn or social media.
               </p>
               <br />
-              <a className='mt-12 btn btn-white w-full' href="https://www.linkedin.com/in/rileymjoseph/" 
-              target="_blank">LinkedIn </a>
+              <a href="https://www.instagram.com/r.m.joseph" target="_blank" className="text-white text-5xl">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="https://www.linkedin.com/in/rileymjoseph/" target="_blank" className="text-white ml-8 text-5xl">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>                            
             </div>
         </div>
       </div>
