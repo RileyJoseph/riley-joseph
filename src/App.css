@@ -272,7 +272,6 @@ html, body {
 .welcome-text{
   position: absolute;
   justify-content: center;
-  /* right: 10%; */
   color: white;
   .cutout{
     position: absolute;
@@ -1128,6 +1127,7 @@ footer{
 @media (width <= 1100px) {
   .welcome-text{
     /* margin-top: 55vh; */
+    justify-content: space-evenly;
     .name{
       font-size: 52px;
     }
@@ -1146,9 +1146,6 @@ footer{
       display: inline-block;
      }    
   }
-  .code{
-    /* margin-top: 10vh; */
-  }
   .jobs{
     width: 100%;
     display: inline-block;
@@ -1166,7 +1163,6 @@ footer{
   }
   .code{
     padding: 0px 10px;
-    margin-top: 5vh;
   }
   .links{
     .hero-links{
@@ -1194,9 +1190,6 @@ footer{
 
 
 @media (width <= 777px) {
-  .welcome-text{
-    /* padding-top: 120px; */
-  }
   .hero-photo {
     height: 800px;
     .hero-text{
