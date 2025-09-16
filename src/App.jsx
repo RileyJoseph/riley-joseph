@@ -63,13 +63,13 @@ function App() {
                   {/* <div className="sun"></div> */}
                   <div className={`overlay glitch ${bgColor}`}></div>
                   
-                  <div className="min-h-screen welcome-text flex flex-col items-center text-center lg:w-3/4 pt-20 pb-40">              
+                  <div className="min-h-screen welcome-text flex flex-col items-center text-center lg:w-3/4">              
                     <div className='first-third'>
                       <h1 className="name text-2xl font-bold ml-auto mr-auto text-center spaceme">Riley Joseph</h1>
                       <div className="info flex justify-between w-full px-8 md:w-2/4">
                         <span className="left flex flex-col text-left jobs">                      
-                          <span className="text-">Software Engineer ● Web Developer</span> <span className="dot inline-only">●</span>
-                          <span className="text-">Musician ● Photographer</span>
+                          <span className="text-">Software Engineer <span className='dot'>●</span> Web Developer</span> <span className="mr-2 inline-only dot">●</span>
+                          <span className="text-">Musician <span className='dot'>●</span> Photographer</span>
                         </span>
                         {/* <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="054629d7-56c4-4544-9460-33acd5351eb5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>                     */}
                         <h2 className='subheading text-right md:w-2/4'>{greeting}</h2>
@@ -81,60 +81,60 @@ function App() {
                     <div className='md:w-3/4 code third-third no-mobile'>
                       <h3>Ceritifed AWS Cloud Practitioner</h3>
                       {/* Frontend Development (Blue) */}
-                      <span className="code-blue">HTML</span> <span className="dot">●</span> 
-                      <span className="code-blue">CSS</span> <span className="dot">●</span> 
-                      <span className="code-blue">SCSS</span> <span className="dot">●</span> 
-                      <span className="code-blue">Tailwind</span> <span className="dot">●</span> 
-                      <span className="code-blue">UX</span> <span className="dot">●</span> 
-                      <span className="code-blue">UI</span> <span className="dot">●</span> 
+                      <span className="code-blue">HTML</span> <span className="dot-space">●</span> 
+                      <span className="code-blue">CSS</span> <span className="dot-space">●</span> 
+                      <span className="code-blue">SCSS</span> <span className="dot-space">●</span> 
+                      <span className="code-blue">Tailwind</span> <span className="dot-space">●</span> 
+                      <span className="code-blue">UX</span> <span className="dot-space">●</span> 
+                      <span className="code-blue">UI</span> <span className="dot-space">●</span> 
 
                       {/* JavaScript & Backend (Red) */}
-                      <span className="code-red">JavaScript</span> <span className="dot">●</span> 
-                      <span className="code-red">Node.js</span> <span className="dot">●</span> 
-                      <span className="code-red">TypeScript</span> <span className="dot">●</span>
-                      <span className="code-red">Express</span> <span className="dot">●</span>
-                      <span className="code-red">PHP</span> <span className="dot">●</span>
+                      <span className="code-red">JavaScript</span> <span className="dot-space">●</span> 
+                      <span className="code-red">Node.js</span> <span className="dot-space">●</span> 
+                      <span className="code-red">TypeScript</span> <span className="dot-space">●</span>
+                      <span className="code-red">Express</span> <span className="dot-space">●</span>
+                      <span className="code-red">PHP</span> <span className="dot-space">●</span>
 
                       {/* JavaScript Frameworks (Purple) */}
-                      <span className="code-purple">Vue</span> <span className="dot">●</span> 
-                      <span className="code-purple">React</span> <span className="dot">●</span> 
-                      <span className="code-purple">Angular</span> <span className="dot">●</span> 
-                      <span className="code-purple">Meteor</span> <span className="dot">●</span> 
-                      <span className="code-purple">Blaze</span> <span className="dot">●</span> 
+                      <span className="code-purple">Vue</span> <span className="dot-space">●</span> 
+                      <span className="code-purple">React</span> <span className="dot-space">●</span> 
+                      <span className="code-purple">Angular</span> <span className="dot-space">●</span> 
+                      <span className="code-purple">Meteor</span> <span className="dot-space">●</span> 
+                      <span className="code-purple">Blaze</span> <span className="dot-space">●</span> 
 
                       {/* Databases (Yellow) */}
-                      <span className="code-yellow">MongoDB</span> <span className="dot">●</span> 
-                      <span className="code-yellow">PostgreSQL</span> <span className="dot">●</span> 
-                      <span className="code-yellow">MySQL</span> <span className="dot">●</span> 
+                      <span className="code-yellow">MongoDB</span> <span className="dot-space">●</span> 
+                      <span className="code-yellow">PostgreSQL</span> <span className="dot-space">●</span> 
+                      <span className="code-yellow">MySQL</span> <span className="dot-space">●</span> 
 
                       {/* CMS & Website Builders (Green) */}
-                      <span className="code-green">Craft</span> <span className="dot">●</span> 
-                      <span className="code-green">WordPress</span> <span className="dot">●</span> 
-                      <span className="code-green">Shopify</span> <span className="dot">●</span> 
-                      <span className="code-green">WIX</span> <span className="dot">●</span> 
-                      <span className="code-green">Webflow</span> <span className="dot">●</span> 
-                      <span className="code-green">Squarespace</span> <span className="dot">●</span> 
+                      <span className="code-green">Craft</span> <span className="dot-space">●</span> 
+                      <span className="code-green">WordPress</span> <span className="dot-space">●</span> 
+                      <span className="code-green">Shopify</span> <span className="dot-space">●</span> 
+                      <span className="code-green">WIX</span> <span className="dot-space">●</span> 
+                      <span className="code-green">Webflow</span> <span className="dot-space">●</span> 
+                      <span className="code-green">Squarespace</span> <span className="dot-space">●</span> 
 
                       {/* DevOps & Tools (Blue) */}
-                      <span className="code-blue">Git</span> <span className="dot">●</span> 
-                      <span className="code-blue">NPM</span> <span className="dot">●</span>                                         
-                      <span className="code-blue">AWS</span> <span className="dot">●</span> 
-                      <span className="code-blue">Docker</span> <span className="dot">●</span> 
-                      <span className="code-blue">Gulp</span> <span className="dot">●</span> 
-                      <span className="code-blue">Yarn</span> <span className="dot">●</span> 
-                      <span className="code-blue">APIs</span> <span className="dot">●</span> 
+                      <span className="code-blue">Git</span> <span className="dot-space">●</span> 
+                      <span className="code-blue">NPM</span> <span className="dot-space">●</span>                                         
+                      <span className="code-blue">AWS</span> <span className="dot-space">●</span> 
+                      <span className="code-blue">Docker</span> <span className="dot-space">●</span> 
+                      <span className="code-blue">Gulp</span> <span className="dot-space">●</span> 
+                      <span className="code-blue">Yarn</span> <span className="dot-space">●</span> 
+                      <span className="code-blue">APIs</span> <span className="dot-space">●</span> 
 
                       {/* Project & Team Management (Green) */}
-                      <span className="code-green">Team Management</span> <span className="dot">●</span> 
-                      <span className="code-green">Client Communication</span> <span className="dot">●</span> 
-                      <span className="code-green">Database Management</span> <span className="dot">●</span> 
+                      <span className="code-green">Team Management</span> <span className="dot-space">●</span> 
+                      <span className="code-green">Client Communication</span> <span className="dot-space">●</span> 
+                      <span className="code-green">Database Management</span> <span className="dot-space">●</span> 
                       <span className="code-green">JIRA</span> 
 
                     </div>
                     <div className='mobile-only'>
-                        <a className='px-6 text-3xl hover-pulse' href="https://coattheband.bandcamp.com/" target="_blank"><ion-icon name="musical-notes-sharp"></ion-icon></a>
-                        <Link className='px-6 text-3xl hover-pulse' to="/photography"><ion-icon name="camera-sharp"></ion-icon> </Link>
-                        <Link className='px-6 text-3xl hover-pulse' to="/portfolio"><ion-icon name="code-slash-sharp"></ion-icon> </Link>                                                                    
+                        <a className='px-6 text-4xl hover-pulse code-blue' href="https://coattheband.bandcamp.com/" target="_blank"><ion-icon name="musical-notes-sharp"></ion-icon></a>
+                        <Link className='px-6 text-4xl hover-pulse code-blue' to="/photography"><ion-icon name="camera-sharp"></ion-icon> </Link>
+                        <Link className='px-6 text-4xl hover-pulse code-blue' to="/portfolio"><ion-icon name="code-slash-sharp"></ion-icon> </Link>                                                                    
                     </div>
 
                   </div>

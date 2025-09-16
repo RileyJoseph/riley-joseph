@@ -187,6 +187,10 @@ html, body {
  }
 
  .dot{
+  font-size: 10px;
+ }
+
+ .dot-space{
   margin-right: 6px;
  }
 
@@ -296,6 +300,7 @@ html, body {
   }
   .spaceme{
     padding-left: 25px;
+    line-height: 130px;
   }
   .name{
     font-family: "Cinzel", serif;
@@ -307,7 +312,7 @@ html, body {
   }
   .info{
     width: 100%;
-    font-family: "Cinzel", serif;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     z-index: 22;
     font-style: normal;
@@ -319,10 +324,15 @@ html, body {
     }
     .left{
       text-align: left;
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     }
     .right{
       text-align: right;
     }
+    .subheading{
+      font-size: 20px;
+      font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    }    
   }
 }
 
@@ -1144,9 +1154,15 @@ footer{
 @media (width <= 1100px) {
   .welcome-text{
     /* margin-top: 55vh; */
-    justify-content: space-evenly;
+    justify-content: center;
     .name{
       font-size: 52px;
+    }
+    .spaceme{
+      line-height: 60px;
+    }
+    .circle-headshot{
+      padding: 20px 0px;
     }
     .info{
       font-size: 14px;
@@ -1157,6 +1173,11 @@ footer{
       .left, .subheading{
         text-align: center;
         width: 100%;
+      }
+      .subheading{
+        display: none;
+        font-size: 20px;
+        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
       }
     }
     .inline-only{
@@ -1298,6 +1319,9 @@ footer{
   .welcome-text{
     .spaceme{
       /* padding-left: 20px; */
+    }
+    .info .subheading{
+      /* display: inline; */
     }
   }
   .no-mobile{
