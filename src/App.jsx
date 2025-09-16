@@ -75,7 +75,7 @@ function App() {
                         <h2 className='subheading text-right md:w-2/4'>{greeting}</h2>
                       </div>
                     </div>
-                    <div className='circle-headshot second-third'>
+                    <div className='circle-headshot second-third pb-6'>
                       <img src="/images/closeup-bw.JPG" alt="Riley Joseph" className="headshot w-46 h-46 rounded-full mb-4 shadow-lg"/>
                     </div>
                     <div className='md:w-3/4 code third-third no-mobile'>
