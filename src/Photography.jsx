@@ -30,9 +30,9 @@ function Photography() {
   }, []);
 
   return (
-    <div className="min-h-screen p-8 flex flex-col app-body all">
+    <div className="min-h-screen p-8 flex flex-col app-body all bg-white">
 
-      <div id="" class="hero-photo film-hero pulse-border-bottom">
+      <div id="" className="hero-photo film-hero pulse-border-bottom">
         <div className='hero-text'>
           <h1>FILM</h1>
           <p>Link to Store Coming Soon</p>

@@ -63,13 +63,13 @@ function App() {
                   {/* <div className="sun"></div> */}
                   <div className={`overlay glitch ${bgColor}`}></div>
                   
-                  <div className="min-h-screen welcome-text flex flex-col items-center text-center lg:w-3/4 pt-40 pb-40">              
+                  <div className="min-h-screen welcome-text flex flex-col items-center text-center lg:w-3/4 pt-30 pb-40">              
                     <div className='first-third'>
                       <h1 className="name text-2xl font-bold ml-auto mr-auto text-center spaceme">Riley Joseph</h1>
                       <div className="info flex justify-between w-full px-8 md:w-2/4">
                         <span className="left flex flex-col text-left jobs">                      
-                          <span>Software Engineer ● Web Developer <span className="dot inline-only">●</span></span>                      
-                          <span>Musician ● Photographer</span>
+                          <span className="text-">Software Engineer ● Web Developer</span> <span className="dot inline-only">●</span>
+                          <span className="text-">Musician ● Photographer</span>
                         </span>
                         {/* <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="054629d7-56c4-4544-9460-33acd5351eb5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>                     */}
                         <h2 className='subheading text-right md:w-2/4'>{greeting}</h2>
@@ -78,7 +78,7 @@ function App() {
                     <div className='circle-headshot second-third'>
                       <img src="/images/closeup-bw.JPG" alt="Riley Joseph" className="headshot w-46 h-46 rounded-full mb-4 shadow-lg"/>
                     </div>
-                    <div className='md:w-3/4 code third-third'>
+                    <div className='md:w-3/4 code third-third no-mobile'>
                       <h3>Ceritifed AWS Cloud Practitioner</h3>
                       {/* Frontend Development (Blue) */}
                       <span className="code-blue">HTML</span> <span className="dot">●</span> 
@@ -131,20 +131,18 @@ function App() {
                       <span className="code-green">JIRA</span> 
 
                     </div>
+                    <div className='mobile-only'>
+                        <a className='px-6 text-3xl hover-pulse' href="https://coattheband.bandcamp.com/" target="_blank"><ion-icon name="musical-notes-sharp"></ion-icon></a>
+                        <Link className='px-6 text-3xl hover-pulse' to="/photography"><ion-icon name="camera-sharp"></ion-icon> </Link>
+                        <Link className='px-6 text-3xl hover-pulse' to="/portfolio"><ion-icon name="code-slash-sharp"></ion-icon> </Link>                                                                    
+                    </div>
 
                   </div>
-                  {/* <div className="links bottom-landing-links absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full max-w-4xl flex justify-between items-center px-8">
-                    <Link to="/portfolio" className="hero-links px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
-                      Portfolio
-                    </Link>
-                    <Link to="/bio" className="hero-links px-6 py-3 text-white transition duration-300 hover:bg-gray-600">
-                      About Me
-                    </Link>
-                  </div> */}
                                             
                     <Link 
                       to="/contact" 
-                      className="fixed right-10 top-1/2 -translate-y-1/2 transform-gpu hire-me-btn bg-white text-black px-6 py-11 rounded-full shadow-lg text-lg font-semibold hover:bg-gray-300"
+                      className="fixed right-10 top-1/2 -translate-y-1/2 transform-gpu hire-me-btn bg-white 
+                      text-black px-6 py-11 rounded-full shadow-lg text-lg font-semibold hover:bg-gray-300"
                     >
                       Hire Me
                     </Link>

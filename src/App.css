@@ -108,6 +108,21 @@ html, body {
   color: white;
 }
 
+.btn-black{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.circle-headshot .headshot{
+  border: 2px solid white;
+}
+
+.text-pulse{
+  color: var(--primary-color);
+  animation: glowPulse 2s infinite;
+}
+
 .dropdown-ul{
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
@@ -127,8 +142,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* min-height: 900px; */
-  /* min-height: 100vh; */
   position: relative;
   overflow: hidden;
  }
@@ -219,6 +232,10 @@ html, body {
   p{
     font-size: 28px;
   }
+}
+
+.mobile-only{
+  display: none;
 }
 
 .intro-block, .outro-block{
@@ -1282,6 +1299,12 @@ footer{
     .spaceme{
       /* padding-left: 20px; */
     }
+  }
+  .no-mobile{
+    display: none;
+  }
+  .mobile-only{
+    display: inline;
   }
 }
 
