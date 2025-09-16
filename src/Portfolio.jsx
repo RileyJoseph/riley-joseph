@@ -30,9 +30,39 @@ const sassPortfolioItems = [
 
 const Portfolio = () => {
   return (
-    <div className="relative min-h-screen items-center p-6 portfolio all w-full">
-    <div className="overlay"></div>
-    <div className={`overlay glitch`}></div>   
+    // <div className="relative min-h-screen items-center p-6 portfolio all w-full">
+    <div className="min-h-screen p-8 flex flex-col app-body all">
+      <div className="overlay"></div>
+      <div className={`overlay glitch`}></div>   
+      <div id="bio" className="bio flex flex-col md:flex-row ">
+      
+        <div className="bio-headshot w-full md:w-1/3 min-h-[300px] md:h-auto bg-cover bg-center bg-no-repeat object-cover"
+            style={{ backgroundImage: "url('/images/matrix.gif')" }}>
+        </div>
+
+        <div className="info flex-1 p-4 md:pl-16 text-center md:text-left">
+          <h2 className="name font-bold">Dev</h2>
+          <p className='subtitle py-4 font-semibold'>Software Engineer, Web Developer</p>
+          <div className='bio-text'>
+            <p>
+              Currently the CTO and founding partner of Proper Conduct, an all-purpose ad and branding agency in Oklahoma City. Riley has
+              been a software developer for over a decade, worked at multiple startups, small and large all-purpose agencies, 
+              developed enterprise software and managed databases with hundreds of thousands of users.
+            </p> 
+              <br />
+            <p>
+              To see small overview of past work, please scroll down. To reach out about work, please visit the contact page or visit 
+              Proper Conduct's website and fill out their contact form. Our email is always open.
+            </p>
+          </div>
+          <div className='buttons pt-8'>
+            <a className='btn btn-white' href="https://www.properconduct.com/" target="_blank">Proper Conduct</a>
+            {/* <Link className='btn btn-white ml-1' to="/photography">Photography</Link> */}
+            <a className='btn btn-white ml-1' href="https://github.com/RileyJoseph" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    <div className="items-center p-6 portfolio all w-full">
     <div className="portfolio-container">
       <h1 className="text-3xl font-bold text-center mb-18 pulse-border-bottom inline">Dev Portfolio</h1>
       {/* <h2>SaaS</h2> */}
@@ -87,6 +117,7 @@ const Portfolio = () => {
         </div>
       </a>
     </div> 
+    </div>
     </div>
   );
 };
