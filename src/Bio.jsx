@@ -34,7 +34,7 @@ function Bio() {
         </p>
       </div>
       <div className='buttons pt-8'>
-        <a className='btn btn-white' href="https://coattheband.bandcamp.com/" target="_blank">Music</a>
+        <Link className='btn btn-white' to="/music">Music</Link>
         <Link className='btn btn-white ml-1' to="/photography">Photography</Link>
         <a className='btn btn-white ml-1' href="/portfolio">Work</a>
       </div>

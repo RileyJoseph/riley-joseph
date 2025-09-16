@@ -36,13 +36,13 @@ const Portfolio = () => {
       <div className={`overlay glitch`}></div>   
       <div id="bio" className="bio flex flex-col md:flex-row ">
       
-        <div className="bio-headshot w-full md:w-1/3 min-h-[300px] md:h-auto bg-cover bg-center bg-no-repeat object-cover"
-            style={{ backgroundImage: "url('/images/matrix.gif')" }}>
+        <div className="bio-headshot w-full md:w-1/3 min-h-[300px] md:h-auto bg-cover bg-bottom bg-no-repeat object-cover"
+            style={{ backgroundImage: "url('/images/photography/fog.jpg')" }}>
         </div>
 
         <div className="info flex-1 p-4 md:pl-16 text-center md:text-left">
           <h2 className="name font-bold">Need a Website?</h2>
-          <p className='subtitle py-4 font-semibold'>Software Engineer, Web Developer</p>
+          <p className='subtitle py-4 font-semibold'>Full-Service Web Development</p>
           <div className='bio-text'>
             <p>
               I'm available for hire. Do you want a simple 1-page site? Do you want a CMS site like Wordpress, WIX, or Squarespace built? Or maybe a fullly custom application built with spreadsheet parsing, database management, file scanning, or AI integration? <span className="font-bold">I can help.</span> Please visit the contact page for information on reaching out or visit Proper Conduct's website and fill out our contact form.
@@ -56,74 +56,70 @@ const Portfolio = () => {
             </p>
           </div>
           <div className='buttons pt-8 flex flex-col justify-around'>
-            {/* <a href="https://github.com/RileyJoseph" target="_blank" className="text-white text-4xl">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-             */}
-
-            <a className='btn btn-hollow text-center' href="https://www.properconduct.com/" target="_blank">Proper Conduct</a>
-
-
-            
-            <a className='btn btn-white mt-2 text-center' href="/contact">Contact Me</a>
+            <a className='btn btn-hollow text-center pc-btn' href="https://www.properconduct.com/" target="_blank">Proper Conduct</a>
+            <a className='btn btn-white mt-2 text-center btn-inverse' href="/contact">Contact Me</a>
           </div>
         </div>
       </div>
-    <div className="items-center p-6 portfolio all w-full">
-    <div className="portfolio-container">
-      <h1 className="text-3xl font-bold text-center mb-18 pulse-border-bottom inline">Dev Portfolio</h1>
-      {/* <h2>SaaS</h2> */}
-      <div className="flex flex-col pt-18">
-      <h2 className="text-2xl font-bold text-center my-12">SaaS Engineering</h2>
-        {sassPortfolioItems.map((item) => (
-          <article key={item.id} className="flex flex-col md:flex-row pb-10">
-            <div className="relative group overflow-hidden sass md:w-1/3 w-full flex mr-4 flex-col justify-center">
-            {/* <div className="relative group overflow-hidden sass w-1/3 flex mr-4 flex-col justify-center border border-white rounded-lg p-4 hover-pulse"> */}
-              <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/3 pb-4 hidden md:inline" />
-              <div className="title-overlay flex items-center justify-center hidden md:inline">
-                <h2 className="text-white text-xl font-semibold pb-0">{item.name}</h2>
+
+          {/* <br /> */}
+          {/* <span>DEVELOPMENT</span></h1> */}
+        
+    <div className="items-center portfolio all w-full">
+      <div className="portfolio-container">
+        <h1 className="text-8xl inter-spanning my-12">SaaS Engineering</h1>
+        {/* <h2>SaaS</h2> */}
+        <div className="flex flex-col">
+        {/* <h2 className="text-2xl font-bold text-center my-12">SaaS Engineering</h2> */}
+          {sassPortfolioItems.map((item) => (
+            <article key={item.id} className="flex flex-col md:flex-row pb-10">
+              <div className="relative group overflow-hidden sass md:w-1/3 w-full flex mr-4 flex-col justify-center">
+              {/* <div className="relative group overflow-hidden sass w-1/3 flex mr-4 flex-col justify-center border border-white rounded-lg p-4 hover-pulse"> */}
+                <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/3 pb-4 hidden md:inline" />
+                <div className="title-overlay flex items-center justify-center hidden md:inline">
+                  <h2 className="text-white text-xl font-semibold pb-0">{item.name}</h2>
+                </div>
+              </div>
+              <div className="md:w-2/3 w-full p-4 md:ml-4 text-left border border-white rounded-lg hover-pulse flex md:flex-col flex-col justify-center relative">
+              {/* <div className="md:w-2/3 w-full p-4 md:ml-4 text-left border border-white rounded-lg hover-pulse flex md:flex-col flex-row justify-center relative"></div> */}            
+                  <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/4 inline md:hidden height-120 inner-logo m-auto px-4 margin-inherit sm:my-auto" />
+                  <div className="flex-col w-full">
+                    <h3 className="text-2xl font-bold">{item.name}</h3>
+                    {/* <span className="text-sm absolute top-5 right-5 font-bold justify-center sm:visible md:visible">SaaS</span> */}
+                    {/* <p className="subtitle text-sm text-bold py-4">{item.subtitle}</p> */}
+                    <p className="text-sm">{item.description}</p>
+                    <p className="text-sm mr-5 mt-4">{item.technology}</p>
+                  </div>
+              </div>
+            </article>
+          ))}
+        </div>
+        <h2 className="text-2xl font-bold text-center my-12 inter-spanning">Full-Stack Development</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {portfolioItems.map((item) => (
+            <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg  project">
+              <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60" />
+              <div className="title-overlay absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
+                <p className="text-white text-2xl font-semibold">{item.name}</p>
+                {/* <p className="text-white text-2xl font-semibold">{item.description}</p> */}
               </div>
             </div>
-            <div className="md:w-2/3 w-full p-4 md:ml-4 text-left border border-white rounded-lg hover-pulse flex md:flex-col flex-col justify-center relative">
-            {/* <div className="md:w-2/3 w-full p-4 md:ml-4 text-left border border-white rounded-lg hover-pulse flex md:flex-col flex-row justify-center relative"></div> */}            
-                <img src={item.image} alt={item.name} className="client object-cover object-center mx-auto w-1/4 inline md:hidden height-120 inner-logo m-auto px-4 margin-inherit sm:my-auto" />
-                <div className="flex-col w-full">
-                  <h3 className="text-2xl font-bold">{item.name}</h3>
-                  {/* <span className="text-sm absolute top-5 right-5 font-bold justify-center sm:visible md:visible">SaaS</span> */}
-                  {/* <p className="subtitle text-sm text-bold py-4">{item.subtitle}</p> */}
-                  <p className="text-sm">{item.description}</p>
-                  <p className="text-sm mr-5 mt-4">{item.technology}</p>
-                </div>
-            </div>
-          </article>
-        ))}
-      </div>
-      <h2 className="text-2xl font-bold text-center my-12">Full-Stack Development</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {portfolioItems.map((item) => (
-          <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg  project">
-            <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60" />
-            <div className="title-overlay absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
-              <p className="text-white text-2xl font-semibold">{item.name}</p>
-              {/* <p className="text-white text-2xl font-semibold">{item.description}</p> */}
-            </div>
-          </div>
-        ))}
-      </div>
-      <h2 className="text-2xl font-bold text-center my-12">For Fun</h2>
-      <a
-        key="platformer"
-        className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer display-block"
-        target="_blank"
-        href="https://project-manager-curve-50566.netlify.app/"
-        rel="noopener noreferrer"
-      >
-        {/* <img src="/" alt="Platformer" className="client object-cover object-top w-full h-80 md:h-96" /> */}
-        <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-70">
-          <p className="text-white text-3xl font-semibold">Play My Platformer</p>
+          ))}
         </div>
-      </a>
-    </div> 
+        <h2 className="text-2xl font-bold text-center my-12">For Fun</h2>
+        <a
+          key="platformer"
+          className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer display-block"
+          target="_blank"
+          href="https://project-manager-curve-50566.netlify.app/"
+          rel="noopener noreferrer"
+        >
+          {/* <img src="/" alt="Platformer" className="client object-cover object-top w-full h-80 md:h-96" /> */}
+          <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-70">
+            <p className="text-white text-3xl font-semibold">Play My Platformer</p>
+          </div>
+        </a>
+      </div> 
     </div>
     </div>
   );
