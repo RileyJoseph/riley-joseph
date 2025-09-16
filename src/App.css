@@ -147,7 +147,7 @@ html, body {
  }
 
  .headshot{
-  z-index: 20;
+  /* z-index: 20; */
  }
 
  .bio-headshot{
@@ -1281,7 +1281,7 @@ footer{
 
 @media (width <= 768px) {
   .bio{
-    padding-top: 0px;
+    padding-top: 80px;
     .name{
       padding-top: 0px;
     }
