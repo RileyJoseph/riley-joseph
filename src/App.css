@@ -114,6 +114,12 @@ html, body {
   border: 1px solid white;
 }
 
+.btn-hollow{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
 .circle-headshot .headshot{
   border: 2px solid white;
 }
@@ -1130,6 +1136,15 @@ footer{
   .resume-download:hover{
     cursor: pointer;
   }
+}
+
+.procon-logo{
+  border: 2px solid white;
+  padding: 4px 12px;
+  margin-top: 8px;
+}
+.procon-logo:hover{
+  background-color: #ff6646;
 }
 
 @media (width <= 1375px) {

@@ -29,7 +29,7 @@ const Footer = () => {
           While I can solve most of your coding problems, sometimes you want the full team at your back. 
           Proper Conduct is an all-purpose agency that offers branding, marketing, security, AI integration and more.
         </p>      
-        <a href="https://www.properconduct.com/" target="_blank" className="inline-block pt-2 procon-logo">
+        <a href="https://www.properconduct.com/" target="_blank" className="inline-block pt-2 procon-logo text-sm">
           <img src="/images/procon-white.png" alt="Proper Conduct Logo" />
         </a>  
       </div>
@@ -42,7 +42,7 @@ const Footer = () => {
         <ul className="text-sm space-y-1">
           <li className="pt-2"><a href="/" className="hover:underline ">Home</a></li>
           <li className="pt-2"><a href="/bio" className="hover:underline ">About Me</a></li>       
-          <li className="pt-2"><a href="/portfolio" className="hover:underline ">Dev Portfolio</a></li>
+          <li className="pt-2"><a href="/portfolio" className="hover:underline ">Web Dev</a></li>
           <li className="pt-2"><a href="/music" className="hover:underline ">Music</a></li>      
           <li className="pt-2"><a href="/photography" className="hover:underline ">Photography</a></li>          
           <li className="pt-2"><a href="/contact" className="hover:underline ">Contact</a></li>          

@@ -41,24 +41,31 @@ const Portfolio = () => {
         </div>
 
         <div className="info flex-1 p-4 md:pl-16 text-center md:text-left">
-          <h2 className="name font-bold">Dev</h2>
+          <h2 className="name font-bold">Need a Website?</h2>
           <p className='subtitle py-4 font-semibold'>Software Engineer, Web Developer</p>
           <div className='bio-text'>
             <p>
-              Currently the CTO and founding partner of Proper Conduct, an all-purpose ad and branding agency in Oklahoma City. Riley has
-              been a software developer for over a decade, worked at multiple startups, small and large all-purpose agencies, 
-              developed enterprise software and managed databases with hundreds of thousands of users.
+              I'm available for hire. Do you want a simple 1-page site? Do you want a CMS site like Wordpress, WIX, or Squarespace built? Or maybe a fullly custom application built with spreadsheet parsing, database management, file scanning, or AI integration? <span className="font-bold">I can help.</span> Please visit the contact page for information on reaching out or visit Proper Conduct's website and fill out our contact form.
+              <br />
+              <br />
+               <span className="font-bold">My email is open 24/7.</span>
             </p> 
               <br />
             <p>
-              To see small overview of past work, please scroll down. To reach out about work, please visit the contact page or visit 
-              Proper Conduct's website and fill out their contact form. Our email is always open.
+              Work porfolio overview is below. Please reach out if you have any questions.
             </p>
           </div>
-          <div className='buttons pt-8'>
-            <a className='btn btn-white' href="https://www.properconduct.com/" target="_blank">Proper Conduct</a>
-            {/* <Link className='btn btn-white ml-1' to="/photography">Photography</Link> */}
-            <a className='btn btn-white ml-1' href="https://github.com/RileyJoseph" target="_blank">GitHub</a>
+          <div className='buttons pt-8 flex flex-col justify-around'>
+            {/* <a href="https://github.com/RileyJoseph" target="_blank" className="text-white text-4xl">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+             */}
+
+            <a className='btn btn-hollow text-center' href="https://www.properconduct.com/" target="_blank">Proper Conduct</a>
+
+
+            
+            <a className='btn btn-white mt-2 text-center' href="/contact">Contact Me</a>
           </div>
         </div>
       </div>
