@@ -1280,7 +1280,7 @@ footer{
 @media (width <= 700px) {
   .welcome-text{
     .spaceme{
-      padding-left: 0px;
+      /* padding-left: 20px; */
     }
   }
 }
