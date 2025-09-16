@@ -14,6 +14,7 @@ import Contact from "./Contact";
 import Bio from './Bio.jsx';
 import Photography from './Photography.jsx';
 import PhotoDetail from './PhotoDetail';
+import Music from './Music.jsx';
 
 const greetings = [
   "Hey, nice to meet you.",
@@ -132,7 +133,7 @@ function App() {
 
                     </div>
                     <div className='mobile-only'>
-                        <a className='px-6 text-4xl hover-pulse code-blue' href="https://coattheband.bandcamp.com/" target="_blank"><ion-icon name="musical-notes-sharp"></ion-icon></a>
+                        <Link className='px-6 text-4xl hover-pulse code-blue' to="/music"><ion-icon name="musical-notes-sharp"></ion-icon></Link>
                         <Link className='px-6 text-4xl hover-pulse code-blue' to="/photography"><ion-icon name="camera-sharp"></ion-icon> </Link>
                         <Link className='px-6 text-4xl hover-pulse code-blue' to="/portfolio"><ion-icon name="code-slash-sharp"></ion-icon> </Link>                                                                    
                     </div>
@@ -161,6 +162,7 @@ function App() {
           <Route path="/photography" element={<Photography />} />     
           <Route path="/portfolio/:url" element={<ProjectDetails />} />
           <Route path="/photography/:slug" element={<PhotoDetail />} />
+          <Route path="/music" element={<Music />} />     
           {/* <Route path="/portfolio/:url" element={<ProjectDetails />} /> */}
         </Routes>
       </div>

@@ -152,6 +152,7 @@ html, body {
 
  .bio-headshot{
   height: 620px;
+  /* border: 2px solid white; */
  }
 
  .code{
@@ -217,6 +218,13 @@ html, body {
 }
 
 .film-hero{
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0 ,.2), rgba(0,0,0,.5)), url("/images/photography/seitan-limania.jpg");
+  background-size: cover;
+  background-position: 50% 60%;
+}
+
+.music-hero{
   position: relative;
   background-image: linear-gradient(rgba(0,0,0 ,.2), rgba(0,0,0,.5)), url("/images/photography/seitan-limania.jpg");
   background-size: cover;

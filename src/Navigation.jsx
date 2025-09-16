@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-6 text-lg">
           <li><Link to="/bio" className="nav-btn py-2" onClick={handleCloseMenu}>About</Link></li>
-          <li><a target="_blank" href="https://coattheband.bandcamp.com/" className="nav-btn py-2">Music</a></li>
+          <li><Link to="/music" className="nav-btn py-2">Music</Link></li>
           <li><Link to="/photography" className="nav-btn py-2">Photography</Link></li>
           <li><Link to="/portfolio" className="nav-btn py-2" onClick={handleCloseMenu}>Dev</Link></li>          
           <li><Link to="/contact" className="nav-btn py-2" onClick={handleCloseMenu}>Contact</Link></li>

@@ -43,7 +43,7 @@ const Footer = () => {
           <li className="pt-2"><a href="/" className="hover:underline ">Home</a></li>
           <li className="pt-2"><a href="/bio" className="hover:underline ">About Me</a></li>       
           <li className="pt-2"><a href="/portfolio" className="hover:underline ">Dev Portfolio</a></li>
-          <li className="pt-2"><a href="/https://coattheband.bandcamp.com/" className="hover:underline ">Music</a></li>      
+          <li className="pt-2"><a href="/music" className="hover:underline ">Music</a></li>      
           <li className="pt-2"><a href="/photography" className="hover:underline ">Photography</a></li>          
           <li className="pt-2"><a href="/contact" className="hover:underline ">Contact</a></li>          
         </ul>
