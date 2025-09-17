@@ -43,7 +43,7 @@ export default function TechnologyIcons() {
   return (
     <div className="icons">
         <div className="tech-icons">
-          <ul className="icon-row md:justify-end justify-center p-8">
+          <ul className="icon-row md:justify-end justify-center md:p-8 p-4">
           {ICONS.map((l, i) => (
             <li className="icon-cell pt-8" key={`${l.name}-${i}`}>
               <a className="icon-item" href="#" aria-label={l.name} title={l.name}>
