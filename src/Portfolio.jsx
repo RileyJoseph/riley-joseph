@@ -71,8 +71,8 @@ const Portfolio = () => {
 
     <div className="items-center portfolio all w-full pt-28">
         {/* <h2 className="text-6xl inter-spanning my-12">SaaS</h2> */}
-        <div className="flex flex-col">
-        <h2 className="text-2xl font-bold text-center my-12">SaaS Engineering</h2>
+        {/* <div className="flex flex-col">
+          <h2 className="text-2xl font-bold text-center my-12">SaaS Engineering</h2>
           {sassPortfolioItems.map((item) => (
             <article key={item.id} className="flex flex-col md:flex-row pb-10 md:mr-8">
               <div className="relative group overflow-hidden sass md:w-1/3 w-full flex mr-4 flex-col justify-center">
@@ -91,8 +91,10 @@ const Portfolio = () => {
               </div>
             </article>
           ))}
-        </div>
-        <h2 className="text-2xl font-bold text-center my-12 inter-spanning">Full-Stack Development</h2>
+        </div> */}
+
+        
+        <h2 className="text-2xl font-bold text-center my-12 inter-spanning">Previous Sites</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {portfolioItems.map((item) => (
             <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg  project">
