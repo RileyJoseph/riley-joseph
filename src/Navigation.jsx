@@ -21,7 +21,7 @@ const Navbar = () => {
           <li><Link to="/bio" className="nav-btn py-2" onClick={handleCloseMenu}>About</Link></li>
           <li><Link to="/music" className="nav-btn py-2">Music</Link></li>
           <li><Link to="/photography" className="nav-btn py-2">Photography</Link></li>
-          <li><Link to="/portfolio" className="nav-btn py-2" onClick={handleCloseMenu}>Web Dev</Link></li>          
+          <li><Link to="/portfolio" className="nav-btn py-2" onClick={handleCloseMenu}>Dev</Link></li>          
           <li><Link to="/contact" className="nav-btn py-2" onClick={handleCloseMenu}>Contact</Link></li>
         </ul>
         
@@ -41,7 +41,7 @@ const Navbar = () => {
               <li><Link to="/" className="nav-btn py-2" onClick={handleCloseMenu}>Home</Link></li>
               <li><a target="_blank" href="https://coattheband.bandcamp.com/" className="nav-btn py-2">Music</a></li>
               <li><Link to="/photography" className="nav-btn py-2" onClick={handleCloseMenu}>Photography</Link></li>
-              <li><Link to="/portfolio" className="nav-btn py-2" onClick={handleCloseMenu}>Web Dev</Link></li>
+              <li><Link to="/portfolio" className="nav-btn py-2" onClick={handleCloseMenu}>Dev</Link></li>
               <li><Link to="/bio" className="nav-btn py-2" onClick={handleCloseMenu}>About</Link></li>
               <li><Link to="/contact" className="nav-btn py-2" onClick={handleCloseMenu}>Contact</Link></li>
             </ul>

@@ -153,9 +153,9 @@ function Photography() {
           </Link>
         </div> */}
         <div className="gallery-img-container w-full md:w-1/3">
-          <Link to="/photography/beach" className="block">
+          <Link to="/photography/hannah" className="block">
             <img
-              className="gallery-img hover-lg w-full object-bottom object-cover tall"
+              className="gallery-img hover-lg w-full object-top90 object-cover tall"
               src="/images/photography/hannah.jpg"
               alt="lifeguard stand on a beach with a boat in the ocean in the background"
               loading="lazy"

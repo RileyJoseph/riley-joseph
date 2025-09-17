@@ -15,6 +15,8 @@ import Bio from './Bio.jsx';
 import Photography from './Photography.jsx';
 import PhotoDetail from './PhotoDetail';
 import Music from './Music.jsx';
+import Technology from './Technology.jsx';
+import LogoMarquee from './LogoMarquee.jsx';
 
 const greetings = [
   "Hey, nice to meet you.",
@@ -79,63 +81,22 @@ function App() {
                     <div className='circle-headshot second-third pb-6'>
                       <img src="/images/closeup-bw.JPG" alt="Riley Joseph" className="headshot w-46 h-46 rounded-full mb-4 shadow-lg"/>
                     </div>
-                    <div className='md:w-3/4 code third-third no-mobile'>
-                      <h3>Ceritifed AWS Cloud Practitioner</h3>
-                      {/* Frontend Development (Blue) */}
-                      <span className="code-blue">HTML</span> <span className="dot-space">●</span> 
-                      <span className="code-blue">CSS</span> <span className="dot-space">●</span> 
-                      <span className="code-blue">SCSS</span> <span className="dot-space">●</span> 
-                      <span className="code-blue">Tailwind</span> <span className="dot-space">●</span> 
-                      <span className="code-blue">UX</span> <span className="dot-space">●</span> 
-                      <span className="code-blue">UI</span> <span className="dot-space">●</span> 
-
-                      {/* JavaScript & Backend (Red) */}
-                      <span className="code-red">JavaScript</span> <span className="dot-space">●</span> 
-                      <span className="code-red">Node.js</span> <span className="dot-space">●</span> 
-                      <span className="code-red">TypeScript</span> <span className="dot-space">●</span>
-                      <span className="code-red">Express</span> <span className="dot-space">●</span>
-                      <span className="code-red">PHP</span> <span className="dot-space">●</span>
-
-                      {/* JavaScript Frameworks (Purple) */}
-                      <span className="code-purple">Vue</span> <span className="dot-space">●</span> 
-                      <span className="code-purple">React</span> <span className="dot-space">●</span> 
-                      <span className="code-purple">Angular</span> <span className="dot-space">●</span> 
-                      <span className="code-purple">Meteor</span> <span className="dot-space">●</span> 
-                      <span className="code-purple">Blaze</span> <span className="dot-space">●</span> 
-
-                      {/* Databases (Yellow) */}
-                      <span className="code-yellow">MongoDB</span> <span className="dot-space">●</span> 
-                      <span className="code-yellow">PostgreSQL</span> <span className="dot-space">●</span> 
-                      <span className="code-yellow">MySQL</span> <span className="dot-space">●</span> 
-
-                      {/* CMS & Website Builders (Green) */}
-                      <span className="code-green">Craft</span> <span className="dot-space">●</span> 
-                      <span className="code-green">WordPress</span> <span className="dot-space">●</span> 
-                      <span className="code-green">Shopify</span> <span className="dot-space">●</span> 
-                      <span className="code-green">WIX</span> <span className="dot-space">●</span> 
-                      <span className="code-green">Webflow</span> <span className="dot-space">●</span> 
-                      <span className="code-green">Squarespace</span> <span className="dot-space">●</span> 
-
-                      {/* DevOps & Tools (Blue) */}
-                      <span className="code-blue">Git</span> <span className="dot-space">●</span> 
-                      <span className="code-blue">NPM</span> <span className="dot-space">●</span>                                         
-                      <span className="code-blue">AWS</span> <span className="dot-space">●</span> 
-                      <span className="code-blue">Docker</span> <span className="dot-space">●</span> 
-                      <span className="code-blue">Gulp</span> <span className="dot-space">●</span> 
-                      <span className="code-blue">Yarn</span> <span className="dot-space">●</span> 
-                      <span className="code-blue">APIs</span> <span className="dot-space">●</span> 
-
-                      {/* Project & Team Management (Green) */}
-                      <span className="code-green">Team Management</span> <span className="dot-space">●</span> 
-                      <span className="code-green">Client Communication</span> <span className="dot-space">●</span> 
-                      <span className="code-green">Database Management</span> <span className="dot-space">●</span> 
-                      <span className="code-green">JIRA</span> 
-
-                    </div>
-                    <div className='mobile-only'>
-                        <Link className='px-6 text-4xl hover-pulse code-blue' to="/music"><ion-icon name="musical-notes-sharp"></ion-icon></Link>
-                        <Link className='px-6 text-4xl hover-pulse code-blue' to="/photography"><ion-icon name="camera-sharp"></ion-icon> </Link>
-                        <Link className='px-6 text-4xl hover-pulse code-blue' to="/portfolio"><ion-icon name="code-slash-sharp"></ion-icon> </Link>                                                                    
+                    {/* <Technology /> */}
+                    
+                    <div className='home-icons flex flex-row md:gap-12 gap-4'>
+                      <div>
+                        <Link className='px-6 hover-pulse code-blue' to="/music"><ion-icon name="musical-notes-sharp"></ion-icon></Link>
+                        <p>Music</p>
+                      </div>
+                      <div>
+                        <Link className='px-6 hover-pulse code-blue' to="/photography"><ion-icon name="camera-sharp"></ion-icon> </Link>
+                        <p>Photography</p>
+                      </div>
+                      <div>
+                        <Link className='px-6 hover-pulse code-blue' to="/portfolio"><ion-icon name="code-slash-sharp"></ion-icon> </Link>                                                                    
+                        <p>Dev</p>
+                      </div>
+                        
                     </div>
 
                   </div>
@@ -149,6 +110,8 @@ function App() {
                     </Link>
 
                 </div>
+
+                {/* <LogoMarquee speed={300} /> */}
 
               </div>
 

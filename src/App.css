@@ -185,13 +185,12 @@ html, body {
   overflow: hidden;
  }
 
- .headshot{
-  /* z-index: 20; */
- }
-
  .bio-headshot{
   height: 620px;
-  /* border: 2px solid white; */
+ }
+
+ .portfolio-left{
+  background-color: black;
  }
 
  .code{
@@ -199,7 +198,7 @@ html, body {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  /* margin-top: 30vh; */
+  font-size: 18px;
  }
 
  .inline-only{
@@ -287,6 +286,13 @@ html, body {
 
 .mobile-only{
   display: none;
+}
+
+.home-icons{
+  font-size: 50px;
+  p{
+    font-size: 18px;
+  }
 }
 
 .intro-block, .outro-block{
@@ -417,7 +423,7 @@ html, body {
   .name{
     font-size: 54px;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 48px;
+    line-height: 60px;
     padding-top: 125px;
   }
   .subtitle{
@@ -438,7 +444,38 @@ html, body {
       border-radius: 0px;
     }
   }
+}
 
+.web-dev{
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 1300px;
+  .name{
+    font-size: 54px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 60px;
+  }
+  .subtitle{
+    font-size: 16px;
+  }
+  .titles{
+    font-size: 28px;
+  }
+  p{
+    color: white;
+    font-size: 20px;
+    line-height: 32px;
+  }  
+  .bio-text{
+    font-size: 16px;
+  }
+  .buttons{
+    .btn{
+      border-radius: 0px;
+      font-size: 18px;
+    }
+  }
 }
 
 .photo-gallery-top{
@@ -489,7 +526,7 @@ html, body {
 .photo-gallery{
   position: relative;
   margin-top: 20px;
-  max-width: 1300px;
+  max-width: 98%;
   .tv-truck{
     background-position: 27% 50%;
   }  
@@ -528,14 +565,8 @@ html, body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 68px;
+  font-size: 38px;
   opacity: .8;
-  /* rotate: 90deg; */
-  /* position: absolute; */
-  /* right: 0; */
-  span{
-    /* padding-left: 20%; */
-  }
 }  
 
 .portfolio{
@@ -1272,7 +1303,7 @@ footer{
     font-size: 38px;
   }
   .code{
-    padding: 0px 10px;
+    padding: 10px 0px;
   }
   .links{
     .hero-links{
@@ -1283,6 +1314,16 @@ footer{
   .bio{
     padding-top: 60px;
     height: auto;
+  }
+  .web-dev{
+    .name{
+      font-size: 42px;
+      line-height: 48px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
   .headshot{
     position: relative;
@@ -1334,7 +1375,7 @@ footer{
     }    
   }
   .code{
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
   }
   .portfolio{
     .title-overlay{
@@ -1358,6 +1399,19 @@ footer{
       margin: auto;
      }
   }
+  .web-dev{
+    padding-top: 80px;
+    .name{
+      padding-top: 0px;
+    }
+    .subtitle{
+      font-size: 18px;
+    }
+    .bio-text{
+      text-align: left;
+      margin: auto;
+     }
+  }  
   .photo-gallery-top{
     width: 80%;
     margin: auto;
