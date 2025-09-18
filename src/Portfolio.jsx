@@ -2,13 +2,17 @@ import React from "react";
 import LogoMarquee from "./LogoMarquee";
 import Technology from "./Technology";
 import TechnologyIcons from "./TechnologyIcons";
+import EoteCards from "./EoteCards";
+import HumbleCards from "./HumbleCards";
+import ChisholmCards from "./ChisholmCards";
 import "./SlickBg.css";
+import "./Cards.css";
 import { BrowserRouter as Router, Route, Routes, Link, useParams } from "react-router-dom";
 
 const portfolioItems = [  
   { id: 1, name: "Orange Leaf", url:"orange-leaf", image: "/images/portfolio/orange-leaf.jpg", description: "Project details for Orange Leaf." },
   { id: 2, name: "Eote", url:"eote", image: "/images/portfolio/eote.jpg", description: "Project details for Eote." },
-  { id: 3, name: "Huble Donuts", url:"humble-donuts", image: "/images/portfolio/humble.jpg", description: "Project details for Huble Donutes." },    
+  { id: 3, name: "Humble Donuts", url:"humble-donuts", image: "/images/portfolio/humble.jpg", description: "Project details for Huble Donutes." },    
   { id: 4, name: "Armstrong Auditorium", url:"armstrong-auditorium", image: "/images/portfolio/armstrong.jpg", description: "Project details for Armstrong Auditorium." },
   { id: 5, name: "Solas", url:"solas", image: "/images/portfolio/solas-1.jpg", description: "Project details for Solas." },
   { id: 6, name: "Chisholm Creek", url:"chisholm-creek", image: "/images/portfolio/ccreek.jpg", description: "Project details for Chisholm Creek." },
@@ -70,6 +74,30 @@ const Portfolio = () => {
       <LogoMarquee speed={300} />       
 
     <div className="items-center portfolio all w-full pt-28">
+      <div className="no-mobile">
+        <h2 className="text-2xl font-bold text-center my-12 inter-spanning">EÔTÉ COFFEE</h2>
+        <EoteCards />
+        <h2 className="text-2xl font-bold text-center my-12 inter-spanning">HUMBLE DONUT CO.</h2>
+        <HumbleCards />
+        <h2 className="text-2xl font-bold text-center my-12 inter-spanning">CHISHOLM CREEK</h2>
+        <ChisholmCards />
+
+        {/* <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-70">
+          <p className="text-white text-3xl font-semibold">Play My Platformer</p>
+        </div> */}
+          {/* <h2 className="text-2xl font-bold text-center my-12">For Fun</h2> */}
+          <div className="title-overlay items-center justify-center bg-black bg-opacity-40 opacity-70 transition-opacity duration-300 group-hover:opacity-70 mt-12">
+            <p className="text-white text-3xl font-semibold">Play My Platformer</p>
+            <p>get to the other side of the castle and kill <s>Bill</s> your evil twin!</p>
+          </div>    
+          <a
+            key="platformer"
+            className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer display-block"
+            target="_blank"
+            href="https://project-manager-curve-50566.netlify.app/"
+            rel="noopener noreferrer"
+          ></a>
+        </div>
         {/* <h2 className="text-6xl inter-spanning my-12">SaaS</h2> */}
         {/* <div className="flex flex-col">
           <h2 className="text-2xl font-bold text-center my-12">SaaS Engineering</h2>
@@ -93,32 +121,39 @@ const Portfolio = () => {
           ))}
         </div> */}
 
-        
-        <h2 className="text-2xl font-bold text-center my-12 inter-spanning">Previous Sites</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {portfolioItems.map((item) => (
-            <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg  project">
-              <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60" />
-              <div className="title-overlay absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
-                <p className="text-white text-2xl font-semibold">{item.name}</p>
-                {/* <p className="text-white text-2xl font-semibold">{item.description}</p> */}
+
+
+        <div className="mobile-only">
+          <h2 className="text-2xl font-bold text-center my-12 inter-spanning">Previous Sites</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {portfolioItems.map((item) => (
+              <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg  project">
+                <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60" />
+                <div className="title-overlay absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
+                  <p className="text-white text-2xl font-semibold">{item.name}</p>
+                  {/* <p className="text-white text-2xl font-semibold">{item.description}</p> */}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-        <h2 className="text-2xl font-bold text-center my-12">For Fun</h2>
-        <a
-          key="platformer"
-          className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer display-block"
-          target="_blank"
-          href="https://project-manager-curve-50566.netlify.app/"
-          rel="noopener noreferrer"
-        >
-          {/* <img src="/" alt="Platformer" className="client object-cover object-top w-full h-80 md:h-96" /> */}
-          <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-70">
-            <p className="text-white text-3xl font-semibold">Play My Platformer</p>
+            ))}
           </div>
-        </a>
+          {/* <h2 className="text-2xl font-bold text-center my-12">For Fun</h2> */}
+          <div className="bg-black">
+            <p className="text-white text-3xl font-semibold">Play My Platformer</p>
+            <p>get to the other side of the castle and kill <s>Bill</s> your evil twin!</p>          
+          </div>
+          <a
+            key="platformer"
+            className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer display-block"
+            target="_blank"
+            href="https://project-manager-curve-50566.netlify.app/"
+            rel="noopener noreferrer"
+          >
+            <img src="/" alt="Platformer" className="client object-cover object-top w-full h-80 md:h-96" />
+            <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-70">
+              <p className="text-white text-3xl font-semibold">Play My Platformer</p>
+            </div>
+          </a>
+        </div>
       </div> 
     </div>
   );

@@ -1,0 +1,186 @@
+/* ---------- ROOT COLORS (from $optionDefaultColours) ---------- */
+:root {
+  /* no Sass variables; we set per-card via nth-child below */
+}
+
+/* ---------- LAYOUT ---------- */
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  /* height: 100vh; */
+
+  font-family: 'Roboto', sans-serif;
+  transition: 0.25s;
+  /* background: #fff; */
+  color: #000;
+}
+
+/* Dark mode (choose ONE of these patterns) */
+/* .cards.dark { background: #232223; color: #fff; }                          add .dark on parent in React */
+/* @media (prefers-color-scheme: dark) { .cards { background: #232223; color:#fff; } } or auto dark mode */
+
+.cards .credit {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: inherit;
+}
+
+/* ---------- OPTIONS WRAPPER ---------- */
+.cards .options {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+
+  min-width: 600px;
+  max-width: 900px;
+  width: calc(100% - 100px);
+  height: 400px;
+}
+
+/* ---------- RESPONSIVE HIDES (converts the Sass @for) ----------
+   At narrower widths we hide some trailing .option cards and shrink min-width.
+   This mirrors the original Sass loop behavior.
+*/
+@media screen and (max-width: 718px) {            /* 798px - 1*80 */
+  .cards .options { min-width: 520px; }           /* 600px - 1*80 */
+  .cards .options .option:nth-child(5) { display: none; }
+}
+@media screen and (max-width: 638px) {            /* 798px - 2*80 */
+  .cards .options { min-width: 440px; }           /* 600px - 2*80 */
+  .cards .options .option:nth-child(4) { display: none; }
+}
+@media screen and (max-width: 558px) {            /* 798px - 3*80 */
+  .cards .options { min-width: 360px; }           /* 600px - 3*80 */
+  .cards .options .option:nth-child(3) { display: none; }
+}
+@media screen and (max-width: 478px) {            /* 798px - 4*80 */
+  .cards .options { min-width: 280px; }           /* 600px - 4*80 */
+  .cards .options .option:nth-child(2) { display: none; }
+}
+
+/* ---------- OPTION CARD ---------- */
+.cards .options .option {
+  position: relative;
+  overflow: hidden;
+
+  min-width: 60px;
+  margin: 10px;
+
+  /* Background uses CSS custom props (same cascade as Sass version) */
+  background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+  background-size: auto 120%;
+  background-position: center;
+
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+
+  border-radius: 30px; /* default radius when not active */
+}
+
+/* Map the six default colors */
+.cards .options .option:nth-child(1) { --defaultBackground: #ED5565; }
+.cards .options .option:nth-child(2) { --defaultBackground: #FC6E51; }
+.cards .options .option:nth-child(3) { --defaultBackground: #FFCE54; }
+.cards .options .option:nth-child(4) { --defaultBackground: #2ECC71; }
+.cards .options .option:nth-child(5) { --defaultBackground: #5D9CEC; }
+.cards .options .option:nth-child(6) { --defaultBackground: #AC92EC; }
+
+/* Active vs. inactive states */
+.cards .options .option.active {
+  flex-grow: 10000;
+  transform: scale(1);
+  max-width: 600px;
+  margin: 0;
+  border-radius: 40px;
+  background-size: auto 100%;
+}
+.cards .options .option:not(.active) {
+  flex-grow: 1;
+}
+
+/* Shadows and labels */
+.cards .options .option .shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  height: 120px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.cards .options .option.active .shadow {
+  /* heavier inner shadow when active */
+  box-shadow:
+    inset 0 -120px 120px -120px rgba(0,0,0,1),
+    inset 0 -120px 120px -100px rgba(0,0,0,1);
+}
+.cards .options .option:not(.active) .shadow {
+  bottom: -40px;
+  box-shadow:
+    inset 0 -120px 0px -120px rgba(0,0,0,1),
+    inset 0 -120px 0px -100px rgba(0,0,0,1);
+}
+
+.cards .options .option .label {
+  display: flex;
+  position: absolute;
+  right: 0;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.cards .options .option.active .label { bottom: 20px; left: 20px; }
+.cards .options .option:not(.active) .label { bottom: 10px; left: 10px; }
+
+.cards .options .option .label .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #fff;
+  color: var(--defaultBackground);
+}
+
+.cards .options .option .label .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 10px;
+  color: #fff;
+  white-space: pre;
+}
+
+.cards .options .option .label .info > div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+.cards .options .option .label .info .main {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.cards .options .option .label .info .sub {
+  transition-delay: 0.1s;
+}
+
+/* Info visibility shifts in/out based on active state */
+.cards .options .option.active .label .info > div {
+  left: 0;
+  opacity: 1;
+}
+.cards .options .option:not(.active) .label .info > div {
+  left: 20px;
+  opacity: 0;
+}
+
+.option { background: var(--optionBackground, #E6E9ED); background-size: auto 120%; background-position: center; }
+.option.active { background-size: auto 100%; }
