@@ -68,7 +68,7 @@ export default function LogoMarquee({ speed = 18 }) {
       >
         <div className="logo-track">
           {items.map((l, i) => (
-            <a className="logo-item" href="#" key={`${l.name}-${i}`} aria-label={l.name}>
+            <a className="logo-item" key={`${l.name}-${i}`} aria-label={l.name}>
               <img className="logo-img" src={l.src} alt={`${l.name} logo`} loading="lazy" decoding="async" />
             </a>
           ))}
