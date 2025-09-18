@@ -8,6 +8,7 @@ function Photography() {
   const LINKS_ENABLED = false;
 
   function Link({ children, className = '', ...props }) {
+    // turning off links to individual photos for now
     if (LINKS_ENABLED) {
       return <RouterLink className={className} {...props}>{children}</RouterLink>;
     }
@@ -16,18 +17,18 @@ function Photography() {
         role="link"
         aria-disabled="true"
         tabIndex={-1}
-        className={className + ' cursor-default'} // add 'opacity-60' if you want a visual cue
+        className={className + ' cursor-default'}
       >
         {children}
       </span>
     );
   }
 
-  // useEffect(() => {
-  //   const handleContextMenu = (e) => e.preventDefault();
-  //   document.addEventListener('contextmenu', handleContextMenu);
-  //   return () => document.removeEventListener('contextmenu', handleContextMenu);
-  // }, []);
+  useEffect(() => {
+    const handleContextMenu = (e) => e.preventDefault();
+    document.addEventListener('contextmenu', handleContextMenu);
+    return () => document.removeEventListener('contextmenu', handleContextMenu);
+  }, []);
 
   return (
     <div className="min-h-screen p-8 flex flex-col app-body all bg-white">

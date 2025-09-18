@@ -41,9 +41,10 @@ const ICONS = [
 
 export default function TechnologyIcons() {
   return (
-    <div className="icons">
-        <div className="tech-icons">
-          <ul className="icon-row md:justify-end justify-center md:p-8 p-4">
+    <div className="icons md:pt-8 pt-12">
+      <p className="mobile-only">Technologies</p>
+        <div className="tech-icons">                  
+          <ul className="icon-row md:justify-end justify-center md:pt-0 md:p-8 p-4">
           {ICONS.map((l, i) => (
             <li className="icon-cell pt-8" key={`${l.name}-${i}`}>
               <a className="icon-item" aria-label={l.name} title={l.name}>

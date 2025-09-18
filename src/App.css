@@ -275,7 +275,7 @@ html, body {
   left: 10%;
   text-align: left;
   h1{
-    font-family: "Orbitron", serif;
+    font-family: "Roboto", sans-serif;
     letter-spacing: 5px;
     font-size: 58px;
   }
@@ -422,11 +422,14 @@ html, body {
   width: 600px;
   .name{
     font-size: 54px;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Roboto Condensed", sans-serif;
     line-height: 60px;
     padding-top: 125px;
   }
   .subtitle{
+    font-weight: bold;
     font-size: 16px;
   }
   .titles{
@@ -453,7 +456,8 @@ html, body {
   max-width: 1300px;
   .name{
     font-size: 54px;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+    font-family: "Roboto Condensed", sans-serif;
     line-height: 60px;
   }
   .subtitle{

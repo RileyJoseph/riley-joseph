@@ -41,7 +41,7 @@ const Footer = () => {
         <p className="text-xl font-bold footer-heading">PAGES</p>
         <ul className="text-sm space-y-1">
           <li className="pt-2"><a href="/" className="hover:underline ">Home</a></li>
-          <li className="pt-2"><a href="/bio" className="hover:underline ">About Me</a></li>       
+          <li className="pt-2"><a href="/bio" className="hover:underline ">Bio</a></li>       
           <li className="pt-2"><a href="/music" className="hover:underline ">Music</a></li>      
           <li className="pt-2"><a href="/photography" className="hover:underline ">Photography</a></li>          
           <li className="pt-2"><a href="/portfolio" className="hover:underline ">Dev</a></li>
