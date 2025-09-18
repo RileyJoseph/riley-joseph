@@ -24,7 +24,7 @@ function Contact() {
       <div id="bio" className="bio flex flex-col md:flex-row "> 
         <img 
           className="bio-headshot w-full md:w-1/3 min-h-[300px] md:h-auto bg-cover bg-center bg-no-repeat object-cover"
-          src='/images/contact.jpg'>
+          src='/images/contactme.jpg'>
         </img>
 
         <div className="info flex-1 p-4 md:pl-16 text-center md:text-left">
