@@ -86,9 +86,9 @@ const Portfolio = () => {
           <p className="text-white text-3xl font-semibold">Play My Platformer</p>
         </div> */}
           {/* <h2 className="text-2xl font-bold text-center my-12">For Fun</h2> */}
-          <div className="title-overlay items-center justify-center bg-black bg-opacity-40 opacity-70 transition-opacity duration-300 group-hover:opacity-70 mt-12">
+          <div className="px-6 py-6 title-overlay items-center justify-center bg-black bg-opacity-40 opacity-70 transition-opacity duration-300 group-hover:opacity-70 mt-12">
             <p className="text-white text-3xl font-semibold">Play My Platformer</p>
-            <p>get to the other side of the castle and kill <s>Bill</s> your evil twin!</p>
+            <p>GET TO THE OTHER SIDE OF THE CASTLE AND KILL <s>Bill</s> YOUR EVIL TWIN!</p>   
           </div>    
           <a
             key="platformer"
@@ -129,28 +129,24 @@ const Portfolio = () => {
             {portfolioItems.map((item) => (
               <div key={item.id} className="relative group overflow-hidden rounded-lg shadow-lg  project">
                 <img src={item.image} alt={item.name} className="client object-cover object-top w-full h-60" />
-                <div className="title-overlay absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
-                  <p className="text-white text-2xl font-semibold">{item.name}</p>
+                <div className="title-overlay absolute inset-0 flex flex-col items-center justify-center md:opacity-0 transition-opacity duration-300 group-hover:opacity-75">
+                  {/* <p className="text-white text-2xl font-semibold">{item.name}</p> */}
                   {/* <p className="text-white text-2xl font-semibold">{item.description}</p> */}
                 </div>
               </div>
             ))}
           </div>
           {/* <h2 className="text-2xl font-bold text-center my-12">For Fun</h2> */}
-          <div className="bg-black">
+          <div className="bg-black px-6 py-6">
             <p className="text-white text-3xl font-semibold">Play My Platformer</p>
-            <p>get to the other side of the castle and kill <s>Bill</s> your evil twin!</p>          
+            <p>GET TO THE OTHER SIDE OF THE CASTLE AND KILL <s>Bill</s> YOUR EVIL TWIN!</p>          
+            {/* <p>get to the other side of the castle and kill <s>Bill</s> your evil twin!</p>           */}
           </div>
-          <a
-            key="platformer"
-            className="relative group overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer display-block"
-            target="_blank"
-            href="https://project-manager-curve-50566.netlify.app/"
-            rel="noopener noreferrer"
-          >
-            <img src="/" alt="Platformer" className="client object-cover object-top w-full h-80 md:h-96" />
-            <div className="title-overlay absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 opacity-70 md:opacity-0 transition-opacity duration-300 group-hover:opacity-70">
-              <p className="text-white text-3xl font-semibold">Play My Platformer</p>
+          <a key="platformer" target="_blank" href="https://project-manager-curve-50566.netlify.app/"
+            className="relative group mb-14 overflow-hidden rounded-lg shadow-lg cursor-pointer project col-span-full platformer display-block"
+            rel="noopener noreferrer">
+            <div className="title-overlay absolute inset-0 flex items-center justify-center md:opacity-0 transition-opacity duration-300 group-hover:opacity-70">
+              <p className="text-white text-3xl font-semibold">Click Here</p>
             </div>
           </a>
         </div>
