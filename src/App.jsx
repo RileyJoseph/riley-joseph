@@ -86,15 +86,15 @@ function App() {
                     <div className='home-icons flex flex-row md:gap-12 gap-4'>
                       <div>
                         <Link className='px-6 hover-pulse code-blue' to="/music"><ion-icon name="musical-notes-sharp"></ion-icon></Link>
-                        <p>Music</p>
+                        <p>music</p>
                       </div>
                       <div>
                         <Link className='px-6 hover-pulse code-blue' to="/photography"><ion-icon name="camera-sharp"></ion-icon> </Link>
-                        <p>Photography</p>
+                        <p>photography</p>
                       </div>
                       <div>
                         <Link className='px-6 hover-pulse code-blue' to="/portfolio"><ion-icon name="code-slash-sharp"></ion-icon> </Link>                                                                    
-                        <p>Dev</p>
+                        <p>dev</p>
                       </div>
                         
                     </div>

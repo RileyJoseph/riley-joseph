@@ -58,7 +58,7 @@ const Portfolio = () => {
             </p> 
               <br />
             <p>
-              Skills and work experience include (but isn't limited to) all featured icons and logos. Please reach out if you have any questions.
+              Skills and work experience include (but aren't limited to) all featured icons and logos. Please reach out if you have any questions.
             </p>
           </div>
           <div className='buttons pt-8 flex flex-col justify-around'>

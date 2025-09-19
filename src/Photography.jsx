@@ -87,7 +87,6 @@ function Photography() {
             />
           </Link>
         </div>
-
         <div className="gallery-img-container w-full md:w-1/3 even">
           <Link to="/photography/converse" className="block">
             <img
@@ -134,7 +133,7 @@ function Photography() {
 
 
         <div className="gallery-img-container w-full md:w-1/3">
-          <Link to="/photography/beach" className="block">
+          <Link to="/photography/chinatown" className="block">
             <img
               className="gallery-img hover-lg w-full bg-cover bg-no-repeat bg-right object-cover tall"
               src="/images/photography/chinatown.jpg"
@@ -154,11 +153,11 @@ function Photography() {
           </Link>
         </div> */}
         <div className="gallery-img-container w-full md:w-1/3">
-          <Link to="/photography/hannah" className="block">
+          <Link to="/photography/hannah-2" className="block">
             <img
-              className="gallery-img hover-lg w-full object-top90 object-cover tall"
-              src="/images/photography/hannah.jpg"
-              alt="lifeguard stand on a beach with a boat in the ocean in the background"
+              className="gallery-img hover-lg w-full object-[50%_35%] object-cover tall"
+              src="/images/photography/hannah-2.jpg"
+              alt="woman stands in front of an art"
               loading="lazy"
             />
           </Link>
@@ -224,7 +223,7 @@ function Photography() {
             <img
               className="gallery-img hover-lg w-full bg-cover bg-no-repeat bg-right object-cover"
               loading="lazy"
-              alt="inflatable raft sits on beach with clear water behind"
+              alt="the temple of athena"
               src="/images/photography/athena.jpg"
             />
           </Link>
@@ -245,7 +244,7 @@ function Photography() {
             <img
               className="gallery-img hover-lg w-full object-bottom object-cover tall"
               src="/images/photography/blue-church.jpg"
-              alt="lifeguard stand on a beach with a boat in the ocean in the background"
+              alt="a painter on top of a church paints the roof the same color as the sky"
               loading="lazy"
             />
           </Link>

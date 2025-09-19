@@ -291,7 +291,8 @@ html, body {
 .home-icons{
   font-size: 50px;
   p{
-    font-size: 18px;
+    font-size: 14px;
+    font-family: "Roboto Mono", monospace;
   }
 }
 
