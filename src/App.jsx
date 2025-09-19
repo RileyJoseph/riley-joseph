@@ -70,10 +70,14 @@ function App() {
                     <div className='first-third'>
                       <h1 className="name text-2xl font-bold ml-auto mr-auto text-center spaceme">Riley Joseph</h1>
                       <div className="info flex justify-between w-full px-8 md:w-2/4">
-                        <span className="left flex flex-col text-left jobs">                      
+                        <span className="left flex flex-col text-left jobs no-mobile">                      
                           <span className="text-">Software Engineer <span className='dot'>●</span> Web Developer</span> <span className="mr-2 inline-only dot">●</span>
                           <span className="text-">Musician <span className='dot'>●</span> Photographer</span>
                         </span>
+                        <span className="left flex flex-col text-left jobs mobile-only">                      
+                          <span className="text-">Software Engineer <span className='dot'>●</span> Web Developer</span> <br />
+                          <span className="text-">Musician <span className='dot'>●</span> Photographer</span>
+                        </span>                        
                         {/* <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="054629d7-56c4-4544-9460-33acd5351eb5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>                     */}
                         <h2 className='subheading text-right md:w-2/4'>{greeting}</h2>
                       </div>
