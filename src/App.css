@@ -1406,6 +1406,7 @@ footer{
   }
   .web-dev{
     padding-top: 80px;
+    padding-bottom: 0px;
     .name{
       padding-top: 0px;
     }
@@ -1417,6 +1418,9 @@ footer{
       margin: auto;
      }
   }  
+  .portfolio{
+    padding-top: 0px;
+  }
   .photo-gallery-top{
     width: 80%;
     margin: auto;

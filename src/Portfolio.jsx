@@ -70,9 +70,9 @@ const Portfolio = () => {
           <TechnologyIcons />
         </div>      
       </div>
-
-      <LogoMarquee speed={300} />       
-
+      <div className="no-mobile">
+        <LogoMarquee speed={300} />       
+      </div>
     <div className="items-center portfolio all w-full pt-28">
       <div className="no-mobile">
         <h2 className="text-2xl font-bold text-center my-12 inter-spanning">EÔTÉ COFFEE</h2>
