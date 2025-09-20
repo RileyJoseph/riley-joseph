@@ -10,7 +10,7 @@ function Bio() {
   <div className="overlay"></div>
   <div className={`overlay glitch`}></div>    
 
-  <div id="bio" className="bio flex flex-col md:flex-row ">
+  <div id="bio" className="bio flex flex-col md:flex-row">
   
     <div className="bio-headshot w-full md:w-1/3 min-h-[300px] md:h-auto bg-cover bg-center bg-no-repeat object-cover"
         style={{ backgroundImage: "url('/images/photography/canopy-headshot-bw.jpg')" }}>
@@ -35,7 +35,7 @@ function Bio() {
       </div>
       <div className='buttons pt-8'>
         <Link className='btn btn-white' to="/music">Music</Link>
-        <Link className='btn btn-white ml-1' to="/photography">Photography</Link>
+        <Link className='btn btn-white' to="/photography">Photography</Link>
         <a className='btn btn-white ml-1' href="/portfolio">Work</a>
       </div>
     </div>

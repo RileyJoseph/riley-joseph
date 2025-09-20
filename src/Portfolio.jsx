@@ -44,7 +44,7 @@ const Portfolio = () => {
       <div className={`overlay glitch`}></div>   
       
       <div id="bio" className="web-dev flex flex-col md:flex-row md:px-8">
-        <div className="info flex flex-col md:w-1/2 w-full text-center md:text-left md:px-8 px-6 mt-20">
+        <div className="info flex flex-col md:w-1/2 w-full text-center md:text-left md:px-8 px-6">
           <h2 className="name font-bold text-center">Full Stack Web Development</h2>
           {/* <h2 className="name font-bold text-center">FULL STACK WEB DEVELOPMENT</h2> */}
           <div className='bio-text pt-8'>

@@ -51,7 +51,7 @@ function Music() {
           </div>
           <div className='buttons pt-8 mobile-center grid grid-cols-2 gap-2 w-full'>
             <a className='btn btn-white w-full text-center' href="https://coattheband.bandcamp.com/" target="_blank">Coat</a>
-            <a className='btn btn-white ml-1 w-full text-center' href="https://www.instagram.com/lovergirltheband/?hl=en">Lover Girl</a>
+            <a className='btn btn-white w-full text-center' href="https://www.instagram.com/lovergirltheband/?hl=en">Lover Girl</a>
             <a className='btn btn-white mt-0 w-full col-span-2 text-center' target="_blank" href="https://goodthebad.bandcamp.com/album/temporary-spaces">Temporary Spaces</a>
           </div>
         </div>

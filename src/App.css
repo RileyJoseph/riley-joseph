@@ -423,8 +423,6 @@ html, body {
   width: 600px;
   .name{
     font-size: 54px;
-    /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-    /* font-family: "Roboto", sans-serif; */
     font-family: "Roboto Condensed", sans-serif;
     line-height: 60px;
     padding-top: 125px;
@@ -440,7 +438,6 @@ html, body {
     color: white;
   }  
   .bio-text{
-    /* max-width: 300px; */
     font-size: 16px;
   }
   .buttons{
@@ -456,8 +453,8 @@ html, body {
   padding-bottom: 80px;
   max-width: 1300px;
   .name{
+    padding-top: 80px;
     font-size: 54px;
-    /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
     font-family: "Roboto Condensed", sans-serif;
     line-height: 60px;
   }
@@ -1261,7 +1258,7 @@ footer{
 
 @media (width <= 1100px) {
   .welcome-text{
-    /* margin-top: 55vh; */
+    min-height: 800px;
     justify-content: center;
     .name{
       font-size: 52px;
@@ -1321,7 +1318,10 @@ footer{
     height: auto;
   }
   .web-dev{
+    padding-top: 80px;
+    height: auto;
     .name{
+      padding-top: 80px;
       font-size: 42px;
       line-height: 48px;
     }
@@ -1403,9 +1403,13 @@ footer{
       max-width: 80%;
       margin: auto;
      }
+     .buttons{
+      max-width: 80%;
+      margin: auto;
+     }
   }
   .web-dev{
-    padding-top: 80px;
+    padding-top: 160px;
     padding-bottom: 0px;
     .name{
       padding-top: 0px;
