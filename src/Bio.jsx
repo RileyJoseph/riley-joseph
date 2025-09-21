@@ -33,7 +33,7 @@ function Bio() {
           music and a practicing film photographer.
         </p>
       </div>
-      <div className='buttons pt-8 grid grid-cols-2 gap-2 w-full'>
+      <div className='buttons pt-8 grid grid-cols-2 gap-2 w-full text-center'>
         <Link className='btn btn-white' to="/music">Music</Link>
         <a className='btn btn-white ml-1' href="/portfolio">Dev</a>
         <Link className='btn btn-white w-full col-span-2' to="/photography">Photography</Link>
