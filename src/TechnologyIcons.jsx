@@ -41,8 +41,8 @@ const ICONS = [
 
 export default function TechnologyIcons() {
   return (
-    <div className="icons md:pt-8 pt-12">
-      <p className="mobile-only">Technologies</p>
+    <div className="icons md:pt-8">
+      {/* <p className="mobile-only">Technologies</p> */}
         <div className="tech-icons">                  
           <ul className="icon-row md:justify-end justify-center md:pt-0 md:p-8 p-4">
           {ICONS.map((l, i) => (

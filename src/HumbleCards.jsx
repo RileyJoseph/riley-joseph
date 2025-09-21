@@ -47,7 +47,7 @@ export default function PortfolioCards() {
       <div className="options">
         {ITEMS.map((it, i) => (
           <div
-            key={it.title}
+            key={it.bg}
             className={`option ${i === active ? "active" : ""}`}
             style={{ "--optionBackground": it.bg }}
             onClick={() => setActive(i)}
