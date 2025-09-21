@@ -1392,6 +1392,10 @@ footer{
 @media (width <= 768px) {
   .bio{
     padding-top: 80px;
+    .info{
+      width: 90%;
+      margin: auto;
+    }
     .name{
       padding-top: 0px;
     }
@@ -1400,11 +1404,9 @@ footer{
     }
     .bio-text{
       text-align: left;
-      max-width: 80%;
       margin: auto;
      }
      .buttons{
-      max-width: 80%;
       margin: auto;
      }
   }
