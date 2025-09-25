@@ -615,9 +615,9 @@ html, body {
   } 
   .platformer{
     width: 100%;
-    max-width: 1560px;
     background-position: center;
     background-image: url("/images/portfolio/kill-bill.jpg");
+    background-size: cover;
     height: 350px;
     display: block;
   }
