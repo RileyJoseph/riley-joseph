@@ -74,7 +74,7 @@
 
   /* Background uses CSS custom props (same cascade as Sass version) */
   background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
-  background-size: auto 120%;
+  background-size: cover;
   background-position: center;
 
   cursor: pointer;
@@ -98,7 +98,7 @@
   max-width: 780px;
   margin: 0;
   border-radius: 40px;
-  background-size: auto 100%;
+  background-size: cover;
 }
 .cards .options .option:not(.active) {
   flex-grow: 1;
@@ -182,5 +182,5 @@
   opacity: 0;
 }
 
-.option { background: var(--optionBackground, #E6E9ED); background-size: auto 120%; background-position: center; }
-.option.active { background-size: auto 100%; }
+.option { background: var(--optionBackground, #E6E9ED); background-size: cover; background-position: center; }
+.option.active { background-size: cover; }
