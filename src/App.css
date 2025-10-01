@@ -1294,6 +1294,9 @@ footer{
     display: inline-block;
     text-align: center;
   }
+  .mobile-only{
+    display: none;
+  }
   .hire-me-btn{
     display: none;
   }
